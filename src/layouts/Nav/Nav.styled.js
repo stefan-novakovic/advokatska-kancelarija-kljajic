@@ -2,15 +2,39 @@ import styled from "styled-components";
 
 export const StyledNav = styled.nav`
   ul {
-    list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    list-style-type: none;
+    font-size: 1.225rem;
+    padding-inline: 3rem;
+  }
+
+  li {
+    min-width: 125px;
+    text-align: center;
   }
 
   a:any-link {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.Neutral0};
+    color: ${({ theme }) => theme.colors.veryLightBlue};
+  }
+
+  @media screen and (max-width: 1439px) {
+    ul {
+      gap: 0.5rem;
+      padding-inline: 2.5rem;
+      font-size: 1.1rem;
+    }
+
+    li {
+      min-width: 104px;
+      line-height: 1.15;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    display: none;
   }
 `;

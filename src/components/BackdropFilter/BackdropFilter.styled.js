@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const StyledHomePage = styled.div`
+const BackdropFilterDiv = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   flex-grow: 1;
+  width: 100%;
 `;
+
+export default BackdropFilterDiv;

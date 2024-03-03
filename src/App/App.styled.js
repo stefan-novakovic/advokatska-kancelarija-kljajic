@@ -7,5 +7,5 @@ export const StyledApp = styled.div`
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: ${({ theme }) => theme.colors.Neutral400};
+  background-color: ${({ theme }) => theme.colors.darkNavy};
 `;

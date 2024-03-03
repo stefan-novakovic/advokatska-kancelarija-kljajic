@@ -1,7 +1,13 @@
-import React from "react";
+import { StyledFooter } from "./Footer.styled";
 
 const Footer = () => {
-  return <footer>Footer</footer>;
+  return (
+    <StyledFooter>
+      <p>
+        Copyright &copy; 2020 <span>Advokatska kancelarija Kljajić</span>
+      </p>
+    </StyledFooter>
+  );
 };
 
 export default Footer;

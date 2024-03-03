@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const StyledHomePage = styled.div`
+export const StyledMissingPage = styled.div`
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

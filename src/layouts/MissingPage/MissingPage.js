@@ -1,5 +1,7 @@
+import { StyledMissingPage } from "./MissingPage.styled";
+
 const MissingPage = () => {
-  return <div>MissingPage</div>;
+  return <StyledMissingPage>MissingPage</StyledMissingPage>;
 };
 
 export default MissingPage;
