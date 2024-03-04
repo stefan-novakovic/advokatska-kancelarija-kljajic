@@ -7,7 +7,7 @@ export const Theme = ({ children }) => {
     colors: {
       white: "#FFF",
       veryLightBlue: "#F2F6F9",
-      lightGray: "#9BAB5",
+      lightNavy: "#37536f",
       navy: "#394867",
       darkNavy: "#212A3E",
       black: "#000",

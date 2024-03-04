@@ -8,10 +8,10 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1.25rem 4rem;
+  padding: 0.875rem 4rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
-  z-index: 1;
-  box-shadow: 0px -20px 50px ${({ theme }) => theme.colors.black};
+  z-index: 5;
+  box-shadow: 0 0 10px ${({ theme }) => theme.colors.black};
 
   & > a {
     border-radius: 50%;
@@ -27,7 +27,7 @@ export const StyledHeader = styled.header`
   }
 
   img {
-    width: 64px;
+    width: 68px;
     height: auto;
     border-radius: 50%;
   }

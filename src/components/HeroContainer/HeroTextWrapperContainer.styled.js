@@ -18,12 +18,16 @@ const HeroTextWrapperContainer = styled.div`
     text-align: center;
     text-shadow: -3px 3px 5px ${({ theme }) => theme.colors.black};
     letter-spacing: 1.25px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   h2 {
     font-weight: 700;
     margin-top: 1.75rem;
-    font-size: 7.25rem;
+    font-size: 8.25rem;
     letter-spacing: 3.5px;
   }
 

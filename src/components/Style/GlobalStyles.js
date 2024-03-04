@@ -67,6 +67,13 @@ const GlobalStyles = createGlobalStyle`
       background-color: ${({ theme }) => theme.colors.veryLightBlue};
       font-family: "Josefin Sans", sans-serif;
       font-weight: 600;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    main {
+      display: flex;
+      flex-grow: 1;
     }
 `;
 export default GlobalStyles;

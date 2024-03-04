@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHomePage = styled.div`
+export const StyledHomePage = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

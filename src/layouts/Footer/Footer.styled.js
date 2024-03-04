@@ -2,17 +2,16 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1.85rem 2rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   z-index: 1;
-  box-shadow: 0px -18px 60px ${({ theme }) => theme.colors.black};
 
-  p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: 1.35;
-    text-align: center;
+  & > p {
     color: ${({ theme }) => theme.colors.veryLightBlue};
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    text-align: center;
   }
 
   span {
@@ -20,9 +19,9 @@ export const StyledFooter = styled.footer`
   }
 
   @media screen and (max-width: 1023px) {
-    padding: 0.85rem 2rem;
+    padding: 1.325rem 2rem;
 
-    p {
+    & > p {
       font-size: 0.95rem;
     }
   }

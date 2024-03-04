@@ -4,7 +4,7 @@ import heroImg from "../../assets/images/home-hero-blurred.jpg";
 export const StyledHeroContainer = styled.div`
   display: flex;
   width: 100%;
-  min-height: calc(100vh - 104px);
+  min-height: calc(100vh - 96px);
   background: url(${heroImg}), ${({ theme }) => theme.colors.veryLightBlue};
   background-size: cover;
   background-position: top;
