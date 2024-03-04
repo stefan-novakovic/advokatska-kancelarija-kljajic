@@ -22,15 +22,13 @@ const HomePage = () => {
       <HeroContainer />
       <HomePageAboutContainer>
         <h2>O nama</h2>
-        <p>
-          <LazyLoad offset={100}>
-            <ReactTyped
-              strings={[aboutUsShortText]}
-              typeSpeed={37}
-              showCursor={true}
-            />
-          </LazyLoad>
-        </p>
+        <LazyLoad offset={150}>
+          <ReactTyped
+            strings={[aboutUsShortText]}
+            typeSpeed={16}
+            showCursor={true}
+          />
+        </LazyLoad>
 
         <Link to="/o-nama">Saznaj više</Link>
       </HomePageAboutContainer>

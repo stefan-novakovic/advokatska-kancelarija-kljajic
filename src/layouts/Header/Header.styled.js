@@ -32,7 +32,7 @@ export const StyledHeader = styled.header`
     border-radius: 50%;
   }
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1536px) {
     padding: 1.375rem 2rem;
 
     img {

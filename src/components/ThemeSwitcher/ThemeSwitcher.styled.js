@@ -27,7 +27,7 @@ export const StyledThemeSwitcher = styled.div`
     height: auto;
   }
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1536px) {
     svg {
       min-width: 20px;
     }

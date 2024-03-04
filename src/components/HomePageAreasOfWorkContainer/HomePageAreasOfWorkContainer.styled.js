@@ -12,6 +12,10 @@ export const HomePageAreasOfWorkContainer = styled.div`
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2.25rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   & > div {
