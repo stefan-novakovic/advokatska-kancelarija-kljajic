@@ -2,6 +2,7 @@ import { StyledHomePage } from "./HomePage.styled";
 import HeroContainer from "../../components/HeroContainer/HeroContainer";
 import { HomePageAboutContainer } from "../../components/HomePageAboutContainer/HomePageAboutContainer.styled";
 import { HomePageAreasOfWorkContainer } from "../../components/HomePageAreasOfWorkContainer/HomePageAreasOfWorkContainer.styled";
+import { HomePageClientsContainer } from "../../components/HomePageClientsContainer/HomePageClientsContainer.styled";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -12,6 +13,11 @@ import img2 from "../../assets/images/gradjansko-pravo.png";
 import img3 from "../../assets/images/radno-pravo.png";
 import img4 from "../../assets/images/upravno-pravo.png";
 import img5 from "../../assets/images/privredno-pravo.png";
+import img6 from "../../assets/images/arborspalet-logo.png";
+import img7 from "../../assets/images/skalar-logo.png";
+import img8 from "../../assets/images/agrocampus-logo.png";
+import img9 from "../../assets/images/poljoprivredni-logo.png";
+import img10 from "../../assets/images/zovet-logo.png";
 
 const HomePage = () => {
   const aboutUsShortText =
@@ -54,20 +60,35 @@ const HomePage = () => {
             </div>
             <p>Radno pravo</p>
           </div>
-          <div>
+          <span>
             <div>
-              <LazyLoadImage src={img4} alt="" threshold={600} />
+              <div>
+                <LazyLoadImage src={img4} alt="" threshold={600} />
+              </div>
+              <p>Upravo pravo</p>
             </div>
-            <p>Upravo pravo</p>
-          </div>
-          <div>
             <div>
-              <LazyLoadImage src={img5} alt="" threshold={600} />
+              <div>
+                <LazyLoadImage src={img5} alt="" threshold={600} />
+              </div>
+              <p>Privredno pravo</p>
             </div>
-            <p>Privredno pravo</p>
-          </div>
+          </span>
         </div>
       </HomePageAreasOfWorkContainer>
+
+      <HomePageClientsContainer>
+        {/* <h4>Klijenti</h4> */}
+        <div>
+          <LazyLoadImage src={img7} alt="" effect="blur" />
+          <LazyLoadImage src={img6} alt="" effect="blur" />
+          <LazyLoadImage src={img9} alt="" effect="blur" />
+          <span>
+            <LazyLoadImage src={img10} alt="" effect="blur" />
+            <LazyLoadImage src={img8} alt="" effect="blur" />
+          </span>
+        </div>
+      </HomePageClientsContainer>
     </StyledHomePage>
   );
 };

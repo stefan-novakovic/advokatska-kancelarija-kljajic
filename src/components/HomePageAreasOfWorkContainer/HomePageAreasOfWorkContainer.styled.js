@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const HomePageAreasOfWorkContainer = styled.div`
   width: 100%;
-  padding: 6rem 4rem;
+  padding: 6rem 0 10rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
+  border-bottom: 10px double ${({ theme }) => theme.colors.veryLightBlue};
 
   h3 {
-    width: 75vw;
+    width: 76vw;
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
@@ -19,6 +20,15 @@ export const HomePageAreasOfWorkContainer = styled.div`
   }
 
   & > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    padding-inline: 3rem;
+  }
+
+  & > div > span {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -53,11 +63,13 @@ export const HomePageAreasOfWorkContainer = styled.div`
     transition: ease 0.75s;
   }
 
-  @media screen and (max-width: 767px) {
-    padding: 6rem 3rem;
+  @media screen and (max-width: 1536px) {
+    h3 {
+      width: 88vw;
+    }
   }
 
-  @media screen and (max-width: 520px) {
-    padding: 6rem 2rem;
+  @media screen and (max-width: 767px) {
+    padding: 6rem 0;
   }
 `;

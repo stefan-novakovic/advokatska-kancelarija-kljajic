@@ -5,6 +5,7 @@ export const StyledFooter = styled.footer`
   padding: 1.85rem 2rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   z-index: 1;
+  border-top: 10px double ${({ theme }) => theme.colors.veryLightBlue};
 
   & > p {
     color: ${({ theme }) => theme.colors.veryLightBlue};

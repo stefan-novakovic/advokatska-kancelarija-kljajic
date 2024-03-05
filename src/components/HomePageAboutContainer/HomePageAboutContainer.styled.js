@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HomePageAboutContainer = styled.div`
   width: 100%;
-  padding: 6rem 4rem;
+  padding: 6rem 0;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
 
@@ -10,8 +10,7 @@ export const HomePageAboutContainer = styled.div`
   border-bottom: 10px double ${({ theme }) => theme.colors.veryLightBlue};
 
   h2 {
-    width: 100%;
-    max-width: 76vw;
+    width: 76vw;
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
@@ -32,7 +31,7 @@ export const HomePageAboutContainer = styled.div`
     line-height: 1.2;
     letter-spacing: 0.5px;
     transform: scaleY(1.04);
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
   }
 
   a:any-link {
@@ -60,7 +59,7 @@ export const HomePageAboutContainer = styled.div`
 
   @media screen and (max-width: 1536px) {
     h2 {
-      max-width: 88vw;
+      width: 88vw;
     }
 
     & > div {
@@ -69,17 +68,15 @@ export const HomePageAboutContainer = styled.div`
   }
 
   @media screen and (max-width: 767px) {
-    padding: 6rem 3rem;
-
     p {
       line-height: normal;
     }
   }
 
   @media screen and (max-width: 520px) {
-    padding: 6rem 2rem;
     & > div {
       font-size: 1.25rem;
+      margin-bottom: 4.75rem;
     }
   }
 
@@ -144,24 +141,49 @@ export const HomePageAboutContainer = styled.div`
       min-height: 432px;
     }
   }
+  @media screen and (max-width: 520px) {
+    & > div {
+      min-height: 290px;
+    }
+  }
+  @media screen and (max-width: 486px) {
+    & > div {
+      min-height: 312px;
+    }
+  }
+  @media screen and (max-width: 459px) {
+    & > div {
+      min-height: 336px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    & > div {
+      min-height: 360px;
+    }
+  }
+  @media screen and (max-width: 397px) {
+    & > div {
+      min-height: 384px;
+    }
+  }
+  @media screen and (max-width: 389px) {
+    & > div {
+      min-height: 408px;
+    }
+  }
   @media screen and (max-width: 371px) {
+    & > div {
+      min-height: 432px;
+    }
+  }
+  @media screen and (max-width: 348px) {
     & > div {
       min-height: 456px;
     }
   }
-  @media screen and (max-width: 349px) {
+  @media screen and (max-width: 324px) {
     & > div {
       min-height: 480px;
-    }
-  }
-  @media screen and (max-width: 333px) {
-    & > div {
-      min-height: 504px;
-    }
-  }
-  @media screen and (max-width: 320px) {
-    & > div {
-      min-height: 528px;
     }
   }
 `;
