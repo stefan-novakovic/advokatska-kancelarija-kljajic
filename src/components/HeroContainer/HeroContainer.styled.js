@@ -1,17 +1,33 @@
 import styled from "styled-components";
-import heroImg from "../../assets/images/home-hero-blurred.jpg";
 
 export const StyledHeroContainer = styled.div`
   display: flex;
   width: 100%;
-  min-height: calc(100vh - 96px + 1px);
-  background: url(${heroImg}), ${({ theme }) => theme.colors.veryLightBlue};
-  background-size: cover;
-  background-position: top;
-  background-attachment: scroll;
+  height: calc(100vh - 96px + 1px);
+  min-height: calc(568px - 96px + 1px);
+  position: relative;
+
+  span {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 
   @media screen and (max-width: 1023px) {
-    background-position: top 0 left 43%;
-    min-height: calc(100vh - 82px + 1px);
+    height: calc(100vh - 82px + 1px);
+
+    img {
+      object-position: top 0 left 44%;
+    }
+  }
+
+  @media screen and (max-width: 320px) and (max-height: 567px) {
+    min-height: calc(480px - 96px + 1px);
   }
 `;

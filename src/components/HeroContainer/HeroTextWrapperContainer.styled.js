@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const HeroTextWrapperContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  padding: 7.5rem 1.75rem;
-  backdrop-filter: brightness(78%);
-  -webkit-backdrop-filter: brightness(78%);
+  display: grid;
+  place-content: center;
+  position: absolute;
+  padding-inline: 3.5rem;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 
   h1,
   h2 {
@@ -24,11 +24,21 @@ const HeroTextWrapperContainer = styled.div`
     -ms-user-select: none;
   }
 
+  h1 {
+    white-space: nowrap;
+  }
+
   h2 {
     font-weight: 700;
     margin-top: 1.75rem;
     font-size: 8.25rem;
     letter-spacing: 3.5px;
+  }
+
+  @media screen and (max-width: 1213px) {
+    h1 {
+      white-space: normal;
+    }
   }
 
   @media screen and (max-width: 767px) {
