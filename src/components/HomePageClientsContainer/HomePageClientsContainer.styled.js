@@ -26,28 +26,17 @@ export const HomePageClientsContainer = styled.div`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    column-gap: 2.75rem;
-    row-gap: 3.25rem;
-  }
-
-  & div span {
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    column-gap: 2.75rem;
     gap: 3.25rem;
   }
 
   img {
     max-height: 168px;
     width: auto;
-    filter: sepia(0.075);
+    filter: sepia(0.15);
   }
 
   img:hover {
     filter: sepia(0);
-    filter: contrast(105%);
-    transform: scale(1.01);
   }
 
   @media screen and (max-width: 767px) {
@@ -56,16 +45,11 @@ export const HomePageClientsContainer = styled.div`
 
   @media screen and (max-width: 627px) {
     img {
-      max-height: 155px;
-      max-width: 90%;
-      margin-inline: auto;
+      max-height: auto;
     }
 
     & div {
       flex-flow: column nowrap;
-    }
-    & div span {
-      flex-direction: column;
     }
   }
 `;

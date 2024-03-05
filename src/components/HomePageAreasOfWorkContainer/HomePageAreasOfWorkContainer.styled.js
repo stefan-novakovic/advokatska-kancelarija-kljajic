@@ -24,16 +24,8 @@ export const HomePageAreasOfWorkContainer = styled.div`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 3.5rem;
+    gap: 4.5rem;
     padding-inline: 3rem;
-  }
-
-  & > div > span {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3.5rem;
   }
 
   div div {

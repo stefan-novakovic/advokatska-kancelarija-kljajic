@@ -1,27 +1,41 @@
 import { StyledHomePage } from "./HomePage.styled";
 import HeroContainer from "../../components/HeroContainer/HeroContainer";
 import { HomePageAboutContainer } from "../../components/HomePageAboutContainer/HomePageAboutContainer.styled";
+import { aboutUsTextShortVersion } from "../../data/lawsDataArray";
 import { HomePageAreasOfWorkContainer } from "../../components/HomePageAreasOfWorkContainer/HomePageAreasOfWorkContainer.styled";
+import krivicnoImg from "../../assets/images/krivicno-pravo.png";
+import gradjanskoImg from "../../assets/images/gradjansko-pravo.png";
+import radnoImg from "../../assets/images/radno-pravo.png";
+import upravnoImg from "../../assets/images/upravno-pravo.png";
+import privrednoImg from "../../assets/images/privredno-pravo.png";
+import arborspaletImg from "../../assets/images/arborspalet-logo.png";
+import skalarImg from "../../assets/images/skalar-logo.png";
+import poljoprivredniImg from "../../assets/images/poljoprivredni-logo.png";
+import agrocampusImg from "../../assets/images/agrocampus-logo.png";
+import zovetImg from "../../assets/images/zovet-logo.png";
 import { HomePageClientsContainer } from "../../components/HomePageClientsContainer/HomePageClientsContainer.styled";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { ReactTyped } from "react-typed";
 import LazyLoad from "react-lazy-load";
-import img1 from "../../assets/images/krivicno-pravo.png";
-import img2 from "../../assets/images/gradjansko-pravo.png";
-import img3 from "../../assets/images/radno-pravo.png";
-import img4 from "../../assets/images/upravno-pravo.png";
-import img5 from "../../assets/images/privredno-pravo.png";
-import img6 from "../../assets/images/arborspalet-logo.png";
-import img7 from "../../assets/images/skalar-logo.png";
-import img8 from "../../assets/images/agrocampus-logo.png";
-import img9 from "../../assets/images/poljoprivredni-logo.png";
-import img10 from "../../assets/images/zovet-logo.png";
 
 const HomePage = () => {
-  const aboutUsShortText =
-    "Advokatska kancelarija Kljajić osnovana je 2012. godine. Sa punom pažnjom pristupa svim problemima klijenata, uz posebnu zaštitu njihovih interesa, strogo čuvanje advokatske tajne i poštovanje odnosa advokat-klijent. Cilj advokatske kancelarije je pružanje kvalitetnih advokatskih usluga svim potencijalnim klijentima uz najveću meru poštovanja njihovih ličnosti i uz objektivno sagledavanje svih njihovih pravnih problema, sa nastojanjem da svoje probleme reše na najefikasniji i najbolji mogući način.";
+  const AOFImgArray = [
+    krivicnoImg,
+    gradjanskoImg,
+    radnoImg,
+    upravnoImg,
+    privrednoImg,
+  ];
+
+  const clientsImgArray = [
+    arborspaletImg,
+    skalarImg,
+    poljoprivredniImg,
+    agrocampusImg,
+    zovetImg,
+  ];
 
   return (
     <StyledHomePage>
@@ -30,7 +44,7 @@ const HomePage = () => {
         <h2>O nama</h2>
         <LazyLoad offset={150}>
           <ReactTyped
-            strings={[aboutUsShortText]}
+            strings={[aboutUsTextShortVersion]}
             typeSpeed={16}
             showCursor={true}
           />
@@ -42,51 +56,25 @@ const HomePage = () => {
       <HomePageAreasOfWorkContainer>
         <h3>Oblasti rada</h3>
         <div>
-          <div>
-            <div>
-              <LazyLoadImage src={img1} alt="" threshold={600} />
-            </div>
-            <p>Krivično pravo</p>
-          </div>
-          <div>
-            <div>
-              <LazyLoadImage src={img2} alt="" threshold={600} />
-            </div>
-            <p>Građansko pravo</p>
-          </div>
-          <div>
-            <div>
-              <LazyLoadImage src={img3} alt="" threshold={600} />
-            </div>
-            <p>Radno pravo</p>
-          </div>
-          <span>
-            <div>
-              <div>
-                <LazyLoadImage src={img4} alt="" threshold={600} />
+          {AOFImgArray.map((img, index) => {
+            return (
+              <div key={index}>
+                <div>
+                  <LazyLoadImage src={img} alt="" threshold={600} />
+                </div>
+                <p>Krivično pravo</p>
               </div>
-              <p>Upravo pravo</p>
-            </div>
-            <div>
-              <div>
-                <LazyLoadImage src={img5} alt="" threshold={600} />
-              </div>
-              <p>Privredno pravo</p>
-            </div>
-          </span>
+            );
+          })}
         </div>
       </HomePageAreasOfWorkContainer>
 
       <HomePageClientsContainer>
         {/* <h4>Klijenti</h4> */}
         <div>
-          <LazyLoadImage src={img7} alt="" effect="blur" />
-          <LazyLoadImage src={img6} alt="" effect="blur" />
-          <LazyLoadImage src={img9} alt="" effect="blur" />
-          <span>
-            <LazyLoadImage src={img10} alt="" effect="blur" />
-            <LazyLoadImage src={img8} alt="" effect="blur" />
-          </span>
+          {clientsImgArray.map((img, index) => {
+            return <LazyLoadImage key={index} src={img} alt="" effect="blur" />;
+          })}
         </div>
       </HomePageClientsContainer>
     </StyledHomePage>
