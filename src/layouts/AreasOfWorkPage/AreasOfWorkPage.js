@@ -1,6 +1,6 @@
 import { StyledAreasOfWorkPage } from "./AreasOfWorkPage.styled";
 import AreasOfWorkPageListContainer from "../../components/AreasOfWorkPageListContainer/AreasOfWorkPageListContainer.styled";
-import { lawsDataArray } from "../../data/lawsDataArray";
+import { lawsDataArray } from "../../data/data";
 
 const AreasOfWorkPage = () => {
   return (

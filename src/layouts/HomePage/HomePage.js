@@ -1,7 +1,7 @@
 import { StyledHomePage } from "./HomePage.styled";
 import HeroContainer from "../../components/HeroContainer/HeroContainer";
 import { HomePageAboutContainer } from "../../components/HomePageAboutContainer/HomePageAboutContainer.styled";
-import { aboutUsTextShortVersion } from "../../data/lawsDataArray";
+import { aboutUsTextShortVersion } from "../../data/data";
 import { HomePageAreasOfWorkContainer } from "../../components/HomePageAreasOfWorkContainer/HomePageAreasOfWorkContainer.styled";
 import krivicnoImg from "../../assets/images/krivicno-pravo.png";
 import gradjanskoImg from "../../assets/images/gradjansko-pravo.png";
