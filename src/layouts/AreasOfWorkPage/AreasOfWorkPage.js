@@ -9,7 +9,7 @@ const AreasOfWorkPage = () => {
       <AreasOfWorkPageListContainer>
         {lawsDataArray.map((law) => {
           return (
-            <li key={law.id}>
+            <li key={law.id} id={law.id}>
               <h3>{law.title}</h3>
               <p>{law.body}</p>
             </li>

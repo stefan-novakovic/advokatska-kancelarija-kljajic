@@ -1,7 +1,11 @@
 import { StyledClientsPage } from "./ClientsPage.styled";
 
 const ClientsPage = () => {
-  return <StyledClientsPage>ClientsPage</StyledClientsPage>;
+  return (
+    <StyledClientsPage>
+      <h2>Klijenti</h2>
+    </StyledClientsPage>
+  );
 };
 
 export default ClientsPage;

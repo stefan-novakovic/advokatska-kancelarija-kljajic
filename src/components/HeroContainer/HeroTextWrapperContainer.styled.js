@@ -4,7 +4,6 @@ const HeroTextWrapperContainer = styled.div`
   display: grid;
   place-content: center;
   position: absolute;
-  padding-inline: 3.5rem;
   right: 0;
   left: 0;
   top: 0;
@@ -18,6 +17,12 @@ const HeroTextWrapperContainer = styled.div`
     text-align: center;
     text-shadow: -3px 3px 5px ${({ theme }) => theme.colors.black};
     letter-spacing: 1.25px;
+    opacity: 0;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+    animation-iteration-count: 1;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -26,13 +31,38 @@ const HeroTextWrapperContainer = styled.div`
 
   h1 {
     white-space: nowrap;
+    animation-name: slide;
   }
 
   h2 {
     font-weight: 700;
-    margin-top: 1.75rem;
     font-size: 8.25rem;
     letter-spacing: 3.5px;
+    animation-name: slideReverse;
+    overflow: visible;
+    line-height: 1.55;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes slideReverse {
+    0% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 
   @media screen and (max-width: 1213px) {
@@ -50,7 +80,6 @@ const HeroTextWrapperContainer = styled.div`
     }
 
     h2 {
-      margin-top: 1rem;
       font-size: 20vw;
       letter-spacing: 2.5px;
     }

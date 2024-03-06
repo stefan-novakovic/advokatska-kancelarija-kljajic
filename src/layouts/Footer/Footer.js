@@ -8,6 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 
 const Footer = () => {
+  const dateObj = new Date();
   return (
     <StyledFooter>
       <StyledFooterInfoContainer>
@@ -49,7 +50,8 @@ const Footer = () => {
         </StyledFooterBasicContainer>
       </StyledFooterInfoContainer>
       <p>
-        Copyright &copy; 2020 <span>Advokatska kancelarija Kljajić</span>
+        Copyright &copy; {dateObj.getFullYear()}{" "}
+        <span>Advokatska kancelarija Kljajić</span>
       </p>
     </StyledFooter>
   );

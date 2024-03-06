@@ -3,6 +3,7 @@ import styled from "styled-components";
 const AreasOfWorkPageListContainer = styled.ul`
   width: 100%;
   color: ${({ theme }) => theme.colors.veryLightBlue};
+  list-style-type: none;
 
   h3 {
     width: 76vw;
@@ -39,9 +40,6 @@ const AreasOfWorkPageListContainer = styled.ul`
     p {
       max-width: 88vw;
     }
-  }
-
-  @media screen and (max-width: 767px) {
   }
 
   @media screen and (max-width: 520px) {

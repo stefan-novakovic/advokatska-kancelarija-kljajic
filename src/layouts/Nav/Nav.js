@@ -1,27 +1,39 @@
 import { StyledNav } from "./Nav.styled";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Nav = () => {
   return (
     <StyledNav>
       <ul>
         <li>
-          <Link to="/">POČETNA</Link>
+          <HashLink smooth to="/#">
+            POČETNA
+          </HashLink>
         </li>
         <li>
-          <Link to="/o-nama">O NAMA</Link>
+          <HashLink smooth to="/o-nama/#">
+            O NAMA
+          </HashLink>
         </li>
         <li>
-          <Link to="/oblasti-rada">OBLASTI RADA</Link>
+          <HashLink smooth to="/oblasti-rada/#">
+            OBLASTI RADA
+          </HashLink>
         </li>
         <li>
-          <Link to="/klijenti">KLIJENTI</Link>
+          <HashLink smooth to="/klijenti/#">
+            KLIJENTI
+          </HashLink>
         </li>
         <li>
-          <Link to="/korisni-linkovi">KORISNI LINKOVI</Link>
+          <HashLink smooth to="/korisni-linkovi/#">
+            KORISNI LINKOVI
+          </HashLink>
         </li>
         <li>
-          <Link to="/kontakt">KONTAKT</Link>
+          <HashLink smooth to="/kontakt/#">
+            KONTAKT
+          </HashLink>
         </li>
       </ul>
     </StyledNav>

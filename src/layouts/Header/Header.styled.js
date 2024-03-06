@@ -11,7 +11,7 @@ export const StyledHeader = styled.header`
   padding: 0.875rem 4rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   z-index: 5;
-  box-shadow: 0 0 10px ${({ theme }) => theme.colors.black};
+  box-shadow: 0 -1px 10px 0px ${({ theme }) => theme.colors.black};
 
   & > a {
     border-radius: 50%;

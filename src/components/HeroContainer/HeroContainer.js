@@ -7,7 +7,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const HeroContainer = () => {
   return (
     <StyledHeroContainer>
-      <LazyLoadImage src={heroImg} alt="" effect="blur" />
+      <LazyLoadImage src={heroImg} alt="" effect="blur" threshold={1000} />
       <HeroTextWrapperContainer>
         <h1>ADVOKATSKA KANCELARIJA</h1>
         <h2>KLJAJIĆ</h2>

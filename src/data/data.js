@@ -11,32 +11,32 @@ import zovetImg from "../assets/images/zovet-logo.png";
 
 export const lawsDataArray = [
   {
-    id: 1,
+    id: "gradjansko-pravo",
     title: "Građansko pravo",
     body: "Naknada štete, razvod braka, dečije izdržavanje i izdržavanje između supružnika, ostavinski postupci, izrada i overe ugovora, međunarodna overa ugovora, zaštita autorskih i srodnih prava, prinudno izvršenje, promet nekretnina.",
   },
   {
-    id: 2,
+    id: "privredno-pravo",
     title: "Privredno pravo",
     body: "Konsultanstske usluge, osnivanje privrednih društava, zabrana konkurencije, carinski propisi, carinski prekršaji, međunarodna špedicija, naplata potraživanja, likvidacija, stečaj.",
   },
   {
-    id: 3,
+    id: "radno-pravo",
     title: "Radno pravo",
     body: "Sporovi povodom naknada štete zbog neisplaćene zarade, naknade štete prilikom povrede na radu, zaštite prava radnika, mobing, izrada svih akata u skladu sa Zakonom o radu.",
   },
   {
-    id: 4,
+    id: "krivicno-pravo",
     title: "Krivično pravo",
     body: "Odbrana okrivljenih lica i zastupanje prava oštećenih, odbrana maloletnih učinilaca krivičnih dela.",
   },
   {
-    id: 5,
+    id: "upravno-pravo",
     title: "Upravno pravo",
     body: "Legalizacija objekata, upis prava svojine na objektima – uknjižba, zastupanje u poreskim i drugim upravnim postupcima, podnošenje prijava Zavodu za intelektualnu svojinu, restitucija.",
   },
   {
-    id: 6,
+    id: "porodicno-pravo",
     title: "Porodično pravo",
     body: "Razvod braka, dečije izdržavanje, vršenje roditeljskog prava, nasilje u porodici.",
   },
@@ -45,12 +45,12 @@ export const lawsDataArray = [
 export const aboutUsTextShortVersion =
   "Advokatska kancelarija Kljajić osnovana je 2012. godine. Sa punom pažnjom pristupa svim problemima klijenata, uz posebnu zaštitu njihovih interesa, strogo čuvanje advokatske tajne i poštovanje odnosa advokat-klijent. Cilj advokatske kancelarije je pružanje kvalitetnih advokatskih usluga svim potencijalnim klijentima uz najveću meru poštovanja njihovih ličnosti i uz objektivno sagledavanje svih njihovih pravnih problema, sa nastojanjem da svoje probleme reše na najefikasniji i najbolji mogući način.";
 
-export const AOFArray = [
-  { img: krivicnoImg, caption: "Krivično pravo" },
-  { img: gradjanskoImg, caption: "Građansko pravo" },
-  { img: radnoImg, caption: "Radno pravo" },
-  { img: upravnoImg, caption: "Upravno pravo" },
-  { img: privrednoImg, caption: "Privredno pravo" },
+export const AOWArray = [
+  { id: "radno-pravo", img: radnoImg, caption: "Radno pravo" },
+  { id: "gradjansko-pravo", img: gradjanskoImg, caption: "Građansko pravo" },
+  { id: "upravno-pravo", img: upravnoImg, caption: "Upravno pravo" },
+  { id: "krivicno-pravo", img: krivicnoImg, caption: "Krivično pravo" },
+  { id: "privredno-pravo", img: privrednoImg, caption: "Privredno pravo" },
 ];
 
 export const clientsImgArray = [
@@ -59,4 +59,40 @@ export const clientsImgArray = [
   poljoprivredniImg,
   agrocampusImg,
   zovetImg,
+];
+
+export const usefulLinksArray = [
+  { title: "OSNOVNI SUD U NOVOM SADU", url: "https://www.ns.os.sud.rs/" },
+  { title: "VIŠI SUD U NOVOM SADU", url: "https://www.ns.vi.sud.rs/" },
+  { title: "APELACIONI SUD U NOVOM SADU", url: "https://www.ns.ap.sud.rs/" },
+  { title: "PRIVREDNI SUD U NOVOM SADU", url: "https://www.ns.pr.sud.rs/" },
+  { title: "VRHOVNI KASACIONI SUD", url: "https://www.vrh.sud.rs/" },
+  { title: "USTAVNI SUD REPUBLIKE SRBIJE", url: "https://www.ustavni.sud.rs/" },
+  {
+    title: "NARODNA SKUPŠTINA REPUBLIKE SRBIJE",
+    url: "http://www.parlament.gov.rs/",
+  },
+  { title: "VLADA REPUBLIKE SRBIJE", url: "https://www.srbija.gov.rs/" },
+  { title: "MINISTARSTVO PRAVDE", url: "https://www.mpravde.gov.rs/" },
+  {
+    title: "MINISTARSTVO UNUTRAŠNJIH POSLOVA",
+    url: "http://www.mup.gov.rs/",
+  },
+  { title: "NARODNA BANKA SRBIJE", url: "https://www.nbs.rs/" },
+  {
+    title: "AGENCIJA ZA PRIVREDNE REGISTRE",
+    url: "https://www.apr.gov.rs/",
+  },
+  {
+    title: "KATASTAR NEPOKRETNOSTI",
+    url: "https://katastar.rgz.gov.rs/",
+  },
+  { title: "ADVOKATSKA KOMORA VOJVODINE", url: "https://akv.org.rs/" },
+  {
+    title: "ADVOKATSKA KOMORA SRBIJE",
+    url: "https://www.advokatska-komora.co.rs/",
+  },
+  { title: "EVROPSKI SUD ZA LJUDSKA PRAVA", url: "https://www.echr.coe.int/" },
+  { title: "MEĐUNARODNI SUD PRAVDE", url: "https://www.icj-cij.org/" },
+  { title: "MEĐUNARODNI KRIVIČNI SUD", url: "https://www.icc-cpi.int/" },
 ];

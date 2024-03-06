@@ -3,14 +3,14 @@ import { StyledHeader } from "./Header.styled";
 import Nav from "../Nav/Nav";
 import logo from "../../assets/images/gk-logo.png";
 import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
     <StyledHeader>
-      <Link to="/">
+      <HashLink smooth to="/#">
         <img src={logo} alt="" />
-      </Link>
+      </HashLink>
       <Nav />
       <ThemeSwitcher />
     </StyledHeader>

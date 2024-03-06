@@ -21,7 +21,8 @@ export const HomePageAboutContainer = styled.div`
     -ms-user-select: none;
   }
 
-  & > div {
+  & > span {
+    display: block;
     width: 100%;
     max-width: 76vw;
     min-height: 87px;
@@ -62,7 +63,7 @@ export const HomePageAboutContainer = styled.div`
       width: 88vw;
     }
 
-    & > div {
+    & > span {
       max-width: 88vw;
     }
   }
@@ -74,7 +75,7 @@ export const HomePageAboutContainer = styled.div`
   }
 
   @media screen and (max-width: 520px) {
-    & > div {
+    & > span {
       font-size: 1.25rem;
       margin-bottom: 4.75rem;
     }
@@ -82,107 +83,107 @@ export const HomePageAboutContainer = styled.div`
 
   // TYPEWRITER SPACE RESERVING QUERIES
   @media screen and (max-width: 2527px) {
-    & > div {
+    & > span {
       min-height: 116px;
     }
   }
   @media screen and (max-width: 1915px) {
-    & > div {
+    & > span {
       min-height: 144px;
     }
   }
   @media screen and (max-width: 1553px) {
-    & > div {
+    & > span {
       min-height: 173px;
     }
   }
   @media screen and (max-width: 1126px) {
-    & > div {
+    & > span {
       min-height: 202px;
     }
   }
   @media screen and (max-width: 985px) {
-    & > div {
+    & > span {
       min-height: 231px;
     }
   }
   @media screen and (max-width: 883px) {
-    & > div {
+    & > span {
       min-height: 260px;
     }
   }
   @media screen and (max-width: 785px) {
-    & > div {
+    & > span {
       min-height: 288px;
     }
   }
   @media screen and (max-width: 708px) {
-    & > div {
+    & > span {
       min-height: 317px;
     }
   }
   @media screen and (max-width: 645px) {
-    & > div {
+    & > span {
       min-height: 346px;
     }
   }
   @media screen and (max-width: 604px) {
-    & > div {
+    & > span {
       min-height: 375px;
     }
   }
   @media screen and (max-width: 577px) {
-    & > div {
+    & > span {
       min-height: 404px;
     }
   }
   @media screen and (max-width: 536px) {
-    & > div {
+    & > span {
       min-height: 432px;
     }
   }
   @media screen and (max-width: 520px) {
-    & > div {
+    & > span {
       min-height: 290px;
     }
   }
   @media screen and (max-width: 486px) {
-    & > div {
+    & > span {
       min-height: 312px;
     }
   }
   @media screen and (max-width: 459px) {
-    & > div {
+    & > span {
       min-height: 336px;
     }
   }
   @media screen and (max-width: 420px) {
-    & > div {
+    & > span {
       min-height: 360px;
     }
   }
   @media screen and (max-width: 397px) {
-    & > div {
+    & > span {
       min-height: 384px;
     }
   }
   @media screen and (max-width: 389px) {
-    & > div {
+    & > span {
       min-height: 408px;
     }
   }
   @media screen and (max-width: 371px) {
-    & > div {
+    & > span {
       min-height: 432px;
     }
   }
   @media screen and (max-width: 348px) {
-    & > div {
+    & > span {
       min-height: 456px;
     }
   }
   @media screen and (max-width: 324px) {
-    & > div {
+    & > span {
       min-height: 480px;
     }
   }

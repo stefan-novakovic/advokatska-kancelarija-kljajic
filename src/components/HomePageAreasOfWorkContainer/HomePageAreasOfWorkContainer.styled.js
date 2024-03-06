@@ -24,8 +24,9 @@ export const HomePageAreasOfWorkContainer = styled.div`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 4.5rem;
+    gap: 4.25rem;
     padding-inline: 3rem;
+    height: 248px;
   }
 
   div div {
@@ -33,7 +34,7 @@ export const HomePageAreasOfWorkContainer = styled.div`
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 2.4rem;
+    gap: 2.5rem;
   }
 
   div div p {
@@ -42,17 +43,18 @@ export const HomePageAreasOfWorkContainer = styled.div`
 
   div div div {
     height: 188px;
+    transition: ease 0.65s;
   }
 
   div div div img {
     width: 180px;
     height: auto;
-    transition: ease 0.75s;
+    min-height: 158px;
   }
 
-  div div div img:hover {
-    transform: scale(1.15);
-    transition: ease 0.75s;
+  div div div:hover {
+    transform: scale(1.1);
+    transition: ease 0.65s;
   }
 
   @media screen and (max-width: 1536px) {
@@ -63,5 +65,28 @@ export const HomePageAreasOfWorkContainer = styled.div`
 
   @media screen and (max-width: 767px) {
     padding: 6rem 0;
+  }
+
+  @media screen and (max-width: 1279px) {
+    & > div {
+      gap: 4.425rem;
+      height: 567px;
+    }
+  }
+  @media screen and (max-width: 840px) {
+    & > div {
+      height: 556px;
+      gap: 3.75rem;
+    }
+  }
+  @media screen and (max-width: 840px) {
+    & > div {
+      height: 864px;
+    }
+  }
+  @media screen and (max-width: 515px) {
+    & > div {
+      height: 1480px;
+    }
   }
 `;
