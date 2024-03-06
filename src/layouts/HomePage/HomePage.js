@@ -15,7 +15,7 @@ const HomePage = () => {
   const scrollWithOffset = (el) => {
     const yCoordinate =
       el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset);
-    const yOffset = 154;
+    const yOffset = 138;
     window.scrollTo({ top: yCoordinate - yOffset, behavior: "smooth" });
   };
 

@@ -13,7 +13,8 @@ export const StyledContactUsPage = styled.div`
   color: ${({ theme }) => theme.colors.veryLightBlue};
 
   h2 {
-    width: 76vw;
+    width: 100%;
+    max-width: min(76vw, 1500px);
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
@@ -24,13 +25,58 @@ export const StyledContactUsPage = styled.div`
     -ms-user-select: none;
   }
 
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: min(76vw, 1500px);
+    margin-inline: auto;
+  }
+
+  form > div,
+  form > textarea {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  form > div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  form > div:first-of-type > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form > button {
+    margin-top: 0.75rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  form p {
+    line-height: 2.25;
+    font-weight: 400;
+    height: 36px;
+  }
+
   @media screen and (max-width: 1023px) {
     min-height: calc(100vh - 82px + 1px);
   }
 
   @media screen and (max-width: 1536px) {
-    h2 {
-      width: 88vw;
+    h2,
+    form {
+      max-width: 88vw;
     }
   }
 `;

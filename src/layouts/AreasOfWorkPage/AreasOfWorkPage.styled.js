@@ -13,7 +13,8 @@ export const StyledAreasOfWorkPage = styled.div`
   color: ${({ theme }) => theme.colors.veryLightBlue};
 
   h2 {
-    width: 76vw;
+    width: 100%;
+    max-width: min(76vw, 1500px);
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
@@ -26,7 +27,7 @@ export const StyledAreasOfWorkPage = styled.div`
 
   @media screen and (max-width: 1536px) {
     h2 {
-      width: 88vw;
+      max-width: 88vw;
     }
   }
 

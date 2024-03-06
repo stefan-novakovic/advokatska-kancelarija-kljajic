@@ -6,7 +6,8 @@ const AreasOfWorkPageListContainer = styled.ul`
   list-style-type: none;
 
   h3 {
-    width: 76vw;
+    width: 100%;
+    max-width: min(76vw, 1500px);
     margin-inline: auto;
     font-size: 2rem;
     font-weight: 700;
@@ -19,7 +20,7 @@ const AreasOfWorkPageListContainer = styled.ul`
 
   p {
     width: 100%;
-    max-width: 76vw;
+    max-width: min(76vw, 1500px);
     margin-inline: auto;
     font-size: 1.4rem;
     font-weight: 400;
@@ -34,7 +35,7 @@ const AreasOfWorkPageListContainer = styled.ul`
 
   @media screen and (max-width: 1536px) {
     h3 {
-      width: 88vw;
+      max-width: 88vw;
     }
 
     p {

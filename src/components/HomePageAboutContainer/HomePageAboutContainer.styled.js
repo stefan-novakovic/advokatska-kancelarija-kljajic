@@ -10,7 +10,8 @@ export const HomePageAboutContainer = styled.div`
   border-bottom: 10px double ${({ theme }) => theme.colors.veryLightBlue};
 
   h2 {
-    width: 76vw;
+    width: 100%;
+    max-width: min(76vw, 1500px);
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
@@ -24,7 +25,7 @@ export const HomePageAboutContainer = styled.div`
   & > span {
     display: block;
     width: 100%;
-    max-width: 76vw;
+    max-width: min(76vw, 1500px);
     min-height: 87px;
     margin-inline: auto;
     font-size: 1.5rem;
@@ -60,7 +61,7 @@ export const HomePageAboutContainer = styled.div`
 
   @media screen and (max-width: 1536px) {
     h2 {
-      width: 88vw;
+      max-width: 88vw;
     }
 
     & > span {
