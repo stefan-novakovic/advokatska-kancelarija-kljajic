@@ -6,34 +6,22 @@ const Nav = () => {
     <StyledNav>
       <ul>
         <li>
-          <HashLink smooth to="/#">
-            POČETNA
-          </HashLink>
+          <HashLink to="/#">POČETNA</HashLink>
         </li>
         <li>
-          <HashLink smooth to="/o-nama/#">
-            O NAMA
-          </HashLink>
+          <HashLink to="/o-nama/#">O NAMA</HashLink>
         </li>
         <li>
-          <HashLink smooth to="/oblasti-rada/#">
-            OBLASTI RADA
-          </HashLink>
+          <HashLink to="/oblasti-rada/#">OBLASTI RADA</HashLink>
         </li>
         <li>
-          <HashLink smooth to="/klijenti/#">
-            KLIJENTI
-          </HashLink>
+          <HashLink to="/klijenti/#">KLIJENTI</HashLink>
         </li>
         <li>
-          <HashLink smooth to="/korisni-linkovi/#">
-            KORISNI LINKOVI
-          </HashLink>
+          <HashLink to="/korisni-linkovi/#">KORISNI LINKOVI</HashLink>
         </li>
         <li>
-          <HashLink smooth to="/kontakt/#">
-            KONTAKT
-          </HashLink>
+          <HashLink to="/kontakt/#">KONTAKT</HashLink>
         </li>
       </ul>
     </StyledNav>

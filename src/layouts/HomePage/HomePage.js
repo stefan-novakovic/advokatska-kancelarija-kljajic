@@ -30,9 +30,7 @@ const HomePage = () => {
           showCursor={true}
         />
 
-        <HashLink smooth to="/o-nama/#">
-          Saznaj više
-        </HashLink>
+        <HashLink to="/o-nama/#">Saznaj više</HashLink>
       </HomePageAboutContainer>
 
       <HomePageAreasOfWorkContainer>
@@ -43,7 +41,6 @@ const HomePage = () => {
               <div key={item.id}>
                 <div>
                   <HashLink
-                    smooth
                     to={`/oblasti-rada#${item.id}`}
                     scroll={(el) => scrollWithOffset(el)}
                   >
@@ -72,7 +69,7 @@ const HomePage = () => {
                 src={img}
                 alt=""
                 effect="blur"
-                threshold={800}
+                threshold={700}
               />
             );
           })}

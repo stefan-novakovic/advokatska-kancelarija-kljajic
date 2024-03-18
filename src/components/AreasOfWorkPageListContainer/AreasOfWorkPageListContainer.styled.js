@@ -5,13 +5,34 @@ const AreasOfWorkPageListContainer = styled.ul`
   color: ${({ theme }) => theme.colors.veryLightBlue};
   list-style-type: none;
 
-  h3 {
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     max-width: min(76vw, 1500px);
+    height: 58px;
     margin-inline: auto;
+    margin-bottom: 1.75rem;
+  }
+
+  div span,
+  div span img {
+    width: 50px;
+    height: auto;
+  }
+
+  li:last-child div span img {
+    height: 58px;
+    width: 40px;
+    margin-inline: auto;
+  }
+
+  div h3 {
+    margin-left: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1.75rem;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -34,7 +55,7 @@ const AreasOfWorkPageListContainer = styled.ul`
   }
 
   @media screen and (max-width: 1536px) {
-    h3 {
+    div {
       max-width: 88vw;
     }
 

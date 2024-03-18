@@ -7,7 +7,7 @@ const UsefulLinksListContainer = styled.ul`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: min(76vw, 1500px);
+  max-width: min(73.1vw, 1366px);
   margin-inline: auto;
   list-style-type: none;
 
@@ -20,7 +20,7 @@ const UsefulLinksListContainer = styled.ul`
   }
 
   a:any-link {
-    font-size: 1.5rem;
+    font-size: 1.425rem;
     font-weight: 400;
     letter-spacing: 0.9px;
     line-height: 1.45;
@@ -40,19 +40,14 @@ const UsefulLinksListContainer = styled.ul`
   }
 
   @media screen and (max-width: 1536px) {
-    max-width: 88vw;
+    max-width: 85.1vw;
   }
 
-  @media screen and (max-width: 1356px) {
+  @media screen and (max-width: 1365px) {
     flex-direction: column;
     align-items: flex-start;
+    max-width: 88vw;
     gap: 2.5rem;
-  }
-
-  @media screen and (max-width: 1190px) {
-    a:any-link {
-      font-size: 1.4rem;
-    }
   }
 `;
 
