@@ -103,3 +103,20 @@ export const usefulLinksArray = [
   { title: "MEĐUNARODNI SUD PRAVDE", url: "https://www.icj-cij.org/" },
   { title: "MEĐUNARODNI KRIVIČNI SUD", url: "https://www.icc-cpi.int/" },
 ];
+
+export const clientNamesArray = [
+  "Poljoprivredni fakultet, Novi Sad",
+  "Istraživačko-obrazovni centar u poljoprivredi ,,Agro Campus”, Temerin",
+  "Vranić farm DOO, Kać",
+  "Adrijana DOO, Novi Sad",
+  "Veterinarska stanica Zrenjanin DOO, Zrenjanin",
+  "Veterinarska stanica ZOVET DOO, Obrva (Kraljevo)",
+  "Downtown Media Systems DOO, Zrenjanin",
+  "Arborspalet 2010 DOO, Bačka Palanka",
+  "Excentar DOO, Novi Sad",
+  "Stilles DOO, Novi Sad",
+  `Ing. „B-SD Gradnja‟ DOO, Novi Sad`,
+  "Suins DOO, međunarodna špedicija i transport, Novi Sad",
+  "OZZ ,,Begečki povrtari”, Begeč",
+  "STR ,,Skalar”, Novi Sad",
+];

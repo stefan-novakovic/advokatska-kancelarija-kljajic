@@ -12,7 +12,7 @@ const AreasOfWorkPageListContainer = styled.ul`
     align-items: center;
     width: 100%;
     max-width: min(76vw, 1500px);
-    height: 58px;
+    height: 64px;
     margin-inline: auto;
     margin-bottom: 1.75rem;
   }
@@ -24,7 +24,7 @@ const AreasOfWorkPageListContainer = styled.ul`
   }
 
   li:last-child div span img {
-    height: 58px;
+    height: 64px;
     width: 40px;
     margin-inline: auto;
   }

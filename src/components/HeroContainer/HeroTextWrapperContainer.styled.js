@@ -12,7 +12,7 @@ const HeroTextWrapperContainer = styled.div`
   h1,
   h2 {
     color: ${({ theme }) => theme.colors.veryLightBlue};
-    font-size: 5rem;
+    font-size: 4.85rem;
     font-weight: 600;
     text-align: center;
     text-shadow: -3px 3px 5px ${({ theme }) => theme.colors.black};
@@ -30,7 +30,7 @@ const HeroTextWrapperContainer = styled.div`
   }
 
   h1 {
-    white-space: nowrap;
+    margin-inline: 5rem;
     animation-name: slide;
   }
 
@@ -77,6 +77,10 @@ const HeroTextWrapperContainer = styled.div`
       color: ${({ theme }) => theme.colors.veryLightBlue};
       font-size: 10vw;
       letter-spacing: 0.75px;
+    }
+
+    h1 {
+      margin-inline: 0;
     }
 
     h2 {
