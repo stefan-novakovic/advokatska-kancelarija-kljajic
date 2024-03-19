@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import placeholderImg from "../../assets/images/slika-1-o-nama-placeholder.jpg";
 
 export const StyledAboutUsPage = styled.div`
   display: flex;
@@ -48,14 +49,19 @@ export const StyledAboutUsPage = styled.div`
   section:first-of-type > div:last-child {
     width: 100%;
     min-width: 535px;
-    max-width: 535px;
-    min-height: 405px;
+    min-height: 402px;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    border: 7px double ${({ theme }) => theme.colors.veryLightBlue};
+    border: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
     border-radius: 4px;
+    background-image: url(${placeholderImg});
+    background-size: cover;
+  }
+
+  section:first-of-type > div:last-child button:hover {
+    background-color: rgba(242, 246, 249, 0.2);
   }
 
   section:first-of-type > div:last-child img {
