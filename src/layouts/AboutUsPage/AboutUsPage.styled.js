@@ -208,5 +208,9 @@ export const StyledAboutUsPage = styled.div`
       gap: 5rem;
       margin-bottom: 3.5rem;
     }
+
+    section:first-of-type > div:last-child {
+      max-width: 800px;
+    }
   }
 `;
