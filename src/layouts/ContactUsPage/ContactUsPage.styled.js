@@ -50,11 +50,13 @@ export const StyledContactUsPage = styled.div`
   form > div:first-of-type > div {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex-grow: 1;
   }
 
+  form > div:first-of-type > div:last-child {
+    width: 56%;
+  }
   form > button {
-    margin-top: 0.75rem;
     font-size: 1.5rem;
     font-family: inherit;
     padding: 0.4rem 1rem;
@@ -64,9 +66,10 @@ export const StyledContactUsPage = styled.div`
   }
 
   form p {
-    line-height: 2.25;
     font-weight: 400;
+    line-height: 2.25;
     height: 36px;
+    margin-bottom: 0.25rem;
   }
 
   @media screen and (max-width: 1023px) {
