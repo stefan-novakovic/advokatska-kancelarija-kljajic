@@ -3,6 +3,7 @@ import GlobalStyles from "../components/Style/GlobalStyles";
 import Layout from "../layouts/Layout/Layout";
 import HomePage from "../layouts/HomePage/HomePage";
 import AboutUsPage from "../layouts/AboutUsPage/AboutUsPage";
+import AboutUsStaffDetailsPage from "../layouts/AboutUsStaffDetailsPage/AboutUsStaffDetailsPage";
 import AreasOfWorkPage from "../layouts/AreasOfWorkPage/AreasOfWorkPage";
 import ClientsPage from "../layouts/ClientsPage/ClientsPage";
 import UsefulLinksPage from "../layouts/UsefulLinksPage/UsefulLinksPage";
@@ -17,7 +18,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="o-nama" element={<AboutUsPage />} />
+          <Route path="o-nama">
+            <Route index element={<AboutUsPage />} />
+            <Route path=":id" element={<AboutUsStaffDetailsPage />} />
+          </Route>
           <Route path="oblasti-rada" element={<AreasOfWorkPage />} />
           <Route path="klijenti" element={<ClientsPage />} />
           <Route path="korisni-linkovi" element={<UsefulLinksPage />} />
