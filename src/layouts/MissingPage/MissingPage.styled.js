@@ -25,12 +25,35 @@ export const StyledMissingPage = styled.div`
     -ms-user-select: none;
   }
 
+  div {
+    width: 100%;
+    max-width: min(76vw, 1500px);
+    margin-inline: auto;
+  }
+
+  a:any-link {
+    width: fit-content;
+    color: ${({ theme }) => theme.colors.veryLightBlue};
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  a:hover,
+  a:focus-visible {
+    filter: brightness(85%);
+  }
+
+  a:active {
+    filter: brightness(72%);
+  }
+
   @media screen and (max-width: 1023px) {
     min-height: calc(100vh - 82px + 1px);
   }
 
   @media screen and (max-width: 1536px) {
-    h2 {
+    h2,
+    div {
       max-width: 88vw;
     }
   }

@@ -17,7 +17,7 @@ const Footer = () => {
             <HiOutlinePhone />
           </a>
 
-          <a href="mailto:info@advokatkljajic.com" title="Pošalji nam email">
+          <a href="mailto:info@advokatkljajic.com" title="Pošaljite nam email">
             <GoMail />
           </a>
 
@@ -40,7 +40,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://maps.app.goo.gl/82gZ3xiW2DdM3gyz7"
+            href="https://maps.app.goo.gl/4X1bggfi8QuYyg5RA"
             target="_blank"
             rel="noopener noreferrer"
             title="Naša lokacija"

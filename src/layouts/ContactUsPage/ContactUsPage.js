@@ -3,17 +3,24 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import TextField from "@mui/material/TextField";
+import StyledContactUsContainer from "../../components/ContactUsPageInfoContainer/ContactUsPageInfoContainer.styled";
+import { SlLocationPin } from "react-icons/sl";
+import { HiOutlinePhone } from "react-icons/hi";
+import { GoMail } from "react-icons/go";
+import { FaFacebookF } from "react-icons/fa";
+import { SlSocialInstagram } from "react-icons/sl";
+import { LuClock8 } from "react-icons/lu";
 
 const ContactUsPage = () => {
   const schema = yup.object().shape({
     firstName: yup
       .string()
       .required("Obavezno polje")
-      .min(2, "Minimalna dužina je 2 karaktera"),
+      .min(2, "Uneli ste manje od 2 karaktera"),
     lastName: yup
       .string()
       .required("Obavezno polje")
-      .min(2, "Minimalna dužina je 2 karaktera"),
+      .min(2, "Uneli ste manje od 2 karaktera"),
     email: yup
       .string()
       .required("Obavezno polje")
@@ -24,7 +31,7 @@ const ContactUsPage = () => {
     message: yup
       .string()
       .required("Obavezno polje")
-      .min(2, "Minimalna dužina je 2 karaktera")
+      .min(2, "Uneli ste manje od 2 karaktera")
       .max(400, "Maksimalna dužina je 400 karaktera"),
   });
 
@@ -56,172 +63,226 @@ const ContactUsPage = () => {
   return (
     <StyledContactUsPage>
       <h2>Kontakt</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div>
+      <div>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div>
-            <TextField
-              error={errors.firstName ? true : false}
-              label="Ime"
-              id="firstName"
-              defaultValue=""
-              variant="outlined"
-              autoComplete="off"
-              {...register("firstName")}
-              InputProps={{
-                style: { color: "whitesmoke", fontSize: "1.2rem" },
-              }}
-              sx={{
-                label: {
-                  fontSize: "1.2rem",
-                  color: "whitesmoke",
-                },
-                "& label.Mui-focused": {
-                  color: errors.firstName ? "red" : "whitesmoke",
-                },
-                "& .MuiOutlinedInput-notchedOutline": {
-                  border: "2px solid whitesmoke",
-                },
+            <div>
+              <TextField
+                error={errors.firstName ? true : false}
+                label="Ime"
+                id="firstName"
+                defaultValue=""
+                variant="outlined"
+                autoComplete="off"
+                {...register("firstName")}
+                InputProps={{
+                  style: { color: "whitesmoke", fontSize: "1.2rem" },
+                }}
+                InputLabelProps={{
+                  style: { fontSize: "1.2rem", color: "whitesmoke" },
+                }}
+                sx={{
+                  "& label.Mui-focused": {
+                    color: errors.firstName ? "red" : "whitesmoke",
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    border: "2px solid whitesmoke",
+                  },
 
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "whitesmoke",
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "whitesmoke",
+                    },
+                    "&:hover fieldset": {
+                      borderColor: errors.firstName
+                        ? "red"
+                        : "rgba(245,245,245,0.6)",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: errors.firstName
+                        ? "red"
+                        : "rgba(245,245,245,0.45)",
+                    },
                   },
-                  "&:hover fieldset": {
-                    borderColor: errors.firstName ? "red" : "whitesmoke",
+                }}
+              />
+              <p>{errors.firstName?.message}</p>
+            </div>
+
+            <div>
+              <TextField
+                error={errors.lastName ? true : false}
+                label="Prezime"
+                id="lastName"
+                defaultValue=""
+                variant="outlined"
+                autoComplete="off"
+                {...register("lastName")}
+                InputProps={{
+                  style: { color: "whitesmoke", fontSize: "1.2rem" },
+                }}
+                InputLabelProps={{
+                  style: { fontSize: "1.2rem", color: "whitesmoke" },
+                }}
+                sx={{
+                  "& label.Mui-focused": {
+                    color: errors.lastName ? "red" : "whitesmoke",
                   },
-                  "&.Mui-focused fieldset": {
-                    borderColor: errors.firstName ? "red" : "whitesmoke",
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    border: "2px solid whitesmoke",
                   },
-                },
-              }}
-            />
-            <p>{errors.firstName?.message}</p>
+
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                      borderColor: "whitesmoke",
+                    },
+                    "&:hover fieldset": {
+                      borderColor: errors.lastName
+                        ? "red"
+                        : "rgba(245,245,245,0.6)",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: errors.lastName
+                        ? "red"
+                        : "rgba(245,245,245,0.45)",
+                    },
+                  },
+                }}
+              />
+              <p>{errors.lastName?.message}</p>
+            </div>
           </div>
 
+          <TextField
+            error={errors.email ? true : false}
+            label="Email"
+            id="email"
+            defaultValue=""
+            variant="outlined"
+            autoComplete="off"
+            {...register("email")}
+            InputProps={{
+              style: { color: "whitesmoke", fontSize: "1.2rem" },
+            }}
+            InputLabelProps={{
+              style: { fontSize: "1.2rem", color: "whitesmoke" },
+            }}
+            sx={{
+              "& label.Mui-focused": {
+                color: errors.email ? "red" : "whitesmoke",
+              },
+              "& .MuiOutlinedInput-notchedOutline": {
+                border: "2px solid whitesmoke",
+              },
+
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "whitesmoke",
+                },
+                "&:hover fieldset": {
+                  borderColor: errors.email ? "red" : "rgba(245,245,245,0.6)",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: errors.email ? "red" : "rgba(245,245,245,0.45)",
+                },
+              },
+            }}
+          />
+
+          <p>{errors.email?.message}</p>
+
+          <TextField
+            error={errors.message ? true : false}
+            multiline
+            inputProps={{ style: { color: "white" } }}
+            label="Vaše pitanje"
+            id="message"
+            defaultValue=""
+            variant="outlined"
+            autoComplete="off"
+            minRows={10}
+            maxRows={40}
+            InputProps={{
+              style: { color: "whitesmoke", fontSize: "1.2rem" },
+            }}
+            InputLabelProps={{
+              style: { fontSize: "1.2rem", color: "whitesmoke" },
+            }}
+            sx={{
+              "& label.Mui-focused": {
+                color: errors.message ? "red" : "whitesmoke",
+              },
+              "& .MuiOutlinedInput-notchedOutline": {
+                border: "2px solid whitesmoke",
+              },
+
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  borderColor: "whitesmoke",
+                },
+                "&:hover fieldset": {
+                  borderColor: errors.message ? "red" : "rgba(245,245,245,0.6)",
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: errors.message
+                    ? "red"
+                    : "rgba(245,245,245,0.45)",
+                },
+              },
+            }}
+            {...register("message")}
+          />
+
+          <p>{errors.message?.message}</p>
+          <button type="submit">Pošalji</button>
+        </form>
+        <StyledContactUsContainer>
+          <a href="tel:+381691669892">
+            <HiOutlinePhone />
+            069/166-98-92
+          </a>
+
+          <a href="mailto:info@advokatkljajic.com">
+            <GoMail />
+            info@advokatkljajic.com
+          </a>
+
+          <a
+            href="https://www.facebook.com/AdvokatskakancelarijaKljajic"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookF />
+            <span>Advokatska kancelarija Kljajić</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/advokatkljajic/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SlSocialInstagram />
+            advokatkljajic
+          </a>
+
+          <a
+            href="https://maps.app.goo.gl/4X1bggfi8QuYyg5RA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SlLocationPin />
+            <span>Šekspirova 11,</span>
+            &nbsp;
+            <span>Novi Sad</span>
+          </a>
           <div>
-            <TextField
-              error={errors.lastName ? true : false}
-              label="Prezime"
-              id="lastName"
-              defaultValue=""
-              variant="outlined"
-              autoComplete="off"
-              {...register("lastName")}
-              InputProps={{
-                style: { color: "whitesmoke", fontSize: "1.2rem" },
-              }}
-              sx={{
-                label: {
-                  fontSize: "1.2rem",
-                  color: "whitesmoke",
-                },
-                "& label.Mui-focused": {
-                  color: errors.lastName ? "red" : "whitesmoke",
-                },
-                "& .MuiOutlinedInput-notchedOutline": {
-                  border: "2px solid whitesmoke",
-                },
-
-                "& .MuiOutlinedInput-root": {
-                  "& fieldset": {
-                    borderColor: "whitesmoke",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: errors.lastName ? "red" : "whitesmoke",
-                  },
-                  "&.Mui-focused fieldset": {
-                    borderColor: errors.lastName ? "red" : "whitesmoke",
-                  },
-                },
-              }}
-            />
-            <p>{errors.lastName?.message}</p>
+            <LuClock8 />
+            <span>Ponedeljak—Petak:</span>
+            &nbsp;
+            <span>08—15h</span>
           </div>
-        </div>
-
-        <TextField
-          error={errors.email ? true : false}
-          label="Email"
-          id="email"
-          defaultValue=""
-          variant="outlined"
-          autoComplete="off"
-          {...register("email")}
-          InputProps={{
-            style: { color: "whitesmoke", fontSize: "1.2rem" },
-          }}
-          sx={{
-            label: {
-              fontSize: "1.2rem",
-              color: "whitesmoke",
-            },
-            "& label.Mui-focused": {
-              color: errors.email ? "red" : "whitesmoke",
-            },
-            "& .MuiOutlinedInput-notchedOutline": {
-              border: "2px solid whitesmoke",
-            },
-
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                borderColor: "whitesmoke",
-              },
-              "&:hover fieldset": {
-                borderColor: errors.email ? "red" : "whitesmoke",
-              },
-              "&.Mui-focused fieldset": {
-                borderColor: errors.email ? "red" : "whitesmoke",
-              },
-            },
-          }}
-        />
-
-        <p>{errors.email?.message}</p>
-
-        <TextField
-          error={errors.message ? true : false}
-          multiline
-          inputProps={{ style: { color: "white" } }}
-          label="Vaše pitanje"
-          id="message"
-          defaultValue=""
-          variant="outlined"
-          autoComplete="off"
-          minRows={10}
-          maxRows={40}
-          InputProps={{
-            style: { color: "whitesmoke", fontSize: "1.2rem" },
-          }}
-          sx={{
-            label: {
-              fontSize: "1.2rem",
-              color: "whitesmoke",
-            },
-            "& label.Mui-focused": {
-              color: errors.message ? "red" : "whitesmoke",
-            },
-            "& .MuiOutlinedInput-notchedOutline": {
-              border: "2px solid whitesmoke",
-            },
-
-            "& .MuiOutlinedInput-root": {
-              "& fieldset": {
-                borderColor: "whitesmoke",
-              },
-              "&:hover fieldset": {
-                borderColor: errors.message ? "red" : "whitesmoke",
-              },
-              "&.Mui-focused fieldset": {
-                borderColor: errors.message ? "red" : "whitesmoke",
-              },
-            },
-          }}
-          {...register("message")}
-        />
-
-        <p>{errors.message?.message}</p>
-        <button type="submit">Pošalji</button>
-      </form>
+        </StyledContactUsContainer>
+      </div>
     </StyledContactUsPage>
   );
 };

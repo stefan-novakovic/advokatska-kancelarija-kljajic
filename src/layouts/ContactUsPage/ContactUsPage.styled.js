@@ -25,14 +25,19 @@ export const StyledContactUsPage = styled.div`
     -ms-user-select: none;
   }
 
-  form {
+  & > div {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
+  }
+
+  form {
+    width: 100%;
   }
 
   form > div,
@@ -56,13 +61,27 @@ export const StyledContactUsPage = styled.div`
   form > div:first-of-type > div:last-child {
     width: 56%;
   }
+
   form > button {
     font-size: 1.5rem;
     font-family: inherit;
-    padding: 0.4rem 1rem;
+    padding: 0.5rem 1.75rem;
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    background-color: ${({ theme }) => theme.colors.veryLightBlue};
+    color: ${({ theme }) => theme.colors.darkNavy};
+    border: 2px solid ${({ theme }) => theme.colors.veryLightBlue};
+  }
+
+  form > button:hover,
+  form > button:focus-visible {
+    filter: brightness(105%);
+  }
+
+  form > button:active {
+    color: ${({ theme }) => theme.colors.veryLightBlue};
+    background-color: ${({ theme }) => theme.colors.darkNavy};
   }
 
   form p {
@@ -72,14 +91,55 @@ export const StyledContactUsPage = styled.div`
     margin-bottom: 0.25rem;
   }
 
-  @media screen and (max-width: 1023px) {
-    min-height: calc(100vh - 82px + 1px);
-  }
-
   @media screen and (max-width: 1536px) {
     h2,
-    form {
+    & > div {
       max-width: 88vw;
+    }
+  }
+
+  @media screen and (max-width: 1279px) {
+    form > div:first-of-type {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    form > div:first-of-type > div:last-child {
+      width: auto;
+      flex-grow: 1;
+    }
+  }
+
+  @media screen and (max-width: 1138px) {
+    & > div {
+      gap: 8rem;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    min-height: calc(100vh - 82px + 1px);
+
+    & > div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 7rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form > div,
+    form > textarea {
+      max-width: none;
+    }
+
+    form p {
+      width: 100%;
     }
   }
 `;
