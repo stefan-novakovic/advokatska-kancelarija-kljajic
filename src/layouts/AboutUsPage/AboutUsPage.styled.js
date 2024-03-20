@@ -34,7 +34,7 @@ export const StyledAboutUsPage = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 5.8vw;
+    gap: 4vw;
     margin-bottom: 2rem;
   }
 
@@ -42,14 +42,15 @@ export const StyledAboutUsPage = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.3;
+    font-size: 1.275rem;
+    line-height: 1.4;
   }
 
   section:first-of-type > div:last-child {
     width: 100%;
     min-width: 535px;
-    min-height: 402px;
+    max-width: 535px;
+    height: 402px;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -75,8 +76,8 @@ export const StyledAboutUsPage = styled.div`
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
-    font-size: 1.25rem;
-    line-height: 1.3;
+    font-size: 1.275rem;
+    line-height: 1.4;
     margin-bottom: 5rem;
   }
 
@@ -102,7 +103,22 @@ export const StyledAboutUsPage = styled.div`
     transition: 0.325s;
   }
 
-  section:nth-of-type(3) a:any-link > div {
+  section:nth-of-type(3) a:any-link > div:first-child {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    aspect-ratio: 375/478.63;
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(242, 246, 249, 0.06);
+    box-shadow: 0 1px 4px -1px ${({ theme }) => theme.colors.black};
+  }
+
+  section:nth-of-type(3) a:any-link > div:first-child {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  section:nth-of-type(3) a:any-link > div:nth-child(2) {
     padding: 1.75rem 1.5rem;
   }
 
@@ -140,7 +156,7 @@ export const StyledAboutUsPage = styled.div`
 
   section:nth-of-type(3) a:any-link img {
     border-radius: 10px 10px 0 0;
-    box-shadow: 0 3px 4px -3px ${({ theme }) => theme.colors.black};
+    box-shadow: 0 2px 12px -5px ${({ theme }) => theme.colors.black};
   }
 
   section:nth-of-type(3) a:hover,
@@ -178,23 +194,38 @@ export const StyledAboutUsPage = styled.div`
     }
   }
 
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 1023px) {
+    min-height: calc(100vh - 82px + 1px);
+  }
+
+  @media screen and (max-width: 1279px) {
+    section:first-of-type {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3.25rem;
+      margin-bottom: 3.25rem;
+    }
+
     section:first-of-type > div:last-child {
-      width: 100%;
-      min-width: 281px;
-      max-width: 535px;
-      min-height: 201px;
-      user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
-      border: 7px double ${({ theme }) => theme.colors.veryLightBlue};
-      border-radius: 4px;
+      max-width: 800px;
+      height: auto;
+      min-height: 601px;
+    }
+
+    section:nth-of-type(2) {
+      margin-bottom: 3.25rem;
     }
   }
 
-  @media screen and (max-width: 1023px) {
-    min-height: calc(100vh - 82px + 1px);
+  @media screen and (max-width: 909px) {
+    section:first-of-type > div:last-child {
+      min-width: auto;
+      min-height: auto;
+      width: 87.912vw;
+      height: auto;
+      aspect-ratio: 800/601;
+    }
   }
 
   @media screen and (max-width: 1536px) {
@@ -203,20 +234,6 @@ export const StyledAboutUsPage = styled.div`
     section:nth-of-type(2),
     section:nth-of-type(3) {
       max-width: 88vw;
-    }
-  }
-
-  @media screen and (max-width: 1762px) {
-    section:first-of-type {
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: 5rem;
-      margin-bottom: 3.5rem;
-    }
-
-    section:first-of-type > div:last-child {
-      max-width: 800px;
     }
   }
 `;

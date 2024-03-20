@@ -178,15 +178,15 @@ const aboutUs_motto_p2 = (
   </p>
 );
 
-export const aboutUsTextArray = [
+export const aboutUsText1Array = [
   aboutUs_p1,
   aboutUs_p2,
   aboutUs_p3,
   aboutUs_p4,
-  aboutUs_p5,
 ];
 
-export const aboutUsMottoTextArray = [
+export const aboutUsText2Array = [
+  aboutUs_p5,
   aboutUs_motto_heading,
   aboutUs_motto_p1,
   aboutUs_motto_p2,

@@ -74,6 +74,7 @@ const GlobalStyles = createGlobalStyle`
     main {
       display: flex;
       flex-grow: 1;
+      overflow-x: hidden;
     }
 `;
 export default GlobalStyles;

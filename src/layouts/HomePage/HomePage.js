@@ -32,7 +32,6 @@ const HomePage = () => {
 
         <HashLink to="/o-nama/#">Saznaj više</HashLink>
       </HomePageAboutContainer>
-
       <HomePageAreasOfWorkContainer>
         <h3>Oblasti rada</h3>
         <div>
@@ -58,7 +57,6 @@ const HomePage = () => {
           })}
         </div>
       </HomePageAreasOfWorkContainer>
-
       <HomePageClientsContainer>
         {/* <h4>Klijenti</h4> */}
         <div>

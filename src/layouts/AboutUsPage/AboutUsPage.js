@@ -1,6 +1,6 @@
 import { StyledAboutUsPage } from "./AboutUsPage.styled";
-import { aboutUsTextArray } from "../../data/data";
-import { aboutUsMottoTextArray } from "../../data/data";
+import { aboutUsText1Array } from "../../data/data";
+import { aboutUsText2Array } from "../../data/data";
 import { aboutUsStaffArray } from "../../data/data";
 import "@mohammedsrehan/react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "@mohammedsrehan/react-responsive-carousel";
@@ -11,6 +11,8 @@ import au4 from "../../assets/images/slika-4-o-nama.jpg";
 import { HiOutlinePhone } from "react-icons/hi";
 import { GoMail } from "react-icons/go";
 import { HashLink } from "react-router-hash-link";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 const AboutUsPage = () => {
   return (
@@ -18,7 +20,7 @@ const AboutUsPage = () => {
       <h2>O nama</h2>
       <section>
         <div>
-          {aboutUsTextArray.map((paragraph) => {
+          {aboutUsText1Array.map((paragraph) => {
             return paragraph;
           })}
         </div>
@@ -28,8 +30,8 @@ const AboutUsPage = () => {
           swipeable
           showStatus={false}
           showThumbs={false}
-          interval={10000}
-          transitionTime={750}
+          interval={6000}
+          transitionTime={725}
         >
           <img src={au1} alt="" />
           <img src={au2} alt="" />
@@ -38,7 +40,7 @@ const AboutUsPage = () => {
         </Carousel>
       </section>
       <section>
-        {aboutUsMottoTextArray.map((paragraph) => {
+        {aboutUsText2Array.map((paragraph) => {
           return paragraph;
         })}
       </section>
@@ -46,7 +48,14 @@ const AboutUsPage = () => {
         {aboutUsStaffArray.map((member) => {
           return (
             <HashLink key={member.id} to={`/o-nama/${member.id}/#`}>
-              <img src={member.image} alt="" />
+              <div>
+                <LazyLoadImage
+                  src={member.image}
+                  alt=""
+                  effect="opacity"
+                  threshold={800}
+                />
+              </div>
               <div>
                 <h3>{member.fullName}</h3>
                 <h4>{member.role.toUpperCase()}</h4>
@@ -58,8 +67,8 @@ const AboutUsPage = () => {
                 </div>
 
                 <p>
-                  {member.bio.length > 206
-                    ? member.bio.slice(0, 206) + "..."
+                  {member.bio.length > 100
+                    ? member.bio.slice(0, 100) + "..."
                     : member.bio}
                 </p>
               </div>
