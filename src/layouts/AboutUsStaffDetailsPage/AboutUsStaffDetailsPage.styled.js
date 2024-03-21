@@ -42,12 +42,12 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
     max-width: 435px;
     aspect-ratio: 435/555.22;
     height: auto;
-    border-radius: 50%;
+    border-radius: 3px;
     background-color: rgba(242, 246, 249, 0.06);
   }
 
   & > section:first-of-type > div:first-child img {
-    border-radius: 50%;
+    border-radius: 3px;
   }
 
   section:first-of-type > div:last-child > h3 {
@@ -57,9 +57,9 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   }
 
   section:first-of-type > div:last-child > h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.25px;
     margin-bottom: 2.5rem;
   }
 

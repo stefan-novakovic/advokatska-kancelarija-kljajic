@@ -49,12 +49,7 @@ const AboutUsPage = () => {
           return (
             <Link key={member.id} to={`/o-nama/${member.id}`}>
               <div>
-                <LazyLoadImage
-                  src={member.image}
-                  alt=""
-                  effect="opacity"
-                  threshold={800}
-                />
+                <LazyLoadImage src={member.image} alt="" effect="opacity" />
               </div>
               <div>
                 <h3>{member.fullName}</h3>
@@ -67,8 +62,8 @@ const AboutUsPage = () => {
                 </div>
 
                 <p>
-                  {member.bio.length > 100
-                    ? member.bio.slice(0, 100) + "..."
+                  {member.bio.length > 174
+                    ? member.bio.slice(0, 174) + "..."
                     : member.bio}
                 </p>
               </div>

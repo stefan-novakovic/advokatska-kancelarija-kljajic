@@ -41,7 +41,7 @@ export const StyledAboutUsPage = styled.div`
   section:first-of-type > div:first-child {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
     font-size: 1.275rem;
     line-height: 1.4;
   }
@@ -78,7 +78,15 @@ export const StyledAboutUsPage = styled.div`
     margin-inline: auto;
     font-size: 1.275rem;
     line-height: 1.4;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  section:nth-of-type(2) > p:first-of-type {
+    margin-bottom: 1rem;
+  }
+
+  section:nth-of-type(2) > h3 {
+    font-size: 1.6rem;
   }
 
   section:nth-of-type(3) {
