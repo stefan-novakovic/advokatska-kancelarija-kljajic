@@ -10,7 +10,7 @@ import au3 from "../../assets/images/slika-3-o-nama.jpg";
 import au4 from "../../assets/images/slika-4-o-nama.jpg";
 import { HiOutlinePhone } from "react-icons/hi";
 import { GoMail } from "react-icons/go";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 
@@ -47,7 +47,7 @@ const AboutUsPage = () => {
       <section>
         {aboutUsStaffArray.map((member) => {
           return (
-            <HashLink key={member.id} to={`/o-nama/${member.id}/#`}>
+            <Link key={member.id} to={`/o-nama/${member.id}`}>
               <div>
                 <LazyLoadImage
                   src={member.image}
@@ -72,7 +72,7 @@ const AboutUsPage = () => {
                     : member.bio}
                 </p>
               </div>
-            </HashLink>
+            </Link>
           );
         })}
       </section>

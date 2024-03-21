@@ -9,14 +9,15 @@ import ClientsPage from "../layouts/ClientsPage/ClientsPage";
 import UsefulLinksPage from "../layouts/UsefulLinksPage/UsefulLinksPage";
 import ContactUsPage from "../layouts/ContactUsPage/ContactUsPage";
 import MissingPage from "../layouts/MissingPage/MissingPage";
-import { Routes, Route, useLocation } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const location = useLocation();
   return (
     <StyledApp>
       <GlobalStyles />
-      <Routes location={location} key={location.pathname}>
+      <ScrollToTop />
+      <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="o-nama">

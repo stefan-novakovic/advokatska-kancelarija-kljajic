@@ -9,6 +9,7 @@ import { clientsImgArray } from "../../data/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { ReactTyped } from "react-typed";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const HomePage = () => {
@@ -30,7 +31,7 @@ const HomePage = () => {
           showCursor={true}
         />
 
-        <HashLink to="/o-nama/#">Saznaj više</HashLink>
+        <Link to="/o-nama">Saznaj više</Link>
       </HomePageAboutContainer>
       <HomePageAreasOfWorkContainer>
         <h3>Oblasti rada</h3>

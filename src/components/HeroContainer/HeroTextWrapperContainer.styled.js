@@ -12,11 +12,8 @@ const HeroTextWrapperContainer = styled.div`
   h1,
   h2 {
     color: ${({ theme }) => theme.colors.veryLightBlue};
-    font-size: 4.85rem;
-    font-weight: 600;
     text-align: center;
     text-shadow: -3px 3px 5px ${({ theme }) => theme.colors.black};
-    letter-spacing: 1.25px;
     opacity: 0;
     animation-duration: 1.4s;
     animation-timing-function: ease-in-out;
@@ -30,13 +27,16 @@ const HeroTextWrapperContainer = styled.div`
   }
 
   h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 1.25px;
     margin-inline: 5rem;
     animation-name: slide;
   }
 
   h2 {
+    font-size: 8.5rem;
     font-weight: 700;
-    font-size: 8.25rem;
     letter-spacing: 3.5px;
     animation-name: slideReverse;
     overflow: visible;
@@ -62,6 +62,16 @@ const HeroTextWrapperContainer = styled.div`
     100% {
       opacity: 1;
       transform: translateY(0px);
+    }
+  }
+
+  @media screen and (max-width: 1536px) {
+    h1 {
+      font-size: 4.15rem;
+    }
+
+    h2 {
+      font-size: 7.5rem;
     }
   }
 

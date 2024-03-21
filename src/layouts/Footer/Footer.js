@@ -1,5 +1,5 @@
 import { StyledFooter } from "./Footer.styled";
-import StyledFooterInfoContainer from "../../components/FooterInfoContainer/FooterInfoContainer";
+import StyledFooterInfoContainer from "../../components/FooterInfoContainer/FooterInfoContainer.styled";
 import StyledFooterBasicContainer from "../../components/FooterBasicContainer/FooterBasicContainer.styled";
 import { SlLocationPin } from "react-icons/sl";
 import { HiOutlinePhone } from "react-icons/hi";
