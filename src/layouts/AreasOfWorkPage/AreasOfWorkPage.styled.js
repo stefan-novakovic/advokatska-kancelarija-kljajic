@@ -8,7 +8,7 @@ export const StyledAreasOfWorkPage = styled.div`
   flex-grow: 1;
   width: 100%;
   min-height: calc(100vh - 96px + 1px);
-  padding: 5rem 0 8rem;
+  padding: 4rem 0 6.5rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
 
@@ -18,7 +18,7 @@ export const StyledAreasOfWorkPage = styled.div`
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.75rem;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;

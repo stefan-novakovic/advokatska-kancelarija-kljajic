@@ -9,7 +9,7 @@ export const StyledAboutUsPage = styled.div`
   flex-grow: 1;
   width: 100%;
   min-height: calc(100vh - 96px + 1px);
-  padding: 5rem 0 8rem;
+  padding: 4rem 0 6.5rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
 
@@ -19,7 +19,7 @@ export const StyledAboutUsPage = styled.div`
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.75rem;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -35,13 +35,13 @@ export const StyledAboutUsPage = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 4vw;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   section:first-of-type > div:first-child {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.65rem;
     font-size: 1.275rem;
     line-height: 1.4;
   }
@@ -72,13 +72,13 @@ export const StyledAboutUsPage = styled.div`
   section:nth-of-type(2) {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
     font-size: 1.275rem;
     line-height: 1.4;
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
   }
 
   section:nth-of-type(2) > p:first-of-type {
@@ -164,7 +164,7 @@ export const StyledAboutUsPage = styled.div`
 
   section:nth-of-type(3) a:any-link img {
     border-radius: 10px 10px 0 0;
-    box-shadow: 0 2px 12px -5px ${({ theme }) => theme.colors.black};
+    box-shadow: 0 1px 20px -8px ${({ theme }) => theme.colors.black};
   }
 
   section:nth-of-type(3) a:hover,

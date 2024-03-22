@@ -8,7 +8,7 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   flex-grow: 1;
   width: 100%;
   min-height: calc(100vh - 96px + 1px);
-  padding: 5rem 0 8rem;
+  padding: 4rem 0 6.5rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
 
@@ -18,7 +18,7 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.75rem;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -39,15 +39,15 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   & > section:first-of-type > div:first-child {
     display: flex;
     width: 100%;
-    max-width: 435px;
-    aspect-ratio: 435/555.22;
+    max-width: 460px;
+    aspect-ratio: 460/587.13;
     height: auto;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: rgba(242, 246, 249, 0.06);
   }
 
   & > section:first-of-type > div:first-child img {
-    border-radius: 3px;
+    border-radius: 4px;
   }
 
   section:first-of-type > div:last-child > h3 {
@@ -59,7 +59,7 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   section:first-of-type > div:last-child > h4 {
     font-size: 1.8rem;
     font-weight: 500;
-    letter-spacing: 0.25px;
+    letter-spacing: 1px;
     margin-bottom: 2.5rem;
   }
 

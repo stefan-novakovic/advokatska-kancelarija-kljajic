@@ -200,7 +200,7 @@ const ContactUsPage = () => {
             defaultValue=""
             variant="outlined"
             autoComplete="off"
-            rows={10}
+            rows={9}
             InputProps={{
               style: { color: "whitesmoke", fontSize: "1.2rem" },
             }}

@@ -62,8 +62,8 @@ const AboutUsPage = () => {
                 </div>
 
                 <p>
-                  {member.bio.length > 174
-                    ? member.bio.slice(0, 174) + "..."
+                  {member.bio.length > 137
+                    ? member.bio.slice(0, 137) + "..."
                     : member.bio}
                 </p>
               </div>
