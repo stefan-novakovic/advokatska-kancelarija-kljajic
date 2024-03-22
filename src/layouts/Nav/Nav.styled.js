@@ -8,6 +8,7 @@ export const StyledNav = styled.nav`
     gap: 1.5rem;
     list-style-type: none;
     font-size: 1.225rem;
+    font-weight: 600;
     padding-inline: 3rem;
   }
 

@@ -7,7 +7,7 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   align-items: flex-start;
   flex-grow: 1;
   width: 100%;
-  min-height: calc(100vh - 96px + 1px);
+  min-height: calc(100vh - 90px + 1px);
   padding: 4rem 0 6.5rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
@@ -51,13 +51,13 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   }
 
   section:first-of-type > div:last-child > h3 {
-    font-size: 4.25rem;
+    font-size: 4.1rem;
     letter-spacing: 2px;
     margin-bottom: 1rem;
   }
 
   section:first-of-type > div:last-child > h4 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 2.5rem;
@@ -68,12 +68,28 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
     justify-content: flex-start;
     align-items: center;
     width: fit-content;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.5px;
     color: ${({ theme }) => theme.colors.veryLightBlue};
     text-decoration: none;
     margin-bottom: 1.35rem;
+  }
+
+  section:first-of-type > div:last-child > a:hover,
+  section:first-of-type > div:last-child > a:focus-visible {
+    filter: brightness(85%);
+  }
+
+  section:first-of-type > div:last-child > a:hover svg,
+  section:first-of-type > div:last-child > a:focus-visible svg {
+    filter: brightness(85%);
+    transform: scale(1.03);
+  }
+
+  section:first-of-type > div:last-child > a:active,
+  section:first-of-type > div:last-child > a:active svg path {
+    filter: brightness(75%);
   }
 
   section:first-of-type > div:last-child > a:any-link:last-child {
@@ -114,7 +130,7 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   }
 
   @media screen and (max-width: 1023px) {
-    min-height: calc(100vh - 82px + 1px);
+    min-height: calc(100vh - 74px + 1px);
 
     & > section:first-of-type {
       display: flex;
@@ -130,6 +146,69 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
     section:first-of-type,
     section:last-of-type {
       max-width: 88vw;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    & > section:first-of-type {
+      gap: 3.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    section:first-of-type > div:last-child > h3 {
+      font-size: 3.15rem;
+      letter-spacing: 1.5px;
+    }
+
+    section:first-of-type > div:last-child > h4 {
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 2rem;
+    }
+
+    section:first-of-type > div:last-child > a:any-link {
+      font-size: 1.15rem;
+      letter-spacing: 0.25px;
+      margin-bottom: 1.25rem;
+    }
+
+    section:first-of-type > div:last-child > a:any-link:last-child {
+      margin-bottom: 0;
+    }
+
+    section:first-of-type > div:last-child > a:any-link span {
+      white-space: nowrap;
+    }
+
+    section:first-of-type > div:last-child > a:any-link svg {
+      min-width: 20px;
+      max-width: 20px;
+      margin-right: 0.5rem;
+    }
+
+    section:last-of-type > h3 {
+      font-size: 1.85rem;
+      font-weight: 500;
+      letter-spacing: 0.75px;
+      margin-bottom: 2.5rem;
+    }
+
+    section:last-of-type > p {
+      font-size: 1.175rem;
+      line-height: 1.35;
+      letter-spacing: 0.35px;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    section:first-of-type > div:last-child > a:any-link svg {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 349px) {
+    section:first-of-type > div:last-child > a:any-link {
+      font-size: 1.075rem;
     }
   }
 `;

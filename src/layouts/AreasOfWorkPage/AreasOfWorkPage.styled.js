@@ -7,7 +7,7 @@ export const StyledAreasOfWorkPage = styled.div`
   align-items: flex-start;
   flex-grow: 1;
   width: 100%;
-  min-height: calc(100vh - 96px + 1px);
+  min-height: calc(100vh - 90px + 1px);
   padding: 4rem 0 6.5rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
@@ -32,6 +32,6 @@ export const StyledAreasOfWorkPage = styled.div`
   }
 
   @media screen and (max-width: 1023px) {
-    min-height: calc(100vh - 82px + 1px);
+    min-height: calc(100vh - 74px + 1px);
   }
 `;

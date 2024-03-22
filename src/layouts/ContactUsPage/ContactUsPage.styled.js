@@ -7,7 +7,7 @@ export const StyledContactUsPage = styled.div`
   align-items: flex-start;
   flex-grow: 1;
   width: 100%;
-  min-height: calc(100vh - 96px + 1px);
+  min-height: calc(100vh - 90px + 1px);
   padding: 4rem 0 6.5rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
@@ -76,7 +76,7 @@ export const StyledContactUsPage = styled.div`
 
   form > button:hover,
   form > button:focus-visible {
-    filter: brightness(105%);
+    filter: brightness(88%);
   }
 
   form > button:active {
@@ -117,7 +117,7 @@ export const StyledContactUsPage = styled.div`
   }
 
   @media screen and (max-width: 1023px) {
-    min-height: calc(100vh - 82px + 1px);
+    min-height: calc(100vh - 74px + 1px);
 
     & > div {
       flex-direction: column;

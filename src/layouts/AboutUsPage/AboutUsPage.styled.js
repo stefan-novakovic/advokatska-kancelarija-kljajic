@@ -8,7 +8,7 @@ export const StyledAboutUsPage = styled.div`
   align-items: flex-start;
   flex-grow: 1;
   width: 100%;
-  min-height: calc(100vh - 96px + 1px);
+  min-height: calc(100vh - 90px + 1px);
   padding: 4rem 0 6.5rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
@@ -109,6 +109,7 @@ export const StyledAboutUsPage = styled.div`
     border-radius: 10px;
     box-shadow: 0 0 15px -1px ${({ theme }) => theme.colors.black};
     transition: 0.325s;
+    filter: invert(4%);
   }
 
   section:nth-of-type(3) a:any-link > div:first-child {
@@ -170,6 +171,7 @@ export const StyledAboutUsPage = styled.div`
   section:nth-of-type(3) a:hover,
   section:nth-of-type(3) a:focus-visible {
     box-shadow: 0 0 25px 1px ${({ theme }) => theme.colors.black};
+    filter: invert(0);
   }
 
   @media screen and (max-width: 413px) {
@@ -203,7 +205,7 @@ export const StyledAboutUsPage = styled.div`
   }
 
   @media screen and (max-width: 1023px) {
-    min-height: calc(100vh - 82px + 1px);
+    min-height: calc(100vh - 74px + 1px);
   }
 
   @media screen and (max-width: 1279px) {
