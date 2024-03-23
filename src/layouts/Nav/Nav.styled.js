@@ -7,7 +7,7 @@ export const StyledNav = styled.nav`
     align-items: center;
     gap: 1.5rem;
     list-style-type: none;
-    font-size: 1.225rem;
+    font-size: 1.25rem;
     font-weight: 600;
     padding-inline: 3rem;
   }
@@ -20,6 +20,8 @@ export const StyledNav = styled.nav`
   a:any-link {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.veryLightBlue};
+    padding: 0.375rem 0;
+    border-bottom: 2px solid transparent;
   }
 
   @media screen and (max-width: 1439px) {

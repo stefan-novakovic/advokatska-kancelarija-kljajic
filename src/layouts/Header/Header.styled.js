@@ -19,19 +19,19 @@ export const StyledHeader = styled.header`
 
   a:not(.selected):hover,
   a:not(.selected):focus-visible {
-    color: rgb(255, 205, 10);
-    filter: brightness(70%);
+    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+    filter: brightness(80%);
   }
 
   a:not(.selected):active {
-    color: rgb(255, 205, 10);
-    filter: brightness(60%);
+    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+    filter: brightness(65%);
   }
 
   & a.selected {
     pointer-events: none;
     cursor: default;
-    color: rgb(255, 205, 10) !important;
+    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue} !important;
   }
 
   img {
