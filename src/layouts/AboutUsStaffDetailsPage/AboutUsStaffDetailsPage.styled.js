@@ -132,6 +132,11 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   @media screen and (max-width: 1023px) {
     min-height: calc(100vh - 74px + 1px);
 
+    section:first-of-type > div:last-child > h3 {
+      font-size: 3.85rem;
+      letter-spacing: 1.5px;
+    }
+
     & > section:first-of-type {
       display: flex;
       flex-direction: column;
@@ -153,6 +158,7 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
     & > section:first-of-type {
       gap: 3.5rem;
       margin-bottom: 3.5rem;
+      align-items: flex-start;
     }
 
     section:first-of-type > div:last-child > h3 {

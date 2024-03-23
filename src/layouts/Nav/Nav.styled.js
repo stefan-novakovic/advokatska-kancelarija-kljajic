@@ -20,7 +20,7 @@ export const StyledNav = styled.nav`
   a:any-link {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.veryLightBlue};
-    padding: 0.375rem 0;
+    padding: 0.375rem 0.02rem;
     border-bottom: 2px solid transparent;
   }
 

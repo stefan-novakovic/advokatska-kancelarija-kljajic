@@ -43,6 +43,7 @@ export const StyledAboutUsPage = styled.div`
     flex-direction: column;
     gap: 1.65rem;
     font-size: 1.275rem;
+    font-weight: 400;
     line-height: 1.4;
   }
 
@@ -81,12 +82,16 @@ export const StyledAboutUsPage = styled.div`
     margin-bottom: 4.5rem;
   }
 
+  section:nth-of-type(2) > h3 {
+    font-size: 1.6rem;
+  }
+
   section:nth-of-type(2) > p:first-of-type {
     margin-bottom: 1rem;
   }
 
-  section:nth-of-type(2) > h3 {
-    font-size: 1.6rem;
+  section:nth-of-type(2) > p {
+    font-weight: 400;
   }
 
   section:nth-of-type(3) {
@@ -137,7 +142,8 @@ export const StyledAboutUsPage = styled.div`
   }
 
   section:nth-of-type(3) a:any-link > div h4 {
-    font-size: 1.025rem;
+    font-size: 1.05rem;
+    font-weight: 600;
     margin-bottom: 1.1rem;
   }
 
@@ -147,6 +153,7 @@ export const StyledAboutUsPage = styled.div`
     align-items: center;
     margin-bottom: 0.75rem;
     font-size: 1.1rem;
+    font-weight: 400;
   }
 
   section:nth-of-type(3) a:any-link > div div svg {
@@ -159,6 +166,7 @@ export const StyledAboutUsPage = styled.div`
   section:nth-of-type(3) a:any-link > div p {
     margin-top: 0.75rem;
     font-size: 1.125rem;
+    font-weight: 400;
     letter-spacing: 0.12px;
     line-height: 1.3;
   }
