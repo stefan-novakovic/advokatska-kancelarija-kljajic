@@ -19,19 +19,19 @@ export const StyledHeader = styled.header`
 
   a:not(.selected):hover,
   a:not(.selected):focus-visible {
-    color: rgb(255, 212, 0);
+    color: rgb(255, 205, 10);
     filter: brightness(70%);
   }
 
   a:not(.selected):active {
-    color: rgb(255, 212, 0);
+    color: rgb(255, 205, 10);
     filter: brightness(60%);
   }
 
   & a.selected {
     pointer-events: none;
     cursor: default;
-    color: rgb(255, 212, 0) !important;
+    color: rgb(255, 205, 10) !important;
   }
 
   img {

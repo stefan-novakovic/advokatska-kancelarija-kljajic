@@ -10,20 +10,24 @@ import { GoMail } from "react-icons/go";
 import { FaFacebookF } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 import { LuClock8 } from "react-icons/lu";
+import { useEffect } from "react";
 
 const ContactUsPage = () => {
   const schema = yup.object().shape({
     firstName: yup
       .string()
       .required("Obavezno polje")
+      .trim()
       .min(2, "Uneli ste manje od 2 karaktera"),
     lastName: yup
       .string()
       .required("Obavezno polje")
+      .trim()
       .min(2, "Uneli ste manje od 2 karaktera"),
     email: yup
       .string()
       .required("Obavezno polje")
+      .trim()
       .email("Neispravan email")
       .matches(/^\w+([-+.']*\w+)@\w+([-.]\w+).\w+([-.]\w+)*$/, {
         message: "Neispravan email",
@@ -31,6 +35,7 @@ const ContactUsPage = () => {
     message: yup
       .string()
       .required("Obavezno polje")
+      .trim()
       .min(2, "Uneli ste manje od 2 karaktera")
       .max(400, "Maksimalna dužina je 400 karaktera"),
   });
@@ -38,7 +43,8 @@ const ContactUsPage = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitSuccessful },
   } = useForm({
     resolver: yupResolver(schema),
     defaultValues: {
@@ -59,6 +65,12 @@ const ContactUsPage = () => {
 
     console.log(data);
   };
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset();
+    }
+  }, [isSubmitSuccessful, reset]);
 
   return (
     <StyledContactUsPage>
