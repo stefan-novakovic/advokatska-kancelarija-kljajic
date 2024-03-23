@@ -37,14 +37,10 @@ const StyledContactUsInfoContainer = styled.div`
   }
 
   a:hover,
-  a:focus-visible {
-    filter: brightness(85%);
-  }
-
+  a:focus-visible,
   a:hover svg,
   a:focus-visible svg {
     filter: brightness(85%);
-    transform: scale(1.075);
   }
 
   a:active,

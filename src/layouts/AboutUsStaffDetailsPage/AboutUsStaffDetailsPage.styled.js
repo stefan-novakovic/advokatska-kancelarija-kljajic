@@ -77,14 +77,10 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   }
 
   section:first-of-type > div:last-child > a:hover,
-  section:first-of-type > div:last-child > a:focus-visible {
-    filter: brightness(85%);
-  }
-
+  section:first-of-type > div:last-child > a:focus-visible,
   section:first-of-type > div:last-child > a:hover svg,
   section:first-of-type > div:last-child > a:focus-visible svg {
     filter: brightness(85%);
-    transform: scale(1.03);
   }
 
   section:first-of-type > div:last-child > a:active,
@@ -103,8 +99,8 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   section:first-of-type > div:last-child > a:any-link svg {
     width: 100%;
     height: auto;
-    min-width: 28px;
-    max-width: 28px;
+    min-width: 26px;
+    max-width: 26px;
     margin-right: 0.75rem;
   }
 

@@ -26,19 +26,19 @@ export const StyledNav = styled.nav`
 
   a:not(.selected):hover,
   a:not(.selected):focus-visible {
-    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+    border-bottom: 3px solid rgba(242, 246, 249, 0.9);
     filter: brightness(80%);
   }
 
   a:not(.selected):active {
-    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+    border-bottom: 3px solid rgba(242, 246, 249, 0.9);
     filter: brightness(65%);
   }
 
   & a.selected {
     pointer-events: none;
     cursor: default;
-    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue} !important;
+    border-bottom: 3px solid rgba(242, 246, 249, 0.9) !important;
   }
 
   @media screen and (max-width: 1439px) {
