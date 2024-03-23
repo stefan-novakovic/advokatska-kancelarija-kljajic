@@ -17,24 +17,16 @@ export const StyledHeader = styled.header`
     border-radius: 50%;
   }
 
-  a:not(.selected):hover,
-  a:not(.selected):focus-visible {
-    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+  & > a:hover,
+  & > a:focus-visible {
     filter: brightness(80%);
   }
 
-  a:not(.selected):active {
-    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+  & > a:active {
     filter: brightness(65%);
   }
 
-  & a.selected {
-    pointer-events: none;
-    cursor: default;
-    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue} !important;
-  }
-
-  img {
+  & > a > img {
     width: 68px;
     height: auto;
     border-radius: 50%;
@@ -43,7 +35,7 @@ export const StyledHeader = styled.header`
   @media screen and (max-width: 1536px) {
     padding: 0.9375rem 2rem;
 
-    img {
+    & > a > img {
       width: 60px;
     }
   }
@@ -51,7 +43,7 @@ export const StyledHeader = styled.header`
   @media screen and (max-width: 1023px) {
     padding: 0.75rem 1.5rem;
 
-    img {
+    & > a > img {
       width: 50px;
     }
   }

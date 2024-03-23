@@ -24,6 +24,23 @@ export const StyledNav = styled.nav`
     border-bottom: 2px solid transparent;
   }
 
+  a:not(.selected):hover,
+  a:not(.selected):focus-visible {
+    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+    filter: brightness(80%);
+  }
+
+  a:not(.selected):active {
+    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+    filter: brightness(65%);
+  }
+
+  & a.selected {
+    pointer-events: none;
+    cursor: default;
+    border-bottom: 3px solid ${({ theme }) => theme.colors.veryLightBlue} !important;
+  }
+
   @media screen and (max-width: 1439px) {
     ul {
       gap: 0.5rem;

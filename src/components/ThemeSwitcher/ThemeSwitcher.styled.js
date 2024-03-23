@@ -14,11 +14,11 @@ export const StyledThemeSwitcher = styled.div`
 
   button:hover,
   button:focus-visible {
-    filter: brightness(70%);
+    filter: brightness(80%);
   }
 
   button:active {
-    filter: brightness(60%);
+    filter: brightness(65%);
   }
 
   svg {
