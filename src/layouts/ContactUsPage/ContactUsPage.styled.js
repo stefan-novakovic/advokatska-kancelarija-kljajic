@@ -122,8 +122,8 @@ export const StyledContactUsPage = styled.div`
     & > div {
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: 7rem;
+      align-items: flex-start;
+      gap: 4.5rem;
     }
 
     form {

@@ -49,6 +49,15 @@ const UsefulLinksListContainer = styled.ul`
     max-width: 88vw;
     gap: 2.5rem;
   }
+  @media screen and (max-width: 767px) {
+    a:any-link {
+      font-size: 1.3rem;
+    }
+
+    li {
+      margin-bottom: 1.6rem;
+    }
+  }
 `;
 
 export default UsefulLinksListContainer;

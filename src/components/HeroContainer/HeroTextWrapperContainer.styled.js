@@ -85,7 +85,7 @@ const HeroTextWrapperContainer = styled.div`
     h1,
     h2 {
       color: ${({ theme }) => theme.colors.veryLightBlue};
-      font-size: 10vw;
+      font-size: 9.5vw;
       letter-spacing: 0.75px;
     }
 
@@ -94,8 +94,19 @@ const HeroTextWrapperContainer = styled.div`
     }
 
     h2 {
-      font-size: 20vw;
+      font-size: 19vw;
       letter-spacing: 2.5px;
+    }
+  }
+
+  @media screen and (max-width: 950px) and (orientation: landscape) {
+    h1,
+    h2 {
+      font-size: 6vw;
+    }
+
+    h2 {
+      font-size: 12vw;
     }
   }
 `;

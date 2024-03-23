@@ -16,6 +16,7 @@ const StyledContactUsInfoContainer = styled.div`
     text-decoration: none;
     font-size: 1.2rem;
     letter-spacing: 0.75px;
+    line-height: 1.32;
   }
 
   & > div:last-child {

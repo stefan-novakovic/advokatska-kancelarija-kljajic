@@ -64,6 +64,12 @@ const AreasOfWorkPageListContainer = styled.ul`
     }
   }
 
+  @media screen and (max-width: 767px) {
+    p {
+      margin-bottom: 3.35rem;
+    }
+  }
+
   @media screen and (max-width: 520px) {
     p {
       font-size: 1.25rem;

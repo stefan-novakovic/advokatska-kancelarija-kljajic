@@ -25,6 +25,7 @@ const ClientsListContainer = styled.ul`
   @media screen and (max-width: 767px) {
     li {
       font-size: 1.35rem;
+      margin-bottom: 2rem;
     }
   }
 `;

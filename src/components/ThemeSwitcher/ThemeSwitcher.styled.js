@@ -32,4 +32,8 @@ export const StyledThemeSwitcher = styled.div`
       min-width: 20px;
     }
   }
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `;
