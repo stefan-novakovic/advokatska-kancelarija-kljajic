@@ -85,26 +85,25 @@ export const StyledHeader = styled.header`
       padding: calc(1.1767rem + 0.5rem) 0 calc(1.1767rem + 0.5rem);
       background-color: transparent;
     }
-    .menu-wrap .menu a {
-      display: block;
-      border-right: 3px solid transparent;
-      margin-bottom: 1.2rem;
+
+    .menu-wrap .menu div {
+      padding: 0 0 0 1.85rem;
+      background-color: transparent;
+      margin-bottom: 0.85rem;
     }
 
-    .menu-wrap .menu a:last-of-type {
+    .menu-wrap .menu div:last-of-type {
       margin-bottom: 0;
     }
 
-    .menu-wrap .menu a.selected {
-      border-right: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+    .menu-wrap .menu div span a {
+      display: block;
+      padding: 0.55rem 1.85rem 0.55rem 0;
+      border-right: 3px solid transparent;
     }
 
-    .menu-wrap .menu a > div {
-      padding: 0.5rem 2rem;
-    }
-    .menu-wrap .menu a > div > span {
-      display: block;
-      height: 15px;
+    .menu-wrap .menu div span a.selected {
+      border-right: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
     }
   }
 `;

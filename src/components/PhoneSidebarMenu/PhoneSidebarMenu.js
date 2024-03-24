@@ -37,58 +37,89 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
       onClose={() => setIsOpen(false)}
       width={300}
     >
-      <Link
-        to="/"
-        className={selectedItem === "pocetna" ? "selected" : "not-selected"}
-      >
-        <Item itemKey={"pocetna"} text={"POČETNA"} onClick={handleItemClick} />
-      </Link>
-      <Link
-        to="/o-nama"
-        className={selectedItem === "o-nama" ? "selected" : "not-selected"}
-      >
-        <Item itemKey={"o-nama"} text={"O NAMA"} onClick={handleItemClick} />
-      </Link>
-      <Link
-        to="/oblasti-rada"
-        className={
-          selectedItem === "oblasti-rada" ? "selected" : "not-selected"
+      <Item
+        itemKey={"pocetna"}
+        text={
+          <Link
+            to="/"
+            className={selectedItem === "pocetna" ? "selected" : "not-selected"}
+            onClick={handleItemClick}
+          >
+            POČETNA
+          </Link>
         }
-      >
-        <Item
-          itemKey={"oblasti-rada"}
-          text={"OBLASTI RADA"}
-          onClick={handleItemClick}
-        />
-      </Link>
-      <Link
-        to="/klijenti"
-        className={selectedItem === "klijenti" ? "selected" : "not-selected"}
-      >
-        <Item
-          itemKey={"klijenti"}
-          text={"KLIJENTI"}
-          onClick={handleItemClick}
-        />
-      </Link>
-      <Link
-        to="/korisni-linkovi"
-        className={
-          selectedItem === "korisni-linkovi" ? "selected" : "not-selected"
+      />
+
+      <Item
+        itemKey={"o-nama"}
+        text={
+          <Link
+            to="/o-nama"
+            className={selectedItem === "o-nama" ? "selected" : "not-selected"}
+            onClick={handleItemClick}
+          >
+            O NAMA
+          </Link>
         }
-      >
-        <Item
-          itemKey={"korisni-linkovi"}
-          text={"KORISNI LINKOVI"}
-          onClick={handleItemClick}
-        />
-      </Link>
-      <Link
-        to="/kontakt"
-        className={selectedItem === "kontakt" ? "selected" : "not-selected"}
-      >
-        <Item itemKey={"kontakt"} text={"KONTAKT"} onClick={handleItemClick} />
-      </Link>
+      />
+
+      <Item
+        itemKey={"oblasti-rada"}
+        text={
+          <Link
+            to="/oblasti-rada"
+            className={
+              selectedItem === "oblasti-rada" ? "selected" : "not-selected"
+            }
+            onClick={handleItemClick}
+          >
+            OBLASTI RADA
+          </Link>
+        }
+      />
+
+      <Item
+        itemKey={"klijenti"}
+        text={
+          <Link
+            to="/klijenti"
+            className={
+              selectedItem === "klijenti" ? "selected" : "not-selected"
+            }
+            onClick={handleItemClick}
+          >
+            KLIJENTI
+          </Link>
+        }
+      />
+
+      <Item
+        itemKey={"korisni-linkovi"}
+        text={
+          <Link
+            to="/korisni-linkovi"
+            className={
+              selectedItem === "korisni-linkovi" ? "selected" : "not-selected"
+            }
+            onClick={handleItemClick}
+          >
+            KORISNI LINKOVI
+          </Link>
+        }
+      />
+
+      <Item
+        itemKey={"kontakt"}
+        text={
+          <Link
+            to="/kontakt"
+            className={selectedItem === "kontakt" ? "selected" : "not-selected"}
+            onClick={handleItemClick}
+          >
+            KONTAKT
+          </Link>
+        }
+      />
     </Menu>
   );
 };
