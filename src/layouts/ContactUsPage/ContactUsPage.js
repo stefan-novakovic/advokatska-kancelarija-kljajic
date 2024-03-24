@@ -286,7 +286,7 @@ const ContactUsPage = () => {
           </a>
 
           <a
-            href="https://maps.app.goo.gl/4X1bggfi8QuYyg5RA"
+            href="https://maps.app.goo.gl/mkZf7gm4s2ErVtjv5"
             target="_blank"
             rel="noopener noreferrer"
           >
