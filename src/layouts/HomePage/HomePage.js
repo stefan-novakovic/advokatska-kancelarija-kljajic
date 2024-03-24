@@ -27,7 +27,7 @@ const HomePage = () => {
         <h2>O nama</h2>
         <ReactTyped
           strings={[aboutUsTextShortVersion]}
-          typeSpeed={16}
+          typeSpeed={20}
           showCursor={true}
         />
 

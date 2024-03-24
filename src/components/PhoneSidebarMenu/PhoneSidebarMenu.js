@@ -26,6 +26,10 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
     setSelectedItem(cselectedItem);
   }, [location]);
 
+  const handleItemClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <Menu
       key="sidebar-menu"
@@ -37,21 +41,13 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
         to="/"
         className={selectedItem === "pocetna" ? "selected" : "not-selected"}
       >
-        <Item
-          itemKey={"pocetna"}
-          text={"POČETNA"}
-          onClick={() => setIsOpen(false)}
-        />
+        <Item itemKey={"pocetna"} text={"POČETNA"} onClick={handleItemClick} />
       </Link>
       <Link
         to="/o-nama"
         className={selectedItem === "o-nama" ? "selected" : "not-selected"}
       >
-        <Item
-          itemKey={"o-nama"}
-          text={"O NAMA"}
-          onClick={() => setIsOpen(false)}
-        />
+        <Item itemKey={"o-nama"} text={"O NAMA"} onClick={handleItemClick} />
       </Link>
       <Link
         to="/oblasti-rada"
@@ -62,7 +58,7 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
         <Item
           itemKey={"oblasti-rada"}
           text={"OBLASTI RADA"}
-          onClick={() => setIsOpen(false)}
+          onClick={handleItemClick}
         />
       </Link>
       <Link
@@ -72,7 +68,7 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
         <Item
           itemKey={"klijenti"}
           text={"KLIJENTI"}
-          onClick={() => setIsOpen(false)}
+          onClick={handleItemClick}
         />
       </Link>
       <Link
@@ -84,18 +80,14 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
         <Item
           itemKey={"korisni-linkovi"}
           text={"KORISNI LINKOVI"}
-          onClick={() => setIsOpen(false)}
+          onClick={handleItemClick}
         />
       </Link>
       <Link
         to="/kontakt"
         className={selectedItem === "kontakt" ? "selected" : "not-selected"}
       >
-        <Item
-          itemKey={"kontakt"}
-          text={"KONTAKT"}
-          onClick={() => setIsOpen(false)}
-        />
+        <Item itemKey={"kontakt"} text={"KONTAKT"} onClick={handleItemClick} />
       </Link>
     </Menu>
   );

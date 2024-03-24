@@ -49,7 +49,12 @@ const AboutUsPage = () => {
           return (
             <Link key={member.id} to={`/o-nama/${member.id}`}>
               <div>
-                <LazyLoadImage src={member.image} alt="" effect="opacity" />
+                <LazyLoadImage
+                  src={member.image}
+                  alt=""
+                  effect="opacity"
+                  threshold={1650}
+                />
               </div>
               <div>
                 <h3>{member.fullName}</h3>
