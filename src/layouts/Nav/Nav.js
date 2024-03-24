@@ -1,10 +1,13 @@
 import { StyledNav } from "./Nav.styled";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { HeaderAndFooterData } from "../../data/dataHeader&Footer";
+import useDataContext from "../../hooks/useDataContext";
 
 const Nav = () => {
   const location = useLocation();
   const [selectedItem, setSelectedItem] = useState("");
+  const { language } = useDataContext();
 
   useEffect(() => {
     const path = location.pathname;
@@ -33,7 +36,7 @@ const Nav = () => {
             to="/"
             className={selectedItem === "pocetna" ? "selected" : "not-selected"}
           >
-            POČETNA
+            {HeaderAndFooterData[`${language}`].navMenuArray[0]}
           </Link>
         </li>
         <li>
@@ -41,7 +44,7 @@ const Nav = () => {
             to="/o-nama"
             className={selectedItem === "o-nama" ? "selected" : "not-selected"}
           >
-            O NAMA
+            {HeaderAndFooterData[`${language}`].navMenuArray[1]}
           </Link>
         </li>
         <li>
@@ -51,7 +54,7 @@ const Nav = () => {
               selectedItem === "oblasti-rada" ? "selected" : "not-selected"
             }
           >
-            OBLASTI RADA
+            {HeaderAndFooterData[`${language}`].navMenuArray[2]}
           </Link>
         </li>
         <li>
@@ -61,7 +64,7 @@ const Nav = () => {
               selectedItem === "klijenti" ? "selected" : "not-selected"
             }
           >
-            KLIJENTI
+            {HeaderAndFooterData[`${language}`].navMenuArray[3]}
           </Link>
         </li>
         <li>
@@ -71,7 +74,7 @@ const Nav = () => {
               selectedItem === "korisni-linkovi" ? "selected" : "not-selected"
             }
           >
-            KORISNI LINKOVI
+            {HeaderAndFooterData[`${language}`].navMenuArray[4]}
           </Link>
         </li>
         <li>
@@ -79,7 +82,7 @@ const Nav = () => {
             to="/kontakt"
             className={selectedItem === "kontakt" ? "selected" : "not-selected"}
           >
-            KONTAKT
+            {HeaderAndFooterData[`${language}`].navMenuArray[5]}
           </Link>
         </li>
       </ul>

@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0.6875rem 4rem;
+  padding: 0.7195rem 4rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   z-index: 5;
   box-shadow: 0 -1px 10px 0px ${({ theme }) => theme.colors.black};
@@ -17,10 +17,25 @@ export const StyledHeader = styled.header`
     border-radius: 50%;
   }
 
-  & > a > img {
-    width: 68px;
+  & > a > img,
+  & > div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
     height: auto;
     border-radius: 50%;
+  }
+
+  & > div:last-of-type > button {
+    color: ${({ theme }) => theme.colors.veryLightBlue};
+    background-color: transparent;
+    border: none;
+    letter-spacing: 0.75px;
+    font-family: inherit;
+    font-size: 1.025rem;
+    font-weight: 400;
+    cursor: pointer;
   }
 
   & > div:first-of-type {
@@ -36,8 +51,18 @@ export const StyledHeader = styled.header`
   @media screen and (max-width: 1536px) {
     padding: 0.9375rem 2rem;
 
-    & > a > img {
+    & > a > img,
+    & > div:last-of-type {
       width: 60px;
+    }
+  }
+
+  @media screen and (max-width: 1439px) {
+    padding: 1.0945rem 2rem;
+
+    & > a > img,
+    & > div:last-of-type {
+      width: 55px;
     }
   }
 
@@ -50,6 +75,10 @@ export const StyledHeader = styled.header`
 
     & > div:first-of-type {
       display: block;
+    }
+
+    & > div:last-of-type {
+      display: none;
     }
 
     // Sidebar menu styles

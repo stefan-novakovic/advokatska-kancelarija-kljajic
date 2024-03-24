@@ -64,7 +64,7 @@ export const HomePageAreasOfWorkContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 755px) {
     padding: 6rem 0;
   }
 
@@ -80,11 +80,12 @@ export const HomePageAreasOfWorkContainer = styled.div`
       gap: 3.75rem;
     }
   }
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 755px) {
     & > div {
       height: 864px;
     }
   }
+
   @media screen and (max-width: 515px) {
     & > div {
       height: 1480px;

@@ -20,7 +20,7 @@ export const StyledNav = styled.nav`
   a:any-link {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.veryLightBlue};
-    padding: 0.375rem 0.02rem;
+    padding: 0.45rem 0.02rem;
     border-bottom: 2px solid transparent;
   }
 
@@ -43,7 +43,7 @@ export const StyledNav = styled.nav`
 
   @media screen and (max-width: 1439px) {
     ul {
-      gap: 0.5rem;
+      gap: 0.35rem;
       padding-inline: 2.5rem;
       font-size: 1.1rem;
     }

@@ -3,16 +3,17 @@ import HeroContainer from "../../components/HeroContainer/HeroContainer";
 import { HomePageAboutContainer } from "../../components/HomePageAboutContainer/HomePageAboutContainer.styled";
 import { HomePageAreasOfWorkContainer } from "../../components/HomePageAreasOfWorkContainer/HomePageAreasOfWorkContainer.styled";
 import { HomePageClientsContainer } from "../../components/HomePageClientsContainer/HomePageClientsContainer.styled";
-import { aboutUsTextShortVersion } from "../../data/data";
-import { AOWArray } from "../../data/data";
-import { clientsImgArray } from "../../data/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { HomePageData } from "../../data/dataHomePage";
+import useDataContext from "../../hooks/useDataContext";
 
 const HomePage = () => {
+  const { language } = useDataContext();
+
   const scrollWithOffset = (el) => {
     const yCoordinate =
       el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset);
@@ -24,19 +25,21 @@ const HomePage = () => {
     <StyledHomePage>
       <HeroContainer />
       <HomePageAboutContainer>
-        <h2>O nama</h2>
+        <h2>{HomePageData[`${language}`].aboutUsTitle}</h2>
         <ReactTyped
-          strings={[aboutUsTextShortVersion]}
+          strings={[HomePageData[`${language}`].aboutUsDesc]}
           typeSpeed={20}
           showCursor={true}
         />
 
-        <Link to="/o-nama">Saznaj više</Link>
+        <Link to="/o-nama">
+          {HomePageData[`${language}`].aboutUsButtonText}
+        </Link>
       </HomePageAboutContainer>
       <HomePageAreasOfWorkContainer>
-        <h3>Oblasti rada</h3>
+        <h3>{HomePageData[`${language}`].areasOfWorkTitle}</h3>
         <div>
-          {AOWArray.map((item) => {
+          {HomePageData[`${language}`].areasOfWorkArray.map((item) => {
             return (
               <div key={item.id}>
                 <div>
@@ -52,16 +55,15 @@ const HomePage = () => {
                     />
                   </HashLink>
                 </div>
-                <p>{item.caption}</p>
+                <p>{item.title}</p>
               </div>
             );
           })}
         </div>
       </HomePageAreasOfWorkContainer>
       <HomePageClientsContainer>
-        {/* <h4>Klijenti</h4> */}
         <div>
-          {clientsImgArray.map((img, index) => {
+          {HomePageData.SRB.clientsImgArray.map((img, index) => {
             return (
               <LazyLoadImage
                 key={index}

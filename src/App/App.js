@@ -11,26 +11,29 @@ import ContactUsPage from "../layouts/ContactUsPage/ContactUsPage";
 import MissingPage from "../layouts/MissingPage/MissingPage";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import { Routes, Route } from "react-router-dom";
+import { DataProvider } from "../context/DataContext";
 
 function App() {
   return (
     <StyledApp>
-      <GlobalStyles />
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="o-nama">
-            <Route index element={<AboutUsPage />} />
-            <Route path=":id" element={<AboutUsStaffDetailsPage />} />
+      <DataProvider>
+        <GlobalStyles />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="o-nama">
+              <Route index element={<AboutUsPage />} />
+              <Route path=":id" element={<AboutUsStaffDetailsPage />} />
+            </Route>
+            <Route path="oblasti-rada" element={<AreasOfWorkPage />} />
+            <Route path="klijenti" element={<ClientsPage />} />
+            <Route path="korisni-linkovi" element={<UsefulLinksPage />} />
+            <Route path="kontakt" element={<ContactUsPage />} />
+            <Route path="*" element={<MissingPage />} />
           </Route>
-          <Route path="oblasti-rada" element={<AreasOfWorkPage />} />
-          <Route path="klijenti" element={<ClientsPage />} />
-          <Route path="korisni-linkovi" element={<UsefulLinksPage />} />
-          <Route path="kontakt" element={<ContactUsPage />} />
-          <Route path="*" element={<MissingPage />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </DataProvider>
     </StyledApp>
   );
 }

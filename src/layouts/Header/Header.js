@@ -1,13 +1,14 @@
 import { StyledHeader } from "./Header.styled";
 import Nav from "../Nav/Nav";
 import logo from "../../assets/images/gk-logo.png";
-import ThemeSwitcher from "../../components/ThemeSwitcher/ThemeSwitcher";
 import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import PhoneSidebarMenu from "../../components/PhoneSidebarMenu/PhoneSidebarMenu";
+import useDataContext from "../../hooks/useDataContext";
 
 const Header = () => {
+  const { language, setLanguage } = useDataContext();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,7 +24,17 @@ const Header = () => {
       <Nav />
 
       <PhoneSidebarMenu isOpen={isOpen} setIsOpen={setIsOpen} />
-      <ThemeSwitcher />
+
+      <div>
+        <button
+          type="button"
+          onClick={() => {
+            setLanguage(language === "SRB" ? "ENG" : "SRB");
+          }}
+        >
+          {language}
+        </button>
+      </div>
     </StyledHeader>
   );
 };
