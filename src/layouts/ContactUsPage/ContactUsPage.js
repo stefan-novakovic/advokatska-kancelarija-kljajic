@@ -29,7 +29,7 @@ const ContactUsPage = () => {
       .required("Obavezno polje")
       .trim()
       .email("Neispravan email")
-      .matches(/^\w+([-+.']*\w+)@\w+([-.]\w+).\w+([-.]\w+)*$/, {
+      .matches(/^\w+([-+.']*\w+)*@\w+([-.]\w{2,3}){1,3}$/, {
         message: "Neispravan email",
       }),
     message: yup
@@ -74,7 +74,7 @@ const ContactUsPage = () => {
       setSendMessageOpacity(1);
       setTimeout(() => {
         setSendMessageOpacity(0);
-      }, 3500);
+      }, 3000);
     }
   }, [isSubmitSuccessful, reset]);
 
