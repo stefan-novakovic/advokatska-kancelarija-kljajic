@@ -27,6 +27,7 @@ export const StyledHeader = styled.header`
     display: none;
   }
 
+  // Sidebar menu styles
   .overlay,
   .menu-wrap {
     display: none;
@@ -51,6 +52,7 @@ export const StyledHeader = styled.header`
       display: block;
     }
 
+    // Sidebar menu styles
     .overlay {
       display: block;
       height: 100vh !important;
@@ -66,7 +68,7 @@ export const StyledHeader = styled.header`
     }
 
     .menu-wrap .head {
-      padding: 1.2rem 1.9rem 0.75rem 1rem;
+      padding: 1.2rem 1.9rem 1.1767rem 1rem;
     }
 
     .menu-wrap .head .close {
@@ -80,13 +82,13 @@ export const StyledHeader = styled.header`
     }
 
     .menu-wrap .menu {
-      padding: 1rem 0 1.2rem;
+      padding: calc(1.1767rem + 0.5rem) 0 calc(1.1767rem + 0.5rem);
       background-color: transparent;
     }
     .menu-wrap .menu a {
       display: block;
       border-right: 3px solid transparent;
-      margin-bottom: 0.9rem;
+      margin-bottom: 1.2rem;
     }
 
     .menu-wrap .menu a:last-of-type {

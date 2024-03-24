@@ -212,7 +212,7 @@ const ContactUsPage = () => {
             defaultValue=""
             variant="outlined"
             autoComplete="off"
-            rows={9}
+            rows={8}
             InputProps={{
               style: { color: "whitesmoke", fontSize: "1.2rem" },
             }}
