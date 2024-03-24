@@ -46,6 +46,13 @@ export const StyledContactUsPage = styled.div`
     max-width: 600px;
   }
 
+  form p {
+    font-weight: 400;
+    line-height: 2.25;
+    height: 36px;
+    margin-bottom: 0.25rem;
+  }
+
   form > div:first-of-type {
     display: flex;
     flex-direction: row;
@@ -62,7 +69,15 @@ export const StyledContactUsPage = styled.div`
     width: 56%;
   }
 
-  form > button {
+  form > div:last-of-type {
+    display: flex;
+    flex-direction: row;
+    gap: 2.25rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  form > div:last-of-type > button {
     font-size: 1.5rem;
     font-family: inherit;
     padding: 0.5rem 1.75rem;
@@ -74,21 +89,26 @@ export const StyledContactUsPage = styled.div`
     border: 2px solid ${({ theme }) => theme.colors.veryLightBlue};
   }
 
-  form > button:hover,
-  form > button:focus-visible {
+  form > div:last-of-type > button:hover,
+  form > div:last-of-type > button:focus-visible {
     filter: brightness(88%);
   }
 
-  form > button:active {
+  form > div:last-of-type > button:active {
     color: ${({ theme }) => theme.colors.veryLightBlue};
     background-color: ${({ theme }) => theme.colors.darkNavy};
   }
 
-  form p {
-    font-weight: 400;
-    line-height: 2.25;
-    height: 36px;
-    margin-bottom: 0.25rem;
+  form > div:last-of-type > h3 {
+    display: flex;
+    flex-grow: 1;
+    font-size: 1.225rem;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    height: auto;
+    line-height: normal;
+    margin-bottom: 0;
+    transition: opacity 0.2s ease-out;
   }
 
   @media screen and (max-width: 1536px) {
@@ -131,6 +151,7 @@ export const StyledContactUsPage = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      max-width: 820px;
     }
 
     form > div,
@@ -140,6 +161,18 @@ export const StyledContactUsPage = styled.div`
 
     form p {
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    form > div:last-of-type {
+      gap: 0;
+    }
+
+    form > div:last-of-type > h3 {
+      justify-content: center;
+      padding-inline: 0.5rem;
+      font-size: 1.175rem;
     }
   }
 `;

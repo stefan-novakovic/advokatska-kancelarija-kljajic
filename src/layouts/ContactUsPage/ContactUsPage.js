@@ -10,7 +10,7 @@ import { GoMail } from "react-icons/go";
 import { FaFacebookF } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 import { LuClock8 } from "react-icons/lu";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const ContactUsPage = () => {
   const schema = yup.object().shape({
@@ -66,9 +66,15 @@ const ContactUsPage = () => {
     console.log(data);
   };
 
+  const [sendMessageOpacity, setSendMessageOpacity] = useState(0);
+
   useEffect(() => {
     if (isSubmitSuccessful) {
       reset();
+      setSendMessageOpacity(1);
+      setTimeout(() => {
+        setSendMessageOpacity(0);
+      }, 3500);
     }
   }, [isSubmitSuccessful, reset]);
 
@@ -245,7 +251,10 @@ const ContactUsPage = () => {
           />
 
           <p>{errors.message?.message}</p>
-          <button type="submit">Pošalji</button>
+          <div>
+            <button type="submit">Pošalji</button>
+            <h3 style={{ opacity: sendMessageOpacity }}>POSLATO!</h3>
+          </div>
         </form>
         <StyledContactUsContainer>
           <a href="tel:+381691669892">

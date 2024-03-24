@@ -61,6 +61,8 @@ const GlobalStyles = createGlobalStyle`
     html {
       scrollbar-color: ${({ theme }) => theme.colors.navy} ${({ theme }) =>
   theme.colors.darkNavy};
+      caret-color: ${({ theme }) => theme.colors.navy} ${({ theme }) =>
+  theme.colors.veryLightBlue};
     }
 
     body {
@@ -75,5 +77,12 @@ const GlobalStyles = createGlobalStyle`
       display: flex;
       flex-grow: 1;
     }
+
+    input, select {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    -webkit-background-clip: text !important;
+    background-clip:  text !important;
+  }
 `;
 export default GlobalStyles;
