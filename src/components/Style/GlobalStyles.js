@@ -61,8 +61,7 @@ const GlobalStyles = createGlobalStyle`
     html {
       scrollbar-color: ${({ theme }) => theme.colors.navy} ${({ theme }) =>
   theme.colors.darkNavy};
-      caret-color: ${({ theme }) => theme.colors.navy} ${({ theme }) =>
-  theme.colors.veryLightBlue};
+      caret-color: ${({ theme }) => theme.colors.veryLightBlue};
     }
 
     body {
