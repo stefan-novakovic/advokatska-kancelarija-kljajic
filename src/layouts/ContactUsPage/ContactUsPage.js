@@ -11,33 +11,36 @@ import { FaFacebookF } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 import { LuClock8 } from "react-icons/lu";
 import { useState, useEffect } from "react";
+import { ContactUsPageData } from "../../data/dataContactUsPage";
+import useDataContext from "../../hooks/useDataContext";
 
 const ContactUsPage = () => {
+  const { language } = useDataContext();
   const schema = yup.object().shape({
     firstName: yup
       .string()
-      .required("Obavezno polje")
+      .required(ContactUsPageData[`${language}`].yupRequired)
       .trim()
-      .min(2, "Uneli ste manje od 2 karaktera"),
+      .min(2, ContactUsPageData[`${language}`].yupMin),
     lastName: yup
       .string()
-      .required("Obavezno polje")
+      .required(ContactUsPageData[`${language}`].yupRequired)
       .trim()
-      .min(2, "Uneli ste manje od 2 karaktera"),
+      .min(2, ContactUsPageData[`${language}`].yupMin),
     email: yup
       .string()
-      .required("Obavezno polje")
+      .required(ContactUsPageData[`${language}`].yupRequired)
       .trim()
-      .email("Neispravan email")
+      .email(ContactUsPageData[`${language}`].yupEmail)
       .matches(/^\w+([-+.']*\w+)*@\w+([-.]\w{2,3}){1,3}$/, {
-        message: "Neispravan email",
+        message: ContactUsPageData[`${language}`].yupEmail,
       }),
     message: yup
       .string()
-      .required("Obavezno polje")
+      .required(ContactUsPageData[`${language}`].yupRequired)
       .trim()
-      .min(2, "Uneli ste manje od 2 karaktera")
-      .max(400, "Maksimalna dužina je 400 karaktera"),
+      .min(2, ContactUsPageData[`${language}`].yupMin)
+      .max(400, ContactUsPageData[`${language}`].yupMax),
   });
 
   const {
@@ -80,14 +83,14 @@ const ContactUsPage = () => {
 
   return (
     <StyledContactUsPage>
-      <h2>Kontakt</h2>
+      <h2>{ContactUsPageData[`${language}`].pageTitle}</h2>
       <div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div>
             <div>
               <TextField
                 error={errors.firstName ? true : false}
-                label="Ime"
+                label={ContactUsPageData[`${language}`].firstNameLabel}
                 id="firstName"
                 defaultValue=""
                 variant="outlined"
@@ -130,7 +133,7 @@ const ContactUsPage = () => {
             <div>
               <TextField
                 error={errors.lastName ? true : false}
-                label="Prezime"
+                label={ContactUsPageData[`${language}`].lastNameLabel}
                 id="lastName"
                 defaultValue=""
                 variant="outlined"
@@ -173,7 +176,7 @@ const ContactUsPage = () => {
 
           <TextField
             error={errors.email ? true : false}
-            label="Email"
+            label={ContactUsPageData.SRB.emailLabel}
             id="email"
             defaultValue=""
             variant="outlined"
@@ -213,7 +216,7 @@ const ContactUsPage = () => {
             error={errors.message ? true : false}
             multiline
             inputProps={{ style: { color: "white" } }}
-            label="Vaše pitanje"
+            label={ContactUsPageData[`${language}`].messageLabel}
             id="message"
             defaultValue=""
             variant="outlined"
@@ -252,8 +255,12 @@ const ContactUsPage = () => {
 
           <p>{errors.message?.message}</p>
           <div>
-            <button type="submit">Pošalji</button>
-            <h3 style={{ opacity: sendMessageOpacity }}>POSLATO!</h3>
+            <button type="submit">
+              {ContactUsPageData[`${language}`].sentButtonText}
+            </button>
+            <h3 style={{ opacity: sendMessageOpacity }}>
+              {ContactUsPageData[`${language}`].sentMessageText}
+            </h3>
           </div>
         </form>
         <StyledContactUsContainer>
@@ -273,7 +280,7 @@ const ContactUsPage = () => {
             rel="noopener noreferrer"
           >
             <FaFacebookF />
-            <span>Advokatska kancelarija Kljajić</span>
+            <span>{ContactUsPageData[`${language}`].facebookLinkText}</span>
           </a>
 
           <a
@@ -297,9 +304,9 @@ const ContactUsPage = () => {
           </a>
           <div>
             <LuClock8 />
-            <span>Ponedeljak—Petak:</span>
+            <span>{ContactUsPageData[`${language}`].workingHoursLabel}</span>
             &nbsp;
-            <span>08—15h</span>
+            <span>{ContactUsPageData.SRB.workingHoursTimeText}</span>
           </div>
         </StyledContactUsContainer>
       </div>

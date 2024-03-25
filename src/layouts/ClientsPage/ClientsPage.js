@@ -1,13 +1,15 @@
 import { StyledClientsPage } from "./ClientsPage.styled";
 import ClientsListContainer from "../../components/ClientsPageListContainer/ClientsPageListContainer.styled";
-import { clientNamesArray } from "../../data/data";
+import { ClientsPageData } from "../../data/dataClientsPage";
+import useDataContext from "../../hooks/useDataContext";
 
 const ClientsPage = () => {
+  const { language } = useDataContext();
   return (
     <StyledClientsPage>
-      <h2>Klijenti</h2>
+      <h2>{ClientsPageData[`${language}`].pageTitle}</h2>
       <ClientsListContainer>
-        {clientNamesArray.map((name, index) => (
+        {ClientsPageData[`${language}`].namesArray.map((name, index) => (
           <li key={index}>◈ {name}</li>
         ))}
       </ClientsListContainer>

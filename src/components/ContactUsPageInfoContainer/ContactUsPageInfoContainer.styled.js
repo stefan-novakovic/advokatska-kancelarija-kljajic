@@ -12,6 +12,7 @@ const StyledContactUsInfoContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
     width: fit-content;
+    min-width: 342px;
     color: ${({ theme }) => theme.colors.veryLightBlue};
     text-decoration: none;
     font-size: 1.2rem;
@@ -70,6 +71,10 @@ const StyledContactUsInfoContainer = styled.div`
     a:any-link,
     & > div:last-child {
       font-size: 1.05rem;
+    }
+
+    a:any-link {
+      min-width: auto;
     }
 
     svg {
