@@ -47,8 +47,11 @@ const ContactUsPage = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitSuccessful },
+    trigger,
+    formState: { errors, isSubmitSuccessful, touchedFields },
   } = useForm({
+    mode: "onTouched",
+    reValidateMode: "onChange",
     resolver: yupResolver(schema),
     defaultValues: {
       firstName: "",
@@ -80,6 +83,21 @@ const ContactUsPage = () => {
       }, 3000);
     }
   }, [isSubmitSuccessful, reset]);
+
+  useEffect(() => {
+    if (touchedFields.firstName) {
+      trigger("firstName");
+    }
+    if (touchedFields.lastName) {
+      trigger("lastName");
+    }
+    if (touchedFields.email) {
+      trigger("email");
+    }
+    if (touchedFields.message) {
+      trigger("message");
+    }
+  }, [language, touchedFields, trigger]);
 
   return (
     <StyledContactUsPage>
