@@ -12,7 +12,7 @@ const UsefulLinksListContainer = styled.ul`
   list-style-type: none;
 
   li {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.2rem;
   }
 
   & li:last-child {
@@ -55,7 +55,7 @@ const UsefulLinksListContainer = styled.ul`
     }
 
     li {
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.55rem;
     }
   }
 `;

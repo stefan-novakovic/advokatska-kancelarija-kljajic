@@ -16,6 +16,8 @@ import useDataContext from "../../hooks/useDataContext";
 
 const ContactUsPage = () => {
   const { language } = useDataContext();
+  const [sendMessageOpacity, setSendMessageOpacity] = useState(0);
+
   const schema = yup.object().shape({
     firstName: yup
       .string()
@@ -71,8 +73,6 @@ const ContactUsPage = () => {
 
     console.log(data);
   };
-
-  const [sendMessageOpacity, setSendMessageOpacity] = useState(0);
 
   useEffect(() => {
     if (isSubmitSuccessful) {
