@@ -1,17 +1,21 @@
 import { StyledAboutUsStaffDetailsPage } from "./AboutUsStaffDetailsPage.styled";
 import { useParams } from "react-router-dom";
-import { aboutUsStaffArray } from "../../data/data";
 import { HiOutlinePhone } from "react-icons/hi";
 import { GoMail } from "react-icons/go";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
+import { AboutUsPageData } from "../../data/dataAboutUsPage";
+import useDataContext from "../../hooks/useDataContext";
 
 const AboutUsStaffDetailsPage = () => {
   const { id } = useParams();
-  const staffMember = aboutUsStaffArray.find((member) => id === member.id);
+  const { language } = useDataContext();
+  const staffMember = AboutUsPageData[`${language}`].staffArray.find(
+    (member) => id === member.id
+  );
   return (
     <StyledAboutUsStaffDetailsPage>
-      <h2>Osoblje</h2>
+      <h2>{AboutUsPageData[`${language}`].staffDetailsPageTitle}</h2>
 
       <section>
         <div>
@@ -30,7 +34,7 @@ const AboutUsStaffDetailsPage = () => {
         </div>
       </section>
       <section>
-        <h3>Biografija</h3>
+        <h3>{AboutUsPageData[`${language}`].staffDetailsPageBioTitle}</h3>
         <p>{staffMember.bio}</p>
       </section>
     </StyledAboutUsStaffDetailsPage>

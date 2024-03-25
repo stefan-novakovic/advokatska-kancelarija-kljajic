@@ -1,13 +1,13 @@
 export const HeaderAndFooterData = {
   SRB: {
-    navMenuArray: [
-      "POČETNA",
-      "O NAMA",
-      "OBLASTI RADA",
-      "KLIJENTI",
-      "KORISNI LINKOVI",
-      "KONTAKT",
-    ],
+    navMenuObj: {
+      home: "POČETNA",
+      aboutUs: "O NAMA",
+      areasOfWork: "OBLASTI RADA",
+      clients: "KLIJENTI",
+      usefulLinks: "KORISNI LINKOVI",
+      contact: "KONTAKT",
+    },
     footerIconTitlesObj: {
       phone: "Pozovite nas",
       email: "Pošaljite nam email",
@@ -18,14 +18,14 @@ export const HeaderAndFooterData = {
     footerFirmText: "Advokatska kancelarija Kljajić",
   },
   ENG: {
-    navMenuArray: [
-      "HOME",
-      "ABOUT US",
-      "AREAS OF PRACTICE",
-      "CLIENTS",
-      "USEFUL LINKS",
-      "CONTACT",
-    ],
+    navMenuObj: {
+      home: "HOME",
+      aboutUs: "ABOUT US",
+      areasOfWork: "AREAS OF PRACTICE",
+      clients: "CLIENTS",
+      usefulLinks: "USEFUL LINKS",
+      contact: "CONTACT",
+    },
     footerIconTitlesObj: {
       phone: "Call us",
       email: "Send us an email",

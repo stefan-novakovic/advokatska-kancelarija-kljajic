@@ -1,7 +1,4 @@
 import { StyledAboutUsPage } from "./AboutUsPage.styled";
-import { aboutUsText1Array } from "../../data/data";
-import { aboutUsText2Array } from "../../data/data";
-import { aboutUsStaffArray } from "../../data/data";
 import "@mohammedsrehan/react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "@mohammedsrehan/react-responsive-carousel";
 import au1 from "../../assets/images/slika-1-o-nama.jpg";
@@ -13,14 +10,17 @@ import { GoMail } from "react-icons/go";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
+import { AboutUsPageData } from "../../data/dataAboutUsPage";
+import useDataContext from "../../hooks/useDataContext";
 
 const AboutUsPage = () => {
+  const { language } = useDataContext();
   return (
     <StyledAboutUsPage>
-      <h2>O nama</h2>
+      <h2>{AboutUsPageData[`${language}`].pageTitle}</h2>
       <section>
         <div>
-          {aboutUsText1Array.map((paragraph) => {
+          {AboutUsPageData[`${language}`].textArray1.map((paragraph) => {
             return paragraph;
           })}
         </div>
@@ -40,12 +40,12 @@ const AboutUsPage = () => {
         </Carousel>
       </section>
       <section>
-        {aboutUsText2Array.map((paragraph) => {
+        {AboutUsPageData[`${language}`].textArray2.map((paragraph) => {
           return paragraph;
         })}
       </section>
       <section>
-        {aboutUsStaffArray.map((member) => {
+        {AboutUsPageData[`${language}`].staffArray.map((member) => {
           return (
             <Link key={member.id} to={`/o-nama/${member.id}`}>
               <div>

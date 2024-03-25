@@ -36,7 +36,7 @@ const Nav = () => {
             to="/"
             className={selectedItem === "pocetna" ? "selected" : "not-selected"}
           >
-            {HeaderAndFooterData[`${language}`].navMenuArray[0]}
+            {HeaderAndFooterData[`${language}`].navMenuObj.home}
           </Link>
         </li>
         <li>
@@ -44,7 +44,7 @@ const Nav = () => {
             to="/o-nama"
             className={selectedItem === "o-nama" ? "selected" : "not-selected"}
           >
-            {HeaderAndFooterData[`${language}`].navMenuArray[1]}
+            {HeaderAndFooterData[`${language}`].navMenuObj.aboutUs}
           </Link>
         </li>
         <li>
@@ -54,7 +54,7 @@ const Nav = () => {
               selectedItem === "oblasti-rada" ? "selected" : "not-selected"
             }
           >
-            {HeaderAndFooterData[`${language}`].navMenuArray[2]}
+            {HeaderAndFooterData[`${language}`].navMenuObj.areasOfWork}
           </Link>
         </li>
         <li>
@@ -64,7 +64,7 @@ const Nav = () => {
               selectedItem === "klijenti" ? "selected" : "not-selected"
             }
           >
-            {HeaderAndFooterData[`${language}`].navMenuArray[3]}
+            {HeaderAndFooterData[`${language}`].navMenuObj.clients}
           </Link>
         </li>
         <li>
@@ -74,7 +74,7 @@ const Nav = () => {
               selectedItem === "korisni-linkovi" ? "selected" : "not-selected"
             }
           >
-            {HeaderAndFooterData[`${language}`].navMenuArray[4]}
+            {HeaderAndFooterData[`${language}`].navMenuObj.usefulLinks}
           </Link>
         </li>
         <li>
@@ -82,7 +82,7 @@ const Nav = () => {
             to="/kontakt"
             className={selectedItem === "kontakt" ? "selected" : "not-selected"}
           >
-            {HeaderAndFooterData[`${language}`].navMenuArray[5]}
+            {HeaderAndFooterData[`${language}`].navMenuObj.contact}
           </Link>
         </li>
       </ul>

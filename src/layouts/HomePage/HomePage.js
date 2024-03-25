@@ -55,7 +55,7 @@ const HomePage = () => {
                     />
                   </HashLink>
                 </div>
-                <p>{item.title}</p>
+                <p>{item.caption}</p>
               </div>
             );
           })}

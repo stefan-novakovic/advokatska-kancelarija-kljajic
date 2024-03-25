@@ -1,12 +1,15 @@
 import { StyledMissingPage } from "./MissingPage.styled";
 import { Link } from "react-router-dom";
+import { MissingPageData } from "../../data/dataMissingPage";
+import useDataContext from "../../hooks/useDataContext";
 
 const MissingPage = () => {
+  const { language } = useDataContext();
   return (
     <StyledMissingPage>
-      <h2>Stranica nije pronađena</h2>
+      <h2>{MissingPageData[`${language}`].pageTitle}</h2>
       <div>
-        <Link to="/">Vratite se na početnu stranicu</Link>
+        <Link to="/">{MissingPageData[`${language}`].goBackLinkText}</Link>
       </div>
     </StyledMissingPage>
   );

@@ -21,28 +21,28 @@ export const HomePageData = {
     areasOfWorkArray: [
       {
         id: "gradjansko-pravo",
-        title: "Građansko pravo",
         img: gradjanskoImg,
+        caption: "Građansko pravo",
       },
       {
         id: "privredno-pravo",
-        title: "Privredno pravo",
         img: privrednoImg,
+        caption: "Privredno pravo",
       },
       {
         id: "radno-pravo",
-        title: "Radno pravo",
         img: radnoImg,
+        caption: "Radno pravo",
       },
       {
         id: "krivicno-pravo",
-        title: "Krivično pravo",
         img: krivicnoImg,
+        caption: "Krivično pravo",
       },
       {
         id: "upravno-pravo",
-        title: "Upravno pravo",
         img: upravnoImg,
+        caption: "Upravno pravo",
       },
     ],
     clientsImgArray: [
@@ -57,34 +57,34 @@ export const HomePageData = {
     heroTitle1: "LAW FIRM",
     aboutUsTitle: "About us",
     aboutUsDesc:
-      "Law firm Kljajić was founded in 2012. We approach all client problems with full attention, with protection of their interests, strict preservation of lawyer's secrecy and respect for the attorney-client privilege. Law firm goal is to provide quality legal services to all potential clients with the utmost respect for their personalities and with an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
+      "Kljajić law firm was founded in 2012. We approach all client problems with full attention, with protection of their interests, strict preservation of a lawyer's secrecy and respect for attorney-client privilege. Our goal is to provide quality legal services to all potential clients with the utmost respect for their personalities and with an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
     aboutUsButtonText: "Find out more",
     areasOfWorkTitle: "Areas of practice",
     areasOfWorkArray: [
       {
         id: "gradjansko-pravo",
-        title: "Civil rights",
         img: gradjanskoImg,
+        caption: "Civil rights",
       },
       {
         id: "privredno-pravo",
-        title: "Commercial law",
         img: privrednoImg,
+        caption: "Commercial law",
       },
       {
         id: "radno-pravo",
-        title: "Labour law",
         img: radnoImg,
+        caption: "Labour law",
       },
       {
         id: "krivicno-pravo",
-        title: "Criminal law",
         img: krivicnoImg,
+        caption: "Criminal law",
       },
       {
         id: "upravno-pravo",
-        title: "Administrative law",
         img: upravnoImg,
+        caption: "Administrative law",
       },
     ],
   },

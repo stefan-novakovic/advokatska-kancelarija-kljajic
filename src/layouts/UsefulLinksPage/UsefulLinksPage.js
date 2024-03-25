@@ -1,14 +1,17 @@
 import { StyledUsefulLinksPage } from "./UsefulLinksPage.styled";
 import UsefulLinksListContainer from "../../components/UsefulLinksPageListContainer/UsefulLinksPageListContainer.styled";
-import { usefulLinksArray } from "../../data/data";
+import { UsefulLinksPageData } from "../../data/dataUsefulLinksPage";
+import useDataContext from "../../hooks/useDataContext";
 
 const UsefulLinksPage = () => {
-  const col1 = usefulLinksArray.slice(0, 9);
-  const col2 = usefulLinksArray.slice(9);
+  const { language } = useDataContext();
+
+  const col1 = UsefulLinksPageData[`${language}`].linksArray.slice(0, 9);
+  const col2 = UsefulLinksPageData[`${language}`].linksArray.slice(9);
 
   return (
     <StyledUsefulLinksPage>
-      <h2>Korisni linkovi</h2>
+      <h2>{UsefulLinksPageData[`${language}`].pageTitle}</h2>
       <UsefulLinksListContainer>
         <div>
           {col1.map((link, index) => (
