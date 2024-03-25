@@ -43,13 +43,13 @@ export const StyledNav = styled.nav`
 
   @media screen and (max-width: 1439px) {
     ul {
-      gap: 0.35rem;
+      gap: 1.25rem;
       padding-inline: 2.5rem;
       font-size: 1.1rem;
     }
 
     li {
-      min-width: 104px;
+      min-width: auto;
       line-height: 1.15;
     }
   }

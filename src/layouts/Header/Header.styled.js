@@ -28,14 +28,29 @@ export const StyledHeader = styled.header`
   }
 
   & > div:last-of-type > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: ${({ theme }) => theme.colors.veryLightBlue};
     background-color: transparent;
     border: none;
     letter-spacing: 0.75px;
     font-family: inherit;
-    font-size: 1.025rem;
-    font-weight: 400;
+
     cursor: pointer;
+  }
+
+  & > div:last-of-type > button > p {
+    font-size: 1.015rem;
+    font-weight: 400;
+    height: 14px;
+  }
+
+  & > div:last-of-type > button > img {
+    max-height: 16px;
+    width: auto;
+    margin-left: 5px;
+    box-shadow: 0 0 1px 1px ${({ theme }) => theme.colors.veryLightBlue};
   }
 
   & > div:first-of-type {
@@ -55,6 +70,15 @@ export const StyledHeader = styled.header`
     & > div:last-of-type {
       width: 60px;
     }
+
+    & > div:last-of-type > button > p {
+      font-size: 1rem;
+    }
+
+    & > div:last-of-type > button > img {
+      max-height: 15px;
+      margin-left: 4px;
+    }
   }
 
   @media screen and (max-width: 1439px) {
@@ -63,6 +87,15 @@ export const StyledHeader = styled.header`
     & > a > img,
     & > div:last-of-type {
       width: 55px;
+    }
+
+    & > div:last-of-type > button > p {
+      font-size: 0.95rem;
+    }
+
+    & > div:last-of-type > button > img {
+      max-height: 14px;
+      margin-left: 4px;
     }
   }
 

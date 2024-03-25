@@ -6,6 +6,8 @@ import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import PhoneSidebarMenu from "../../components/PhoneSidebarMenu/PhoneSidebarMenu";
 import useDataContext from "../../hooks/useDataContext";
+import srbIcon from "../../assets/images/sr.png";
+import enIcon from "../../assets/images/en.png";
 
 const Header = () => {
   const { language, setLanguage } = useDataContext();
@@ -33,7 +35,8 @@ const Header = () => {
             localStorage.setItem("lang", JSON.stringify(language));
           }}
         >
-          {language}
+          <p>{language}</p>
+          <img src={language === "SRB" ? srbIcon : enIcon} alt="" />{" "}
         </button>
       </div>
     </StyledHeader>
