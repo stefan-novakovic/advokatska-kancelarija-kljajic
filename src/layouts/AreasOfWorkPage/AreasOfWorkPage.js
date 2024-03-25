@@ -1,15 +1,17 @@
 import { StyledAreasOfWorkPage } from "./AreasOfWorkPage.styled";
 import AreasOfWorkPageListContainer from "../../components/AreasOfWorkPageListContainer/AreasOfWorkPageListContainer.styled";
-import { lawsDataArray } from "../../data/data";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
+import { AreasOfWorkPageData } from "../../data/dataAreasOfWorkPage";
+import useDataContext from "../../hooks/useDataContext";
 
 const AreasOfWorkPage = () => {
+  const { language } = useDataContext();
   return (
     <StyledAreasOfWorkPage>
-      <h2>Oblasti rada</h2>
+      <h2>{AreasOfWorkPageData[`${language}`].pageTitle}</h2>
       <AreasOfWorkPageListContainer>
-        {lawsDataArray.map((law) => {
+        {AreasOfWorkPageData[`${language}`].aopArray.map((law) => {
           return (
             <li key={law.id} id={law.id}>
               <div>
@@ -21,7 +23,7 @@ const AreasOfWorkPage = () => {
                 />
                 <h3>{law.title}</h3>
               </div>
-              <p>{law.body}</p>
+              <p>{law.desc}</p>
             </li>
           );
         })}

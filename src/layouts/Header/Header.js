@@ -30,6 +30,7 @@ const Header = () => {
           type="button"
           onClick={() => {
             setLanguage(language === "SRB" ? "ENG" : "SRB");
+            localStorage.setItem("lang", JSON.stringify(language));
           }}
         >
           {language}
