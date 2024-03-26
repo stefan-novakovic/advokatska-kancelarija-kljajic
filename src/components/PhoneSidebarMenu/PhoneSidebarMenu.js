@@ -4,8 +4,6 @@ import { Menu, Item } from "burger-menu";
 import "burger-menu/lib/index.css";
 import { PhoneSidebarMenuData } from "../../data/dataPhoneSidebarMenu";
 import useDataContext from "../../hooks/useDataContext";
-import srbIcon from "../../assets/images/sr.png";
-import enIcon from "../../assets/images/en.png";
 
 const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
   const location = useLocation();
@@ -136,8 +134,8 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
               localStorage.setItem("lang", JSON.stringify(language));
             }}
           >
-            <p>{PhoneSidebarMenuData[`${language}`].navMenuObj.language}</p>
-            <img src={language === "SRB" ? srbIcon : enIcon} alt="" />
+            {PhoneSidebarMenuData[`${language}`].navMenuObj.language}:{" "}
+            {language}
           </button>
         }
       />

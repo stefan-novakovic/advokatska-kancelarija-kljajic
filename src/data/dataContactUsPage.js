@@ -22,7 +22,7 @@ export const ContactUsPageData = {
     pageTitle: "Contact",
     sentButtonText: "Send",
     sentMessageText: "SENT!",
-    facebookLinkText: "Law firm Kljajić",
+    facebookLinkText: "Law office Kljajić",
     workingHoursLabel: "Monday—Friday:",
     yupRequired: "Required field",
     yupMin: "You entered less than 2 characters",

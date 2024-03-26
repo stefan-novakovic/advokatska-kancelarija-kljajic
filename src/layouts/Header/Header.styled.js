@@ -31,26 +31,20 @@ export const StyledHeader = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
+    /* color: ${({ theme }) => theme.colors.darkNavy}; */
     color: ${({ theme }) => theme.colors.veryLightBlue};
+    /* background-color: ${({ theme }) => theme.colors.veryLightBlue}; */
     background-color: transparent;
     border: none;
-    letter-spacing: 0.75px;
+    /* border-radius: 4px; */
+    letter-spacing: 1px;
     font-family: inherit;
-
+    font-size: 1rem;
+    font-weight: 700;
+    /* min-width: 45.2px; */
     cursor: pointer;
-  }
-
-  & > div:last-of-type > button > p {
-    font-size: 1.015rem;
-    font-weight: 400;
-    height: 14px;
-  }
-
-  & > div:last-of-type > button > img {
-    max-height: 16px;
-    width: auto;
-    margin-left: 5px;
-    box-shadow: 0 0 1px 1px ${({ theme }) => theme.colors.veryLightBlue};
+    /* padding: 0.3rem 0.2595rem 0.0525rem; */
+    padding: 0.25rem;
   }
 
   & > div:first-of-type {
@@ -70,15 +64,6 @@ export const StyledHeader = styled.header`
     & > div:last-of-type {
       width: 60px;
     }
-
-    & > div:last-of-type > button > p {
-      font-size: 1rem;
-    }
-
-    & > div:last-of-type > button > img {
-      max-height: 15px;
-      margin-left: 4px;
-    }
   }
 
   @media screen and (max-width: 1439px) {
@@ -87,15 +72,6 @@ export const StyledHeader = styled.header`
     & > a > img,
     & > div:last-of-type {
       width: 55px;
-    }
-
-    & > div:last-of-type > button > p {
-      font-size: 0.95rem;
-    }
-
-    & > div:last-of-type > button > img {
-      max-height: 14px;
-      margin-left: 4px;
     }
   }
 
@@ -117,13 +93,13 @@ export const StyledHeader = styled.header`
     // Sidebar menu styles
     .overlay {
       display: block;
-      height: 100vh !important;
+      height: 100lvh !important;
       /* touch-action: none; */
     }
 
     .menu-wrap {
       display: block;
-      /* height: 100vh !important; */
+      height: 100lvh !important;
       /* touch-action: none; */
       overflow-y: scroll;
       background-color: ${({ theme }) => theme.colors.darkNavy};
@@ -165,6 +141,16 @@ export const StyledHeader = styled.header`
       display: block;
     }
 
+    .menu-wrap .menu div span a {
+      display: block;
+      padding: 0.55rem 1.85rem 0.55rem 0;
+      border-right: 3px solid transparent;
+    }
+
+    .menu-wrap .menu div span a.selected {
+      border-right: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+    }
+
     .menu-wrap .menu div:last-of-type span button {
       width: 100%;
       display: flex;
@@ -176,26 +162,7 @@ export const StyledHeader = styled.header`
       font-family: inherit;
       font-size: 1.2rem;
       border: none;
-    }
-
-    .menu-wrap .menu div:last-of-type span button img {
-      max-height: 14px;
-      width: auto;
-    }
-
-    .menu-wrap .menu div:last-of-type span button p {
-      height: 15px;
-      margin-right: 12px;
-    }
-
-    .menu-wrap .menu div span a {
-      display: block;
-      padding: 0.55rem 1.85rem 0.55rem 0;
-      border-right: 3px solid transparent;
-    }
-
-    .menu-wrap .menu div span a.selected {
-      border-right: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+      cursor: pointer;
     }
   }
 `;
