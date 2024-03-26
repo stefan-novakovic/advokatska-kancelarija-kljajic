@@ -59,7 +59,7 @@ export const HomePageData = {
     aboutUsDesc:
       "Kljajić law office was founded in 2012. We approach all client problems with full attention, with protection of their interests, strict preservation of a lawyer's secrecy and respect for attorney-client privilege. Our goal is to provide quality legal services to all potential clients with the utmost respect for their personalities and with an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
     aboutUsButtonText: "Find out more",
-    areasOfWorkTitle: "Areas of practice",
+    areasOfWorkTitle: "Practice areas",
     areasOfWorkArray: [
       {
         id: "gradjansko-pravo",

@@ -48,7 +48,7 @@ export const AreasOfWorkPageData = {
     ],
   },
   ENG: {
-    pageTitle: "Areas of practice",
+    pageTitle: "Practice areas",
     aopArray: [
       {
         id: "gradjansko-pravo",

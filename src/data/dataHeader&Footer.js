@@ -21,7 +21,7 @@ export const HeaderAndFooterData = {
     navMenuObj: {
       home: "HOME",
       aboutUs: "ABOUT US",
-      areasOfWork: "AREAS OF PRACTICE",
+      areasOfWork: "PRACTICE AREAS",
       clients: "CLIENTS",
       usefulLinks: "USEFUL LINKS",
       contact: "CONTACT",

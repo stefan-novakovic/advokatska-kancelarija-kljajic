@@ -5,7 +5,7 @@ export const StyledNav = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
     list-style-type: none;
     font-size: 1.25rem;
     font-weight: 600;
@@ -13,7 +13,7 @@ export const StyledNav = styled.nav`
   }
 
   li {
-    min-width: 125px;
+    min-width: 90px;
     text-align: center;
   }
 
@@ -43,7 +43,7 @@ export const StyledNav = styled.nav`
 
   @media screen and (max-width: 1439px) {
     ul {
-      gap: 1.25rem;
+      gap: 1.5rem;
       padding-inline: 2.5rem;
       font-size: 1.1rem;
     }
