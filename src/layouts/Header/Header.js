@@ -36,7 +36,7 @@ const Header = () => {
           }}
         >
           <p>{language}</p>
-          <img src={language === "SRB" ? srbIcon : enIcon} alt="" />{" "}
+          <img src={language === "SRB" ? srbIcon : enIcon} alt="" />
         </button>
       </div>
     </StyledHeader>

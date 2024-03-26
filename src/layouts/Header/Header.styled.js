@@ -118,15 +118,18 @@ export const StyledHeader = styled.header`
     .overlay {
       display: block;
       height: 100vh !important;
-      touch-action: none;
+      /* touch-action: none; */
     }
 
     .menu-wrap {
       display: block;
-      touch-action: none;
+      /* height: 100vh !important; */
+      /* touch-action: none; */
+      overflow-y: scroll;
       background-color: ${({ theme }) => theme.colors.darkNavy};
       color: ${({ theme }) => theme.colors.veryLightBlue};
-      font-size: 1.225rem;
+      font-size: 1.2rem;
+      position: fixed;
     }
 
     .menu-wrap .head {
@@ -156,6 +159,33 @@ export const StyledHeader = styled.header`
 
     .menu-wrap .menu div:last-of-type {
       margin-bottom: 0;
+    }
+
+    .menu-wrap .menu div:last-of-type span {
+      display: block;
+    }
+
+    .menu-wrap .menu div:last-of-type span button {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0.55rem 1.85rem 0.55rem 0;
+      background-color: ${({ theme }) => theme.colors.darkNavy};
+      color: ${({ theme }) => theme.colors.veryLightBlue};
+      font-family: inherit;
+      font-size: 1.2rem;
+      border: none;
+    }
+
+    .menu-wrap .menu div:last-of-type span button img {
+      max-height: 14px;
+      width: auto;
+    }
+
+    .menu-wrap .menu div:last-of-type span button p {
+      height: 15px;
+      margin-right: 12px;
     }
 
     .menu-wrap .menu div span a {

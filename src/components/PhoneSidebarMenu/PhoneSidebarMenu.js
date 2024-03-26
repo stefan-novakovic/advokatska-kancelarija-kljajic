@@ -2,10 +2,15 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Item } from "burger-menu";
 import "burger-menu/lib/index.css";
+import { PhoneSidebarMenuData } from "../../data/dataPhoneSidebarMenu";
+import useDataContext from "../../hooks/useDataContext";
+import srbIcon from "../../assets/images/sr.png";
+import enIcon from "../../assets/images/en.png";
 
 const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
   const location = useLocation();
   const [selectedItem, setSelectedItem] = useState("");
+  const { language, setLanguage } = useDataContext();
 
   useEffect(() => {
     const path = location.pathname;
@@ -45,7 +50,7 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
             className={selectedItem === "pocetna" ? "selected" : "not-selected"}
             onClick={handleItemClick}
           >
-            POČETNA
+            {PhoneSidebarMenuData[`${language}`].navMenuObj.home}
           </Link>
         }
       />
@@ -58,7 +63,7 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
             className={selectedItem === "o-nama" ? "selected" : "not-selected"}
             onClick={handleItemClick}
           >
-            O NAMA
+            {PhoneSidebarMenuData[`${language}`].navMenuObj.aboutUs}
           </Link>
         }
       />
@@ -73,7 +78,7 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
             }
             onClick={handleItemClick}
           >
-            OBLASTI RADA
+            {PhoneSidebarMenuData[`${language}`].navMenuObj.areasOfWork}
           </Link>
         }
       />
@@ -88,7 +93,7 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
             }
             onClick={handleItemClick}
           >
-            KLIJENTI
+            {PhoneSidebarMenuData[`${language}`].navMenuObj.clients}
           </Link>
         }
       />
@@ -103,7 +108,7 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
             }
             onClick={handleItemClick}
           >
-            KORISNI LINKOVI
+            {PhoneSidebarMenuData[`${language}`].navMenuObj.usefulLinks}
           </Link>
         }
       />
@@ -116,8 +121,24 @@ const PhoneSidebarMenu = ({ isOpen, setIsOpen }) => {
             className={selectedItem === "kontakt" ? "selected" : "not-selected"}
             onClick={handleItemClick}
           >
-            KONTAKT
+            {PhoneSidebarMenuData[`${language}`].navMenuObj.contact}
           </Link>
+        }
+      />
+
+      <Item
+        itemKey={"jezik"}
+        text={
+          <button
+            type="button"
+            onClick={() => {
+              setLanguage(language === "SRB" ? "ENG" : "SRB");
+              localStorage.setItem("lang", JSON.stringify(language));
+            }}
+          >
+            <p>{PhoneSidebarMenuData[`${language}`].navMenuObj.language}</p>
+            <img src={language === "SRB" ? srbIcon : enIcon} alt="" />
+          </button>
         }
       />
     </Menu>
