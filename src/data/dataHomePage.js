@@ -57,7 +57,7 @@ export const HomePageData = {
     heroTitle1: "LAW OFFICE",
     aboutUsTitle: "About us",
     aboutUsDesc:
-      "Kljajić law office was founded in 2012. We approach all client problems with full attention, with protection of their interests, strict preservation of a lawyer's secrecy and respect for attorney-client privilege. Our goal is to provide quality legal services to all potential clients with the utmost respect for their personalities and with an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
+      "Kljajić Law Office was founded in 2012. We approach all client problems with full attention, with the protection of their interests, strict preservation of a lawyer's secrecy, and respect for attorney-client privilege. Our goal is to provide high—quality legal services to all potential clients with the utmost respect for their personalities and an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
     aboutUsButtonText: "Find out more",
     areasOfWorkTitle: "Practice areas",
     areasOfWorkArray: [
@@ -74,7 +74,7 @@ export const HomePageData = {
       {
         id: "radno-pravo",
         img: radnoImg,
-        caption: "Labour law",
+        caption: "Labor law",
       },
       {
         id: "krivicno-pravo",

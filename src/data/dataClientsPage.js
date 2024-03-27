@@ -33,8 +33,8 @@ export const ClientsPageData = {
       "Stilles DOO, Novi Sad",
       `Ing. „B-SD Gradnja” DOO, Novi Sad`,
       "Suins DOO, international forwarding and transport, Novi Sad",
-      "GAC „Begečki povrtari”, Begeč",
-      "STB „Skalar”, Novi Sad",
+      "Farmers’ co-op „Begečki povrtari”, Begeč",
+      "S.P. „Skalar”, Novi Sad",
     ],
   },
 };

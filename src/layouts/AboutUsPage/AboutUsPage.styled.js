@@ -34,7 +34,7 @@ export const StyledAboutUsPage = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 4vw;
+    gap: 3.85vw;
     margin-bottom: 3rem;
   }
 

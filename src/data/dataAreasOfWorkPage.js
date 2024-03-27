@@ -64,8 +64,8 @@ export const AreasOfWorkPageData = {
       },
       {
         id: "radno-pravo",
-        title: "Labour law",
-        desc: "Disputes regarding compensation for unpaid wages, compensation for injuries at work, protection of workers' rights, mobbing, drafting of all acts in accordance with the Labour Law.",
+        title: "Labor law",
+        desc: "Disputes regarding compensation for unpaid wages, compensation for injuries at work, protection of workers' rights, mobbing, drafting of all acts in accordance with the Labor Law.",
         img: radnoImg,
       },
       {

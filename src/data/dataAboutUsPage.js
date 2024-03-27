@@ -56,37 +56,37 @@ const aboutUs_motto_p2_LAT = (
 const aboutUs_p1_ENG = (
   <p key="p1">
     Man's freedom is to regulate legal and business relations of his own free
-    will, conclude contracts, have the ability and skill to agree or negotiate.
-    Certainly, it is necessary to have a good foundation, which has been woven
-    into many laws of our country a long time ago.
+    will, conclude contracts and have the ability and skill to agree or
+    negotiate. Certainly, it's necessary to have a good foundation, which has
+    been woven into the laws of our country a long time ago.
   </p>
 );
 const aboutUs_p2_ENG = (
   <p key="p2">
-    If you are not sure what your rights are and what your obligations are, what
-    your opportunities are and scope, how you will create the best legal
-    protection for yourself personally or your business, the checkmate business
+    If you are not sure what your rights are, what your obligations are, what
+    your opportunities are and their possible scope, or how you will create the
+    best legal protection for yourself personally or your business, the best
     move you can make is to always have an excellent lawyer, representative and
     advisor, whose work is exclusively in your interest.
   </p>
 );
 const aboutUs_p3_ENG = (
   <p key="p3">
-    We are that kind of office and our goal is to build a professional and loyal
-    relationship with our clients.
+    We are that kind of office, and our goal is to build a professional and
+    loyal relationship with our clients.
   </p>
 );
 const aboutUs_p4_ENG = (
   <p key="p4">
-    Kljajić law office was founded in 2012. We approach all client problems with
-    full attention, with protection of their interests, strict preservation of a
-    lawyer's secrecy and respect for attorney-client privilege.
+    Kljajić Law Office was founded in 2012. We approach all client problems with
+    full attention, with the protection of their interests, strict preservation
+    of a lawyer's secrecy, and respect for attorney-client privilege.
   </p>
 );
 const aboutUs_p5_ENG = (
   <p key="p5">
-    Our goal is to provide quality legal services to all potential clients with
-    the utmost respect for their personalities and with an objective assessment
+    Our goal is to provide high—quality legal services to all potential clients
+    with the utmost respect for their personalities and an objective assessment
     of all their legal problems, with an effort to solve their problems in the
     most efficient and best possible way.
   </p>
@@ -94,7 +94,7 @@ const aboutUs_p5_ENG = (
 const aboutUs_motto_heading_ENG = <h3 key="motto">Our motto:</h3>;
 const aboutUs_motto_p1_ENG = (
   <p key="motto-p1">
-    By the law of nature it is fair that no one become richer by the loss and
+    By the law of nature, it is fair that no one becomes richer by the loss and
     injury of another
   </p>
 );
@@ -172,7 +172,7 @@ export const AboutUsPageData = {
         email: "info@advokatkljajic.com",
         phone: "069/166-98-92",
         phoneLink: "+381691669892",
-        bio: "Lawyer Goran Kljajić was born in Zrenjanin in 1984. He graduated from the “Dositej Obradović“ elementary school in Zrenjanin in 1999, and then from the “Jovan Trajković“ secondary school of economics in 2003. godine. He enrolled in the Faculty of Law University in Novi Sad in 2003 and graduated in 2008.\n\nAfter graduating from the Faculty of Law, in 2009 he began his internship at the Zoran Koprivica law office, where he worked until 2012, initially as a trainee lawyer, and then for a while as a lawyer - associate.\n\nHe passed the bar exam in 2011 with very good success, and after working as a lawyer - associate in the Koprivica lawyer's office, he founded his own law office in 2012 and started practicing law independently.\n\nIn 2016, at a competition announced by the Republic Agency for the Peaceful Resolution of Labor Disputes in Belgrade, he was chosen as an arbitrator/conciliator at the Agency for the Peaceful Resolution of Labor Disputes, and he was engaged in that work until September 2020, when his mandate expired.\n\nDuring his work as an arbitrator, he successfully arbitrated in over 200 arbitration proceedings, among others in the arbitration of JKP Put from Novi Sad, Student Center Novi Sad and preschool institution Radost from Novi Banovac, where he worked on reconciliation between employees and their employers, and in connection with the problems regarding the payment of holiday pay, hot meals, travel expenses and jubilee awards.\n\nDuring his mandate as an arbitrator and conciliator, he participated in numerous seminars and conferences, including the annual conference of the Federal Conciliation Service from Washington (USA) held in july 2018 in Arandjelovac, as a result of which he expressed a desire for additional training and gaining experience in the field of labor relations from a lawyer's perspective.\n\nHe has numerous certificates, including a certificate for the defense of juvenile offenders and representation of minors injured by criminal offenses, as well as a certificate in the field of environmental protection law.\n\nHe deals with the representation of numerous individuals and legal entities from all areas of law, especially in the domain of civil law (property disputes, disputes related to real estate, property relations), labour law (representation in disputes over annulment of decisions, lost earnings, discrimination at work - mobbing, compensation for damages due to injuries at work) as well as defense in criminal proceedings (defense of defendants and representation of injured parties). In addition, he deals with banking law as well as bond law and the drafting of all types of bond contracts.\n\nHis areas of interest are labor law and civil (property) law.\n\nHe lives in Novi Sad, is married and is the father of two. He speaks English, and his hobby is table tennis, which he actively plays with his friends and currently competes in the city's recreational league.",
+        bio: "Attorney Goran Kljajić was born in Zrenjanin in 1984. He graduated from the “Dositej Obradović“ elementary school in Zrenjanin in 1999, and then from the “Jovan Trajković“ secondary school of economics in 2003. He enrolled in the Faculty of Law at the University of Novi Sad in 2003 and graduated in 2008.\n\nAfter graduating from the Faculty of Law, in 2009 he began his internship at the Zoran Koprivica Law Office, where he worked until 2012, initially as a trainee lawyer, and then for a while as a lawyer—associate.\n\nHe passed the bar exam in 2011 with very good success, and after working as a lawyer—associate in the Koprivica lawyer's office, he founded his own law office in 2012 and started practicing law independently.\n\nIn 2016, at a competition announced by the Republic Agency for the Peaceful Resolution of Labor Disputes in Belgrade, he was chosen as an arbitrator/conciliator at the Agency for the Peaceful Resolution of Labor Disputes, and he was engaged in that work until September 2020, when his mandate expired.\n\nDuring his work as an arbitrator, he successfully arbitrated in over 200 arbitration proceedings, among others in the arbitration of JKP Put from Novi Sad, Student Center Novi Sad and preschool institution Radost from Novi Banovac, where he worked on reconciliation between employees and their employers, and in connection with the problems regarding the payment of holiday pay, hot meals, travel expenses and jubilee awards.\n\nDuring his mandate as an arbitrator and conciliator, he participated in numerous seminars and conferences, including the annual conference of the Federal Conciliation Service from Washington (USA) held in July 2018 in Arandjelovac, as a result of which he expressed a desire for additional training and gaining experience in the field of labor relations from a lawyer's perspective.\n\nHe has numerous certificates, including a certificate for the defense of juvenile offenders and representation of minors injured by criminal offenses, as well as a certificate in the field of environmental protection law.\n\nHe deals with the representation of numerous individuals and legal entities from all areas of law, especially in the domain of civil law (property disputes, disputes related to real estate, property relations), labor law (representation in disputes over annulment of decisions, lost earnings, discrimination at work - mobbing, compensation for damages due to injuries at work) as well as defense in criminal proceedings (defense of defendants and representation of injured parties). In addition, he deals with banking law as well as bond law and the drafting of all types of bond contracts.\n\nHis area of interest is labor law and civil (property) law.\n\nHe lives in Novi Sad, is married and is the father of two. He speaks English, and his hobby is table tennis, which he actively plays with his friends and currently competes in the city's recreational league.",
       },
       {
         id: "milana-forkapa",
@@ -182,7 +182,7 @@ export const AboutUsPageData = {
         email: "milana.forkapa@advokatkljajic.com",
         phone: "063/803-90-13",
         phoneLink: "+381638039013",
-        bio: "Milana Forkapa was born in Novi Sad in 1994. She graduated from the economic school “Svetozar Miletić“ in Novi Sad, majoring in tourism technician, as an excellent student. She did practical classes at the “Park“ hotel, as well as at the “Grand tours“ travel agency, during which she gained valuable experience in working with people of various profiles, which will later prove to be an advantage when working in a law office.\n\nAfter finishing high school, she enrolled in the Faculty of Law University in Novi Sad, a general major, which she also finished with a very good success.\n\nShe comes from a family where both her father and mother are law graduates, so the logical choice of education falls on the Faculty of Law, where she showed great interest in the field of family and inheritance law at the very beggining of her studies.\n\nHer other area of interest is criminal law as well as criminology, for which she shows a high degree of legal logic and a desire to improve and acquire necessary knowledge and experience.\n\nShe joins Kljajić law office in July 2020, and officially enrolled in the Vojvodina Bar Association as a trainee lawyer in September 2020.\n\nIn the law office she deals with representation in the field of family relations (divorce, child support, exercise of parental rights, domestic violence), also deals with banking law, general litigation (disputes in the field of civil law), representation in the field of damages as well as writing lawsuits in the field of banking law, family relations and damages. In addition, she deals with obligation law and the drafting of all types of obligation contracts.\n\nShe speaks english, and is familiar with spanish and russian. Her hobby is photography and creative work. Her favorite destination is Cuba, and her wish is to live in Spain.",
+        bio: "Milana Forkapa was born in Novi Sad in 1994. She graduated from the economic school “Svetozar Miletić“ in Novi Sad, majoring in tourism technician, as an excellent student. She did practical classes at the “Park“ hotel, as well as at the “Grand tours“ travel agency, during which she gained valuable experience in working with people of various profiles, which will later prove to be an advantage when working in a law office.\n\nAfter finishing high school, she enrolled in the Faculty of Law, University of Novi Sad, general major, which she also finished with very good success.\n\nShe comes from a family where both her father and mother are law graduates, so the logical choice of education falls on the Faculty of Law, where she showed great interest in the field of family and inheritance law at the very beginning of her studies.\n\nHer other area of interest is criminal law as well as criminology, for which she shows a high degree of legal logic and a desire to improve and acquire the necessary knowledge and experience.\n\nShe joins Kljajić Law Office in July 2020, and officially enrolled in the Vojvodina Bar Association as a trainee lawyer in September 2020.\n\nWorking for Kljajić Law Office, she deals with representation in the field of family relations (divorce, child support, exercise of parental rights, domestic violence), also deals with banking law, general litigation (disputes in the field of civil law), representation in the field of damages as well as writing lawsuits in the field of banking law, family relations and damages. In addition, she deals with obligation law and the drafting of all types of obligation contracts.\n\nShe speaks English, and is familiar with Spanish and Russian. Her hobbies are photography and creative work. Her favorite destination is Cuba, and her wish is to live in Spain.",
       },
       {
         id: "vuksa-jerkovic",
@@ -192,7 +192,7 @@ export const AboutUsPageData = {
         email: "vuksa.jerkovic@advokatkljajic.com",
         phone: "065/562-34-51",
         phoneLink: "+381655623451",
-        bio: "Vukša Jerković was born in 1985 in Zrenjanin. He graduated from the Zrenjanin high school in 2004, after which he enrolled in the Faculty of Philosophy University in Novi Sad, majoring in Serbian literature and language, from which he graduated in 2009 with an average grade of 8,95.\n\nAfter completing his studies, he got a job as a Serbian language teacher at the “Žarko Zrenjanin“ elementary school in Boka, Sečanj municipality.\n\nWhile working as a teacher, he had a desire to prove himself and gain new knowledge, and since he always had love for law and legal science, in 2012 he enrolled in the Faculty of Law University in Novi Sad, general major, where, along with his work at the school, he graduated in 2020 with an average grade of 8.00.\n\nRealizing that law is still his vocation and that the desire to acquire knowledge and experience in legal science prevailed in relation to the profession of a teacher, he made the decision to pursue further professional development in this rather complicated field.\n\nEven during his studies, he showed great interest in the field of civil and commercial law.\n\nHe joins Kljajić law office in July 2020, and officially enrolled in the Vojvodina Bar Association as a trainee lawyer in September 2020.\n\nIn the law office he deals with representation in the field of civil law (resolving property law relations, property relations, disputes related to real estate), deals with banking law, general litigation, representation in the field of damages as well as writing lawsuits in the field of banking law, commercial rights and real rights. In addition, he deals with obligation law and the drafting of all types of obligation contracts.\n\nHe speaks english and is familiar with russian and latin. His hobby is hiking.",
+        bio: "Vukša Jerković was born in 1985 in Zrenjanin. He graduated from the Zrenjanin high school in 2004, after which he enrolled in the Faculty of Philosophy, University of Novi Sad, majoring in Serbian literature and language, from which he graduated in 2009 with an average grade of 8,95.\n\nAfter completing his studies, he got a job as a Serbian language teacher at the “Žarko Zrenjanin“ elementary school in Boka, Sečanj municipality.\n\nWhile working as a teacher, he had a desire to prove himself and gain new knowledge, and since he always had love for law and legal science, in 2012 he enrolled in the Faculty of Law, University of Novi Sad, general major, where, along with his work at the school, he graduated in 2020 with an average grade of 8.00.\n\nRealizing that law is still his vocation and that the desire to acquire knowledge and experience in legal science prevailed in relation to the profession of a teacher, he made the decision to pursue further professional development in this rather complicated field.\n\nEven during his studies, he showed great interest in the field of civil and commercial law.\n\nHe joins Kljajić Law Office in July 2020, and officially enrolled in the Vojvodina Bar Association as a trainee lawyer in September 2020.\n\nWorking for Kljajić Law Office, he deals with representation in the field of civil law (resolving property law relations, property relations, disputes related to real estate), deals with banking law, general litigation, representation in the field of damages as well as writing lawsuits in the field of banking law, commercial rights and real rights. In addition, he deals with obligation law and the drafting of all types of obligation contracts.\n\nHe speaks English and is familiar with Russian and Latin. His hobby is hiking.",
       },
     ],
     staffDetailsPageTitle: "Staff",

@@ -61,7 +61,7 @@ export const UsefulLinksPageData = {
       { title: "COMMERCIAL COURT NOVI SAD", url: "https://www.ns.pr.sud.rs/" },
       { title: "SUPREME COURT BELGRADE", url: "https://www.vrh.sud.rs/" },
       {
-        title: "THE CONSTITUTIONAL COURT",
+        title: "CONSTITUTIONAL COURT OF SERBIA",
         url: "https://www.ustavni.sud.rs/",
       },
       {

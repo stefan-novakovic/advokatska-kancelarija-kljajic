@@ -33,6 +33,6 @@ export const HeaderAndFooterData = {
       instagram: "Visit our Instagram profile",
       location: "Our location",
     },
-    footerFirmText: "Law office Kljajić",
+    footerFirmText: "Law Office Kljajić",
   },
 };
