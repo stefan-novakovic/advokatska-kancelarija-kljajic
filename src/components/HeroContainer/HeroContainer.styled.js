@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import placeholderImg from "../../assets/images/home-hero-placeholder.jpg";
+import placeholderImg from "../../assets/images/placeholders/home-hero-placeholder.jpg";
 
 export const StyledHeroContainer = styled.div`
   display: flex;

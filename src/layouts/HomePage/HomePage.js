@@ -4,6 +4,7 @@ import { HomePageAboutContainer } from "../../components/HomePageAboutContainer/
 import { HomePageAreasOfWorkContainer } from "../../components/HomePageAreasOfWorkContainer/HomePageAreasOfWorkContainer.styled";
 import { HomePageClientsContainer } from "../../components/HomePageClientsContainer/HomePageClientsContainer.styled";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
@@ -50,7 +51,7 @@ const HomePage = () => {
                     <LazyLoadImage
                       src={item.img}
                       alt=""
-                      effect="blur"
+                      effect="opacity"
                       threshold={800}
                     />
                   </HashLink>

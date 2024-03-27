@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import placeholderImg from "../../assets/images/slika-1-o-nama-placeholder.jpg";
+import placeholderImg from "../../assets/images/placeholders/slika-1-o-nama-placeholder.jpg";
 
 export const StyledAboutUsPage = styled.div`
   display: flex;
