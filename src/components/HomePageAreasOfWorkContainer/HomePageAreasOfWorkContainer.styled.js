@@ -27,7 +27,6 @@ export const HomePageAreasOfWorkContainer = styled.div`
     align-items: center;
     gap: 4.25rem;
     padding-inline: 3rem;
-    height: 248px;
   }
 
   div div {
@@ -48,31 +47,19 @@ export const HomePageAreasOfWorkContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 1279px) {
+    & > div {
+      gap: 3.75rem;
+    }
+  }
+
   @media screen and (max-width: 755px) {
     padding: 6rem 0;
   }
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 500px) {
     & > div {
-      gap: 4.425rem;
-      height: 567px;
-    }
-  }
-  @media screen and (max-width: 840px) {
-    & > div {
-      height: 556px;
-      gap: 3.75rem;
-    }
-  }
-  @media screen and (max-width: 755px) {
-    & > div {
-      height: 864px;
-    }
-  }
-
-  @media screen and (max-width: 515px) {
-    & > div {
-      height: 1480px;
+      gap: 3rem;
     }
   }
 `;
