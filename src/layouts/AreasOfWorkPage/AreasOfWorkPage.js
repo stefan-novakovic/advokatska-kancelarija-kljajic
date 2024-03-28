@@ -1,9 +1,8 @@
 import { StyledAreasOfWorkPage } from "./AreasOfWorkPage.styled";
 import AreasOfWorkPageListContainer from "../../components/AreasOfWorkPageListContainer/AreasOfWorkPageListContainer.styled";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/opacity.css";
 import { AreasOfWorkPageData } from "../../data/dataAreasOfWorkPage";
 import useDataContext from "../../hooks/useDataContext";
+import AreasOfWorkPageImageContainer from "../../components/AreasOfWorkPageImageContainer/AreasOfWorkPageImageContainer";
 
 const AreasOfWorkPage = () => {
   const { language } = useDataContext();
@@ -15,11 +14,9 @@ const AreasOfWorkPage = () => {
           return (
             <li key={law.id} id={law.id}>
               <div>
-                <LazyLoadImage
-                  src={law.img}
-                  alt=""
-                  effect="opacity"
-                  threshold={300}
+                <AreasOfWorkPageImageContainer
+                  img={law.img}
+                  placeholderImg={law.placeholderImg}
                 />
                 <h3>{law.title}</h3>
               </div>

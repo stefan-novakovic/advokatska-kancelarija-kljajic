@@ -1,8 +1,13 @@
-import krivicnoImg from "../assets/images/krivicno-pravo.png";
 import gradjanskoImg from "../assets/images/gradjansko-pravo.png";
-import radnoImg from "../assets/images/radno-pravo.png";
-import upravnoImg from "../assets/images/upravno-pravo.png";
 import privrednoImg from "../assets/images/privredno-pravo.png";
+import radnoImg from "../assets/images/radno-pravo.png";
+import krivicnoImg from "../assets/images/krivicno-pravo.png";
+import upravnoImg from "../assets/images/upravno-pravo.png";
+import gradjanskoPlaceholderImg from "../assets/images/placeholders/gradjansko-pravo-placeholder.png";
+import privrednoPlaceholderImg from "../assets/images/placeholders/privredno-pravo-placeholder.png";
+import radnoPlaceholderImg from "../assets/images/placeholders/radno-pravo-placeholder.png";
+import krivicnoPlaceholderImg from "../assets/images/placeholders/krivicno-pravo-placeholder.png";
+import upravnoPlaceholderImg from "../assets/images/placeholders/upravno-pravo-placeholder.png";
 import arborspaletImg from "../assets/images/arborspalet-logo.png";
 import skalarImg from "../assets/images/skalar-logo.png";
 import poljoprivredniImg from "../assets/images/poljoprivredni-logo.png";
@@ -22,26 +27,31 @@ export const HomePageData = {
       {
         id: "gradjansko-pravo",
         img: gradjanskoImg,
+        placeholderImg: gradjanskoPlaceholderImg,
         caption: "Građansko pravo",
       },
       {
         id: "privredno-pravo",
         img: privrednoImg,
+        placeholderImg: privrednoPlaceholderImg,
         caption: "Privredno pravo",
       },
       {
         id: "radno-pravo",
         img: radnoImg,
+        placeholderImg: radnoPlaceholderImg,
         caption: "Radno pravo",
       },
       {
         id: "krivicno-pravo",
         img: krivicnoImg,
+        placeholderImg: krivicnoPlaceholderImg,
         caption: "Krivično pravo",
       },
       {
         id: "upravno-pravo",
         img: upravnoImg,
+        placeholderImg: upravnoPlaceholderImg,
         caption: "Upravno pravo",
       },
     ],
@@ -64,26 +74,31 @@ export const HomePageData = {
       {
         id: "gradjansko-pravo",
         img: gradjanskoImg,
+        placeholderImg: gradjanskoPlaceholderImg,
         caption: "Civil rights",
       },
       {
         id: "privredno-pravo",
         img: privrednoImg,
+        placeholderImg: privrednoPlaceholderImg,
         caption: "Commercial law",
       },
       {
         id: "radno-pravo",
         img: radnoImg,
+        placeholderImg: radnoPlaceholderImg,
         caption: "Labor law",
       },
       {
         id: "krivicno-pravo",
         img: krivicnoImg,
+        placeholderImg: krivicnoPlaceholderImg,
         caption: "Criminal law",
       },
       {
         id: "upravno-pravo",
         img: upravnoImg,
+        placeholderImg: upravnoPlaceholderImg,
         caption: "Administrative law",
       },
     ],

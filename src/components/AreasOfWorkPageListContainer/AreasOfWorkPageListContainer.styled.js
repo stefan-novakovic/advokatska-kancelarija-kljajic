@@ -5,32 +5,20 @@ const AreasOfWorkPageListContainer = styled.ul`
   color: ${({ theme }) => theme.colors.veryLightBlue};
   list-style-type: none;
 
-  div {
+  & > li > div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     max-width: min(76vw, 1500px);
     height: 64px;
     margin-inline: auto;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.85rem;
   }
 
-  div span,
-  div span img {
-    width: 50px;
-    height: auto;
-  }
-
-  li:last-child div span img {
-    height: 64px;
-    width: 40px;
-    margin-inline: auto;
-  }
-
-  div h3 {
-    margin-left: 1rem;
+  & > li > div h3 {
+    margin-left: 1.25rem;
     font-size: 2rem;
     font-weight: 700;
     user-select: none;
@@ -39,7 +27,7 @@ const AreasOfWorkPageListContainer = styled.ul`
     -ms-user-select: none;
   }
 
-  p {
+  & > li p {
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
@@ -47,7 +35,7 @@ const AreasOfWorkPageListContainer = styled.ul`
     font-weight: 400;
     letter-spacing: 0.75px;
     line-height: 1.2;
-    margin-bottom: 5rem;
+    margin-bottom: 4.25rem;
   }
 
   & > li:last-child p {
@@ -55,23 +43,33 @@ const AreasOfWorkPageListContainer = styled.ul`
   }
 
   @media screen and (max-width: 1536px) {
-    div {
+    & > li > div {
       max-width: 88vw;
     }
 
-    p {
+    & > li p {
       max-width: 88vw;
     }
   }
 
   @media screen and (max-width: 767px) {
-    p {
+    & > li p {
       margin-bottom: 3.35rem;
     }
   }
 
   @media screen and (max-width: 520px) {
-    p {
+    & > li > div h3 {
+      margin-left: 0.75rem;
+      font-size: 1.7rem;
+      font-weight: 700;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+
+    & > li p {
       font-size: 1.25rem;
     }
   }

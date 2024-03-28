@@ -8,19 +8,12 @@ import "react-lazy-load-image-component/src/effects/opacity.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { HomePageData } from "../../data/dataHomePage";
 import useDataContext from "../../hooks/useDataContext";
+import HomePageAOFImageCointainer from "../../components/HomePageAOFImageContainer/HomePageAOFImageCointainer";
 
 const HomePage = () => {
   const { language } = useDataContext();
-
-  const scrollWithOffset = (el) => {
-    const yCoordinate =
-      el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset);
-    const yOffset = 138;
-    window.scrollTo({ top: yCoordinate - yOffset, behavior: "smooth" });
-  };
 
   return (
     <StyledHomePage>
@@ -43,19 +36,11 @@ const HomePage = () => {
           {HomePageData[`${language}`].areasOfWorkArray.map((item) => {
             return (
               <div key={item.id}>
-                <div>
-                  <HashLink
-                    to={`/oblasti-rada#${item.id}`}
-                    scroll={(el) => scrollWithOffset(el)}
-                  >
-                    <LazyLoadImage
-                      src={item.img}
-                      alt=""
-                      effect="opacity"
-                      threshold={800}
-                    />
-                  </HashLink>
-                </div>
+                <HomePageAOFImageCointainer
+                  id={item.id}
+                  img={item.img}
+                  placeholderImg={item.placeholderImg}
+                />
                 <p>{item.caption}</p>
               </div>
             );

@@ -42,26 +42,6 @@ export const HomePageAreasOfWorkContainer = styled.div`
     font-size: 1.25rem;
   }
 
-  div div div {
-    height: 190px;
-  }
-
-  div div div a {
-    display: flex;
-    transition: ease 0.75s;
-  }
-
-  div div div img {
-    width: 180px;
-    height: auto;
-    min-height: 158px;
-  }
-
-  div div div a:hover {
-    transform: scale(1.1);
-    transition: ease 0.5s;
-  }
-
   @media screen and (max-width: 1536px) {
     h3 {
       max-width: 88vw;
