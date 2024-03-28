@@ -43,8 +43,12 @@ export const HomePageAreasOfWorkContainer = styled.div`
   }
 
   div div div {
-    height: 188px;
-    transition: ease 0.65s;
+    height: 190px;
+  }
+
+  div div div a {
+    display: flex;
+    transition: ease 0.75s;
   }
 
   div div div img {
@@ -53,9 +57,9 @@ export const HomePageAreasOfWorkContainer = styled.div`
     min-height: 158px;
   }
 
-  div div div:hover {
+  div div div a:hover {
     transform: scale(1.1);
-    transition: ease 0.65s;
+    transition: ease 0.5s;
   }
 
   @media screen and (max-width: 1536px) {
