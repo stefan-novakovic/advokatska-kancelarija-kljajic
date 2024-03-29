@@ -12,6 +12,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 import { AboutUsPageData } from "../../data/dataAboutUsPage";
 import useDataContext from "../../hooks/useDataContext";
+import AboutUsPageCardImageContainer from "../../components/AboutUsPageCardImageContainer/AboutUsPageCardImageContainer";
 
 const AboutUsPage = () => {
   const { language } = useDataContext();
@@ -30,10 +31,10 @@ const AboutUsPage = () => {
           swipeable
           showStatus={false}
           showThumbs={false}
-          interval={6000}
-          transitionTime={725}
+          interval={12000}
+          transitionTime={500}
         >
-          <img src={au1} alt="" />
+          <LazyLoadImage src={au1} alt="" threshold={4750} effect="opacity" />
           <img src={au2} alt="" />
           <img src={au3} alt="" />
           <img src={au4} alt="" />
@@ -48,14 +49,10 @@ const AboutUsPage = () => {
         {AboutUsPageData[`${language}`].staffArray.map((member) => {
           return (
             <Link key={member.id} to={`/o-nama/${member.id}`}>
-              <div>
-                <LazyLoadImage
-                  src={member.image}
-                  alt=""
-                  effect="opacity"
-                  threshold={1650}
-                />
-              </div>
+              <AboutUsPageCardImageContainer
+                memberImg={member.image}
+                placeholderImg={member.imagePlaceholder}
+              />
               <div>
                 <h3>{member.fullName}</h3>
                 <h4>{member.role.toUpperCase()}</h4>

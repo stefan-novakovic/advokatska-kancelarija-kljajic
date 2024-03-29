@@ -2,10 +2,9 @@ import { StyledAboutUsStaffDetailsPage } from "./AboutUsStaffDetailsPage.styled"
 import { useParams } from "react-router-dom";
 import { HiOutlinePhone } from "react-icons/hi";
 import { GoMail } from "react-icons/go";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/opacity.css";
 import { AboutUsPageData } from "../../data/dataAboutUsPage";
 import useDataContext from "../../hooks/useDataContext";
+import AboutUsStaffDetailsPageCardImageContainer from "../../components/AboutUsStaffDetailsPageCardImageContainer/AboutUsStaffDetailsPageCardImageContainer";
 
 const AboutUsStaffDetailsPage = () => {
   const { id } = useParams();
@@ -18,9 +17,10 @@ const AboutUsStaffDetailsPage = () => {
       <h2>{AboutUsPageData[`${language}`].staffDetailsPageTitle}</h2>
 
       <section>
-        <div>
-          <LazyLoadImage src={staffMember.image} alt="" effect="opacity" />
-        </div>
+        <AboutUsStaffDetailsPageCardImageContainer
+          memberImg={staffMember.image}
+          placeholderImg={staffMember.imagePlaceholder}
+        />
 
         <div>
           <h3>{staffMember.fullName}</h3>

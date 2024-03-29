@@ -1,6 +1,9 @@
 import goran from "../assets/images/goran.png";
 import milana from "../assets/images/milana.png";
 import vuksa from "../assets/images/vuksa.png";
+import goranPlaceholder from "../assets/images/placeholders/goran-placeholder.png";
+import milanaPlaceholder from "../assets/images/placeholders/milana-placeholder.png";
+import vuksaPlaceholder from "../assets/images/placeholders/vuksa-placeholder.png";
 
 const aboutUs_p1_SRB = (
   <p key="p1">
@@ -119,6 +122,7 @@ export const AboutUsPageData = {
         id: "goran-kljajic",
         fullName: "Goran Kljajić",
         image: goran,
+        imagePlaceholder: goranPlaceholder,
         role: "advokat",
         email: "info@advokatkljajic.com",
         phone: "069/166-98-92",
@@ -129,6 +133,7 @@ export const AboutUsPageData = {
         id: "milana-forkapa",
         fullName: "Milana Forkapa",
         image: milana,
+        imagePlaceholder: milanaPlaceholder,
         role: "advokatski pripravnik",
         email: "milana.forkapa@advokatkljajic.com",
         phone: "063/803-90-13",
@@ -139,6 +144,7 @@ export const AboutUsPageData = {
         id: "vuksa-jerkovic",
         fullName: "Vukša Jerković",
         image: vuksa,
+        imagePlaceholder: vuksaPlaceholder,
         role: "advokatski pripravnik",
         email: "vuksa.jerkovic@advokatkljajic.com",
         phone: "065/562-34-51",
@@ -168,6 +174,7 @@ export const AboutUsPageData = {
         id: "goran-kljajic",
         fullName: "Goran Kljajić",
         image: goran,
+        imagePlaceholder: goranPlaceholder,
         role: "attorney",
         email: "info@advokatkljajic.com",
         phone: "069/166-98-92",
@@ -178,6 +185,7 @@ export const AboutUsPageData = {
         id: "milana-forkapa",
         fullName: "Milana Forkapa",
         image: milana,
+        imagePlaceholder: milanaPlaceholder,
         role: "trainee lawyer",
         email: "milana.forkapa@advokatkljajic.com",
         phone: "063/803-90-13",
@@ -188,6 +196,7 @@ export const AboutUsPageData = {
         id: "vuksa-jerkovic",
         fullName: "Vukša Jerković",
         image: vuksa,
+        imagePlaceholder: vuksaPlaceholder,
         role: "trainee lawyer",
         email: "vuksa.jerkovic@advokatkljajic.com",
         phone: "065/562-34-51",

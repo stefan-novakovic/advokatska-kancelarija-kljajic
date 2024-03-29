@@ -117,37 +117,22 @@ export const StyledAboutUsPage = styled.div`
     filter: invert(4%);
   }
 
-  section:nth-of-type(3) a:any-link > div:first-child {
-    display: flex;
-    width: 100%;
-    max-width: 375px;
-    aspect-ratio: 375/478.63;
-    border-radius: 10px 10px 0 0;
-    background-color: rgba(242, 246, 249, 0.06);
-    box-shadow: 0 1px 4px -1px ${({ theme }) => theme.colors.black};
-  }
-
-  section:nth-of-type(3) a:any-link > div:first-child {
-    display: flex;
-    flex-grow: 1;
-  }
-
-  section:nth-of-type(3) a:any-link > div:nth-child(2) {
+  section:nth-of-type(3) a:any-link > div:last-child {
     padding: 1.75rem 1.5rem;
   }
 
-  section:nth-of-type(3) a:any-link > div h3 {
+  section:nth-of-type(3) a:any-link > div:last-child h3 {
     font-size: 1.625rem;
     margin-bottom: 0.75rem;
   }
 
-  section:nth-of-type(3) a:any-link > div h4 {
+  section:nth-of-type(3) a:any-link > div:last-child h4 {
     font-size: 1.05rem;
     font-weight: 600;
     margin-bottom: 1.1rem;
   }
 
-  section:nth-of-type(3) a:any-link > div div {
+  section:nth-of-type(3) a:any-link > div:last-child div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -156,24 +141,19 @@ export const StyledAboutUsPage = styled.div`
     font-weight: 400;
   }
 
-  section:nth-of-type(3) a:any-link > div div svg {
+  section:nth-of-type(3) a:any-link > div:last-child div svg {
     width: 16px;
     min-width: 16px;
     height: auto;
     margin-right: 0.55rem;
   }
 
-  section:nth-of-type(3) a:any-link > div p {
+  section:nth-of-type(3) a:any-link > div:last-child p {
     margin-top: 0.75rem;
     font-size: 1.125rem;
     font-weight: 400;
     letter-spacing: 0.12px;
     line-height: 1.3;
-  }
-
-  section:nth-of-type(3) a:any-link img {
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 1px 20px -8px ${({ theme }) => theme.colors.black};
   }
 
   section:nth-of-type(3) a:hover,
@@ -183,30 +163,30 @@ export const StyledAboutUsPage = styled.div`
   }
 
   @media screen and (max-width: 413px) {
-    section:nth-of-type(3) a:any-link > div div svg {
+    section:nth-of-type(3) a:any-link > div:last-child div svg {
       width: 14px;
       min-width: 14px;
       height: auto;
       margin-right: 0.375rem;
     }
 
-    section:nth-of-type(3) a:any-link > div div {
+    section:nth-of-type(3) a:any-link > div:last-child div {
       font-size: 0.995rem;
     }
   }
 
   @media screen and (max-width: 374px) {
-    section:nth-of-type(3) a:any-link > div div svg {
+    section:nth-of-type(3) a:any-link > div:last-child div svg {
       display: none;
     }
 
-    section:nth-of-type(3) a:any-link > div div {
+    section:nth-of-type(3) a:any-link > div:last-child div {
       font-size: 0.975rem;
     }
   }
 
   @media screen and (max-width: 349px) {
-    section:nth-of-type(3) a:any-link > div div {
+    section:nth-of-type(3) a:any-link > div:last-child div {
       font-size: 0.89rem;
       word-break: break-all;
     }
