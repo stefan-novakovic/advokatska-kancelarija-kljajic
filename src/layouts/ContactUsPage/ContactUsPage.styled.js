@@ -111,6 +111,10 @@ export const StyledContactUsPage = styled.div`
     transition: opacity 0.2s ease-out;
   }
 
+  .MuiSnackbar-root {
+    margin: 0;
+  }
+
   @media screen and (max-width: 1536px) {
     h2,
     & > div {

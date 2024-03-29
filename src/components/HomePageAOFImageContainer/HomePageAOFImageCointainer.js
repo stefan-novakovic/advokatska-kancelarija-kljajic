@@ -7,7 +7,7 @@ const HomePageAOFImageCointainer = ({ id, img, placeholderImg }) => {
   const scrollWithOffset = (el) => {
     const yCoordinate =
       el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset);
-    const yOffset = 138;
+    const yOffset = 115;
     window.scrollTo({ top: yCoordinate - yOffset, behavior: "smooth" });
   };
 

@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import TextField from "@mui/material/TextField";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 import StyledContactUsContainer from "../../components/ContactUsPageInfoContainer/ContactUsPageInfoContainer.styled";
 import { SlLocationPin } from "react-icons/sl";
 import { HiOutlinePhone } from "react-icons/hi";
@@ -16,7 +18,7 @@ import useDataContext from "../../hooks/useDataContext";
 
 const ContactUsPage = () => {
   const { language } = useDataContext();
-  const [sendMessageOpacity, setSendMessageOpacity] = useState(0);
+  const [sendMessageOpen, setSendMessageOpen] = useState(false);
 
   const schema = yup.object().shape({
     firstName: yup
@@ -77,10 +79,7 @@ const ContactUsPage = () => {
   useEffect(() => {
     if (isSubmitSuccessful) {
       reset();
-      setSendMessageOpacity(1);
-      setTimeout(() => {
-        setSendMessageOpacity(0);
-      }, 3000);
+      setSendMessageOpen(true);
     }
   }, [isSubmitSuccessful, reset]);
 
@@ -272,15 +271,14 @@ const ContactUsPage = () => {
           />
 
           <p>{errors.message?.message}</p>
+
           <div>
             <button type="submit">
               {ContactUsPageData[`${language}`].sentButtonText}
             </button>
-            <h3 style={{ opacity: sendMessageOpacity }}>
-              {ContactUsPageData[`${language}`].sentMessageText}
-            </h3>
           </div>
         </form>
+
         <StyledContactUsContainer>
           <a href="tel:+381691669892">
             <HiOutlinePhone />
@@ -328,6 +326,24 @@ const ContactUsPage = () => {
           </div>
         </StyledContactUsContainer>
       </div>
+
+      <Snackbar
+        open={sendMessageOpen}
+        autoHideDuration={3500}
+        onClose={() => setSendMessageOpen(false)}
+      >
+        <Alert
+          severity="success"
+          variant="filled"
+          sx={{
+            width: "304px",
+            fontSize: "1.1rem",
+            alignItems: "center",
+          }}
+        >
+          {ContactUsPageData[`${language}`].sentMessageText}
+        </Alert>
+      </Snackbar>
     </StyledContactUsPage>
   );
 };
