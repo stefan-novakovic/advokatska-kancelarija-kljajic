@@ -1,9 +1,9 @@
-import { StyledImageContainer } from "./HomePageAOFImageContainer.styled";
+import { StyledHomePageAOWImageWrapper } from "./HomePageAOWImageWrapper.styled";
 import { HashLink } from "react-router-hash-link";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 
-const HomePageAOFImageCointainer = ({ id, img, placeholderImg }) => {
+const HomePageAOFImageWrapper = ({ id, img, placeholderImg }) => {
   const scrollWithOffset = (el) => {
     const yCoordinate =
       el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset);
@@ -12,15 +12,15 @@ const HomePageAOFImageCointainer = ({ id, img, placeholderImg }) => {
   };
 
   return (
-    <StyledImageContainer $placeholderImg={placeholderImg}>
+    <StyledHomePageAOWImageWrapper $placeholderImg={placeholderImg}>
       <HashLink
         to={`/oblasti-rada#${id}`}
         scroll={(el) => scrollWithOffset(el)}
       >
         <LazyLoadImage src={img} alt="" effect="opacity" threshold={800} />
       </HashLink>
-    </StyledImageContainer>
+    </StyledHomePageAOWImageWrapper>
   );
 };
 
-export default HomePageAOFImageCointainer;
+export default HomePageAOFImageWrapper;

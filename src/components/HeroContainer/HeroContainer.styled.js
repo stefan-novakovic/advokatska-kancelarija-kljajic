@@ -12,12 +12,11 @@ export const StyledHeroContainer = styled.div`
   background-position: top;
   background-size: cover;
 
-  span {
-    display: flex;
+  & > span {
     flex-grow: 1;
   }
 
-  span img {
+  & > span > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -26,8 +25,9 @@ export const StyledHeroContainer = styled.div`
 
   @media screen and (max-width: 1023px) {
     height: calc(100vh - 74px + 1px);
+    background-position: top 0 left 44%;
 
-    img {
+    & > span > img {
       object-position: top 0 left 44%;
     }
   }

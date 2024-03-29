@@ -13,6 +13,11 @@ import skalarImg from "../assets/images/skalar-logo.png";
 import poljoprivredniImg from "../assets/images/poljoprivredni-logo.png";
 import agrocampusImg from "../assets/images/agrocampus-logo.png";
 import zovetImg from "../assets/images/zovet-logo.png";
+import arborspaletPlaceholderImg from "../assets/images/placeholders/arborspalet-logo-placeholder.png";
+import skalarPlaceholderImg from "../assets/images/placeholders/skalar-logo-placeholder.png";
+import poljoprivredniPlaceholderImg from "../assets/images/placeholders/poljoprivredni-logo-placeholder.png";
+import agrocampusPlaceholderImg from "../assets/images/placeholders/agrocampus-logo-placeholder.png";
+import zovetPlaceholderImg from "../assets/images/placeholders/zovet-logo-placeholder.png";
 
 export const HomePageData = {
   SRB: {
@@ -56,11 +61,36 @@ export const HomePageData = {
       },
     ],
     clientsImgArray: [
-      arborspaletImg,
-      skalarImg,
-      poljoprivredniImg,
-      agrocampusImg,
-      zovetImg,
+      {
+        img: arborspaletImg,
+        placeholderImg: arborspaletPlaceholderImg,
+        imgAspectRatio: "310/83",
+        maxWidth: "310px",
+      },
+      {
+        img: skalarImg,
+        placeholderImg: skalarPlaceholderImg,
+        imgAspectRatio: "138.39/168",
+        maxWidth: "138.39px",
+      },
+      {
+        img: poljoprivredniImg,
+        placeholderImg: poljoprivredniPlaceholderImg,
+        imgAspectRatio: "169.44/169.94",
+        maxWidth: "169.44px",
+      },
+      {
+        img: agrocampusImg,
+        placeholderImg: agrocampusPlaceholderImg,
+        imgAspectRatio: "231/138",
+        maxWidth: "231px",
+      },
+      {
+        img: zovetImg,
+        placeholderImg: zovetPlaceholderImg,
+        imgAspectRatio: "217/81",
+        maxWidth: "217px",
+      },
     ],
   },
   ENG: {

@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
-export const HomePageAboutContainer = styled.div`
+export const StyledHomePageAboutUsContainer = styled.div`
   width: 100%;
   padding: 6rem 0;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
-
   border-top: 10px double ${({ theme }) => theme.colors.veryLightBlue};
   border-bottom: 10px double ${({ theme }) => theme.colors.veryLightBlue};
 
-  h2 {
+  & > h2 {
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
@@ -36,7 +35,7 @@ export const HomePageAboutContainer = styled.div`
     margin-bottom: 6rem;
   }
 
-  a:any-link {
+  & > a:any-link {
     display: block;
     width: fit-content;
     margin-inline: auto;
@@ -49,29 +48,23 @@ export const HomePageAboutContainer = styled.div`
     color: ${({ theme }) => theme.colors.veryLightBlue};
   }
 
-  a:hover,
-  a:focus-visible {
+  & > a:hover,
+  & > a:focus-visible {
     color: ${({ theme }) => theme.colors.darkNavy};
     background-color: ${({ theme }) => theme.colors.veryLightBlue};
   }
 
-  a:active {
+  & > a:active {
     filter: brightness(92%);
   }
 
   @media screen and (max-width: 1536px) {
-    h2 {
+    & > h2 {
       max-width: 88vw;
     }
 
     & > span {
       max-width: 88vw;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    p {
-      line-height: normal;
     }
   }
 
