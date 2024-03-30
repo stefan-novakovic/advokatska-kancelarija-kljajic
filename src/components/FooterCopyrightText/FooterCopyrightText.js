@@ -8,7 +8,7 @@ const FooterCopyrightText = () => {
 
   return (
     <StyledFooterCopyrightText>
-      Copyright &copy; {dateObj.getFullYear()}&nbsp;
+      <span>Copyright &copy; {dateObj.getFullYear()}&nbsp;</span>
       <span>{HeaderAndFooterData[`${language}`].footerFirmText}</span>
     </StyledFooterCopyrightText>
   );

@@ -6,6 +6,10 @@ export const StyledFooterCopyrightText = styled.p`
   line-height: 1.4;
   font-weight: 600;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 
   & > span {
     white-space: nowrap;
