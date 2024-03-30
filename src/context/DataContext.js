@@ -7,11 +7,19 @@ export const DataProvider = ({ children }) => {
   const [language, setLanguage] = useState(
     JSON.parse(localStorage.getItem("lang")) || "SRB"
   );
+  const [openSidebar, setOpenSidebar] = useState(false);
 
   localStorage.setItem("lang", JSON.stringify(language));
 
   return (
-    <DataContext.Provider value={{ language, setLanguage }}>
+    <DataContext.Provider
+      value={{
+        language,
+        setLanguage,
+        openSidebar,
+        setOpenSidebar,
+      }}
+    >
       {children}
     </DataContext.Provider>
   );

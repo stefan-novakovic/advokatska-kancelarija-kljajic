@@ -1,41 +1,27 @@
 import { StyledHeader } from "./Header.styled";
+import HeaderLogoImageWrapper from "../../components/HeaderLogoImageWrapper/HeaderLogoImageWrapper";
 import Nav from "../Nav/Nav";
-import logo from "../../assets/images/gk-logo.png";
-import { HashLink } from "react-router-hash-link";
-import { useState } from "react";
-import { Squash as Hamburger } from "hamburger-react";
+import HeaderHamburgerWrapper from "../../components/HeaderHamburgerWrapper/HeaderHamburgerWrapper";
 import PhoneSidebarMenu from "../../components/PhoneSidebarMenu/PhoneSidebarMenu";
+import HeaderLanguageButtonWrapper from "../../components/HeaderLanguageButtonWrapper/HeaderLanguageButtonWrapper";
 import useDataContext from "../../hooks/useDataContext";
 
 const Header = () => {
-  const { language, setLanguage } = useDataContext();
-  const [isOpen, setIsOpen] = useState(false);
+  const { openSidebar, setOpenSidebar } = useDataContext();
 
   return (
     <StyledHeader>
-      <HashLink smooth to="/#">
-        <img src={logo} alt="" />
-      </HashLink>
-
-      <div onClick={() => setIsOpen(!isOpen)}>
-        <Hamburger toggled={false} distance="sm" color="#F2F6F9" />
-      </div>
+      <HeaderLogoImageWrapper />
 
       <Nav />
 
-      <PhoneSidebarMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+      <HeaderHamburgerWrapper />
+      <PhoneSidebarMenu
+        openSidebar={openSidebar}
+        setOpenSidebar={setOpenSidebar}
+      />
 
-      <div>
-        <button
-          type="button"
-          onClick={() => {
-            setLanguage(language === "SRB" ? "ENG" : "SRB");
-            localStorage.setItem("lang", JSON.stringify(language));
-          }}
-        >
-          {language}
-        </button>
-      </div>
+      <HeaderLanguageButtonWrapper />
     </StyledHeader>
   );
 };

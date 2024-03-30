@@ -13,45 +13,7 @@ export const StyledHeader = styled.header`
   z-index: 5;
   box-shadow: 0 -1px 10px 0px ${({ theme }) => theme.colors.black};
 
-  & > a {
-    border-radius: 50%;
-  }
-
-  & > a > img,
-  & > div:last-of-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 67px;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  & > div:last-of-type > button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* color: ${({ theme }) => theme.colors.darkNavy}; */
-    color: ${({ theme }) => theme.colors.veryLightBlue};
-    /* background-color: ${({ theme }) => theme.colors.veryLightBlue}; */
-    background-color: transparent;
-    border: none;
-    /* border-radius: 4px; */
-    letter-spacing: 1px;
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 700;
-    /* min-width: 45.2px; */
-    cursor: pointer;
-    /* padding: 0.3rem 0.2595rem 0.0525rem; */
-    padding: 0.25rem;
-  }
-
-  & > div:first-of-type {
-    display: none;
-  }
-
-  // Sidebar menu styles
+  // MUI Sidebar styles
   .overlay,
   .menu-wrap {
     display: none;
@@ -59,38 +21,16 @@ export const StyledHeader = styled.header`
 
   @media screen and (max-width: 1536px) {
     padding: 0.9375rem 2rem;
-
-    & > a > img,
-    & > div:last-of-type {
-      width: 60px;
-    }
   }
 
   @media screen and (max-width: 1439px) {
     padding: 1.0945rem 2rem;
-
-    & > a > img,
-    & > div:last-of-type {
-      width: 55px;
-    }
   }
 
   @media screen and (max-width: 1023px) {
     padding: 0.75rem 1.5rem;
 
-    & > a > img {
-      width: 50px;
-    }
-
-    & > div:first-of-type {
-      display: block;
-    }
-
-    & > div:last-of-type {
-      display: none;
-    }
-
-    // Sidebar menu styles
+    // MUI Sidebar styles
     .overlay {
       display: block;
       height: 100lvh !important;
@@ -102,9 +42,9 @@ export const StyledHeader = styled.header`
       height: 100lvh !important;
       /* touch-action: none; */
       overflow-y: scroll;
+      font-size: 1.2rem;
       background-color: ${({ theme }) => theme.colors.darkNavy};
       color: ${({ theme }) => theme.colors.veryLightBlue};
-      font-size: 1.2rem;
       position: fixed;
     }
 
