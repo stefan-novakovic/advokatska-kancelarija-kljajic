@@ -1,9 +1,5 @@
-import HomeListItem from "./HomeListItem";
-import AboutUsListItem from "./AboutUsListItem";
-import AreasOfWorkListItem from "./AreasOfWorkListItem";
-import ClientsListItem from "./ClientsListItem";
-import UsefulLinksListItem from "./UsefulLinksListItem";
-import ContactListItem from "./ContactListItem";
+import { NavListItemArray } from "../../data/dataHeader&Footer";
+import GenericListItem from "./GenericListItem";
 import LanguageListItem from "./LanguageListItem";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -13,7 +9,7 @@ import useDataContext from "../../hooks/useDataContext";
 
 const PhoneSidebarMenu = ({ openSidebar, setOpenSidebar }) => {
   const location = useLocation();
-  const [selectedItem, setSelectedItem] = useState("");
+  const [selectedItemName, setSelectedItemName] = useState("");
   const { language, setLanguage } = useDataContext();
 
   useEffect(() => {
@@ -32,7 +28,7 @@ const PhoneSidebarMenu = ({ openSidebar, setOpenSidebar }) => {
         : path === "/kontakt"
         ? "kontakt"
         : "";
-    setSelectedItem(pageSelection);
+    setSelectedItemName(pageSelection);
   }, [location]);
 
   const handleItemClick = () => {
@@ -46,42 +42,18 @@ const PhoneSidebarMenu = ({ openSidebar, setOpenSidebar }) => {
       onClose={() => setOpenSidebar(false)}
       width={300}
     >
-      <HomeListItem
-        selectedItem={selectedItem}
-        language={language}
-        handleItemClick={handleItemClick}
-      />
-
-      <AboutUsListItem
-        selectedItem={selectedItem}
-        language={language}
-        handleItemClick={handleItemClick}
-      />
-
-      <AreasOfWorkListItem
-        selectedItem={selectedItem}
-        language={language}
-        handleItemClick={handleItemClick}
-      />
-
-      <ClientsListItem
-        selectedItem={selectedItem}
-        language={language}
-        handleItemClick={handleItemClick}
-      />
-
-      <UsefulLinksListItem
-        selectedItem={selectedItem}
-        language={language}
-        handleItemClick={handleItemClick}
-      />
-
-      <ContactListItem
-        selectedItem={selectedItem}
-        language={language}
-        handleItemClick={handleItemClick}
-      />
-
+      {NavListItemArray.map((item) => {
+        return (
+          <GenericListItem
+            itemName={item.name}
+            itemClassName={item.itemClassName}
+            link={item.link}
+            language={language}
+            selectedItemName={selectedItemName}
+            handleItemClick={handleItemClick}
+          />
+        );
+      })}
       <LanguageListItem language={language} setLanguage={setLanguage} />
     </Menu>
   );

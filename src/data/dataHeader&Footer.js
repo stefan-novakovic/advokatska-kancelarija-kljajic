@@ -36,3 +36,20 @@ export const HeaderAndFooterData = {
     footerFirmText: "Law Office Kljajić",
   },
 };
+
+export const NavListItemArray = [
+  { link: "/", itemClassName: "pocetna", name: "home" },
+  { link: "/o-nama", itemClassName: "o-nama", name: "aboutUs" },
+  {
+    link: "/oblasti-rada",
+    itemClassName: "oblasti-rada",
+    name: "areasOfWork",
+  },
+  { link: "/klijenti", itemClassName: "klijenti", name: "clients" },
+  {
+    link: "/korisni-linkovi",
+    itemClassName: "korisni-linkovi",
+    name: "usefulLinks",
+  },
+  { link: "/kontakt", itemClassName: "kontakt", name: "contact" },
+];

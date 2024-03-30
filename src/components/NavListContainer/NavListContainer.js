@@ -1,17 +1,13 @@
 import { StyledNavListContainer } from "./NavListContainer.styled";
-import NavHomeListItem from "./NavHomeListItem";
-import NavAboutUsListItem from "./NavAboutUsListItem";
-import NavAreasOfWorkListItem from "./NavAreasOfWorkListItem";
-import NavClientsListItem from "./NavClientsListItem";
-import NavUsefulLinksListItem from "./NavUsefulLinksListItem";
-import NavContactListItem from "./NavContactListItem";
+import { NavListItemArray } from "../../data/dataHeader&Footer";
+import NavListItem from "./NavListItem";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import useDataContext from "../../hooks/useDataContext";
 
 const NavListContainer = () => {
   const location = useLocation();
-  const [selectedItem, setSelectedItem] = useState("");
+  const [selectedItemName, setSelectedItemName] = useState("");
   const { language } = useDataContext();
 
   useEffect(() => {
@@ -30,17 +26,22 @@ const NavListContainer = () => {
         : path === "/kontakt"
         ? "kontakt"
         : "";
-    setSelectedItem(pageSelection);
+    setSelectedItemName(pageSelection);
   }, [location]);
 
   return (
     <StyledNavListContainer>
-      <NavHomeListItem selectedItem={selectedItem} language={language} />
-      <NavAboutUsListItem selectedItem={selectedItem} language={language} />
-      <NavAreasOfWorkListItem selectedItem={selectedItem} language={language} />
-      <NavClientsListItem selectedItem={selectedItem} language={language} />
-      <NavUsefulLinksListItem selectedItem={selectedItem} language={language} />
-      <NavContactListItem selectedItem={selectedItem} language={language} />
+      {NavListItemArray.map((item) => {
+        return (
+          <NavListItem
+            itemName={item.name}
+            itemClassName={item.itemClassName}
+            link={item.link}
+            language={language}
+            selectedItemName={selectedItemName}
+          />
+        );
+      })}
     </StyledNavListContainer>
   );
 };
