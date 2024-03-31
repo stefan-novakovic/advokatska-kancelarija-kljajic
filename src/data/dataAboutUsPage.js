@@ -5,118 +5,14 @@ import goranPlaceholder from "../assets/images/placeholders/goran-placeholder.pn
 import milanaPlaceholder from "../assets/images/placeholders/milana-placeholder.png";
 import vuksaPlaceholder from "../assets/images/placeholders/vuksa-placeholder.png";
 
-const aboutUs_p1_SRB = (
-  <p key="p1">
-    Čovekova sloboda je da svojom voljom reguliše pravne i poslovne odnose,
-    zaključuje ugovore, ima sposobnost i veštinu da dogovara ili pregovara.
-    Svakako, neophodno je imati dobru osnovu i podlogu, koja je od pamtiveka
-    utkana u mnoge zakone naše zemlje.
-  </p>
-);
-const aboutUs_p2_SRB = (
-  <p key="p2">
-    Ako niste sigurni u to koja su Vaša prava a šta su Vaše obaveze, kolike su
-    Vam mogućnosti i dometi, na koji način ćete za sebe lično ili svoj posao
-    stvoriti najbolju pravnu zaštinu, šah-mat poslovni potez koji možete
-    napraviti je da uvek imate odličnog advokata, zastupnika i savetnika, čiji
-    je posao isključivo Vaš interes.
-  </p>
-);
-const aboutUs_p3_SRB = (
-  <p key="p3">
-    Mi smo upravo takva kancelarija i cilj nam je da gradimo profesionalan i
-    lojalan odnos sa svojim klijentima.
-  </p>
-);
-const aboutUs_p4_SRB = (
-  <p key="p4">
-    Advokatska kancelarija Kljajić osnovana je 2012. godine. Sa punom pažnjom
-    pristupa svim problemima klijenata, uz posebnu zaštitu njihovih interesa,
-    strogo čuvanje advokatske tajne i poštovanje odnosa advokat-klijent.
-  </p>
-);
-const aboutUs_p5_SRB = (
-  <p key="p5">
-    Cilj advokatske kancelarije je pružanje kvalitetnih advokatskih usluga svim
-    potencijalnim klijentima uz najveću meru poštovanja njihovih ličnosti i uz
-    objektivno sagledavanje svih njihovih pravnih problema , sa nastojanjem da
-    svoje probleme reše na najefikasniji i najbolji mogući način.
-  </p>
-);
-const aboutUs_motto_heading_SRB = <h3 key="motto">Moto našeg tima je:</h3>;
-const aboutUs_motto_p1_SRB = (
-  <p key="motto-p1">
-    Opšti je princip pravičnosti da se niko ne obogati čineći drugom štetu i
-    nepravdu.
-  </p>
-);
-const aboutUs_motto_p2_LAT = (
-  <p key="motto-p2">
-    Iure naturae aequum est neminem cum alterius detrimento et iniuria fieri
-    locupletiorem. (Pomponius – D. 51, 17, 206)
-  </p>
-);
-const aboutUs_p1_ENG = (
-  <p key="p1">
-    Man's freedom is to regulate legal and business relations of his own free
-    will, conclude contracts and have the ability and skill to agree or
-    negotiate. Certainly, it's necessary to have a good foundation, which has
-    been woven into the laws of our country a long time ago.
-  </p>
-);
-const aboutUs_p2_ENG = (
-  <p key="p2">
-    If you are not sure what your rights are, what your obligations are, what
-    your opportunities are and their possible scope, or how you will create the
-    best legal protection for yourself personally or your business, the best
-    move you can make is to always have an excellent lawyer, representative and
-    advisor, whose work is exclusively in your interest.
-  </p>
-);
-const aboutUs_p3_ENG = (
-  <p key="p3">
-    We are that kind of office, and our goal is to build a professional and
-    loyal relationship with our clients.
-  </p>
-);
-const aboutUs_p4_ENG = (
-  <p key="p4">
-    Kljajić Law Office was founded in 2012. We approach all client problems with
-    full attention, with the protection of their interests, strict preservation
-    of a lawyer's secrecy, and respect for attorney-client privilege.
-  </p>
-);
-const aboutUs_p5_ENG = (
-  <p key="p5">
-    Our goal is to provide high—quality legal services to all potential clients
-    with the utmost respect for their personalities and an objective assessment
-    of all their legal problems, with an effort to solve their problems in the
-    most efficient and best possible way.
-  </p>
-);
-const aboutUs_motto_heading_ENG = <h3 key="motto">Our motto:</h3>;
-const aboutUs_motto_p1_ENG = (
-  <p key="motto-p1">
-    By the law of nature, it is fair that no one becomes richer by the loss and
-    injury of another
-  </p>
-);
-
 export const AboutUsPageData = {
   SRB: {
     pageTitle: "O nama",
-    textArray1: [
-      aboutUs_p1_SRB,
-      aboutUs_p2_SRB,
-      aboutUs_p3_SRB,
-      aboutUs_p4_SRB,
-    ],
-    textArray2: [
-      aboutUs_p5_SRB,
-      aboutUs_motto_heading_SRB,
-      aboutUs_motto_p1_SRB,
-      aboutUs_motto_p2_LAT,
-    ],
+    pageText:
+      "Čovekova sloboda je da svojom voljom reguliše pravne i poslovne odnose, zaključuje ugovore, ima sposobnost i veštinu da dogovara ili pregovara. Svakako, neophodno je imati dobru osnovu i podlogu, koja je od pamtiveka utkana u mnoge zakone naše zemlje.\n\nAko niste sigurni u to koja su Vaša prava a šta su Vaše obaveze, kolike su Vam mogućnosti i dometi, na koji način ćete za sebe lično ili svoj posao stvoriti najbolju pravnu zaštinu, šah-mat poslovni potez koji možete napraviti je da uvek imate odličnog advokata, zastupnika i savetnika, čiji je posao isključivo Vaš interes.\n\nMi smo upravo takva kancelarija i cilj nam je da gradimo profesionalan i lojalan odnos sa svojim klijentima.\n\nAdvokatska kancelarija Kljajić osnovana je 2012. godine. Sa punom pažnjom pristupa svim problemima klijenata, uz posebnu zaštitu njihovih interesa, strogo čuvanje advokatske tajne i poštovanje odnosa advokat-klijent.\n\nCilj advokatske kancelarije je pružanje kvalitetnih advokatskih usluga svim potencijalnim klijentima uz najveću meru poštovanja njihovih ličnosti i uz objektivno sagledavanje svih njihovih pravnih problema , sa nastojanjem da svoje probleme reše na najefikasniji i najbolji mogući način.",
+    mottoTitle: "Moto našeg tima je:",
+    mottoDesc:
+      "Opšti je princip pravičnosti da se niko ne obogati čineći drugom štetu i nepravdu.\n\nIure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem. (Pomponius – D. 51, 17, 206)",
     staffArray: [
       {
         id: "goran-kljajic",
@@ -157,18 +53,11 @@ export const AboutUsPageData = {
   },
   ENG: {
     pageTitle: "About us",
-    textArray1: [
-      aboutUs_p1_ENG,
-      aboutUs_p2_ENG,
-      aboutUs_p3_ENG,
-      aboutUs_p4_ENG,
-    ],
-    textArray2: [
-      aboutUs_p5_ENG,
-      aboutUs_motto_heading_ENG,
-      aboutUs_motto_p1_ENG,
-      aboutUs_motto_p2_LAT,
-    ],
+    pageText:
+      "Man's freedom is to regulate legal and business relations of his own free will, conclude contracts and have the ability and skill to agree or negotiate. Certainly, it's necessary to have a good foundation, which has been woven into the laws of our country a long time ago.\n\nIf you are not sure what your rights are, what your obligations are, what your opportunities are and their possible scope, or how you will create the best legal protection for yourself personally or your business, the best move you can make is to always have an excellent lawyer, representative and advisor, whose work is exclusively in your interest.\n\nWe are that kind of office, and our goal is to build a professional and loyal relationship with our clients.\n\nKljajić Law Office was founded in 2012. We approach all client problems with full attention, with the protection of their interests, strict preservation of a lawyer's secrecy, and respect for attorney-client privilege.\n\nOur goal is to provide high—quality legal services to all potential clients with the utmost respect for their personalities and an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
+    mottoTitle: "Our motto:",
+    mottoDesc:
+      "By the law of nature, it is fair that no one becomes richer by the loss and injury of another\n\nIure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem. (Pomponius – D. 51, 17, 206)",
     staffArray: [
       {
         id: "goran-kljajic",

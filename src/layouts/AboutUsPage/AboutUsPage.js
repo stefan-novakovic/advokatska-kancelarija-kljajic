@@ -20,11 +20,6 @@ const AboutUsPage = () => {
     <StyledAboutUsPage>
       <h2>{AboutUsPageData[`${language}`].pageTitle}</h2>
       <section>
-        <div>
-          {AboutUsPageData[`${language}`].textArray1.map((paragraph) => {
-            return paragraph;
-          })}
-        </div>
         <Carousel
           infiniteLoop
           autoPlay
@@ -39,11 +34,11 @@ const AboutUsPage = () => {
           <img src={au3} alt="" />
           <img src={au4} alt="" />
         </Carousel>
+        <p>{AboutUsPageData[`${language}`].pageText}</p>
       </section>
       <section>
-        {AboutUsPageData[`${language}`].textArray2.map((paragraph) => {
-          return paragraph;
-        })}
+        <h3>{AboutUsPageData[`${language}`].mottoTitle}</h3>
+        <p>{AboutUsPageData[`${language}`].mottoDesc}</p>
       </section>
       <section>
         {AboutUsPageData[`${language}`].staffArray.map((member) => {
