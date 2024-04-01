@@ -25,164 +25,17 @@ export const StyledContactUsPage = styled.div`
     -ms-user-select: none;
   }
 
-  & > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10rem;
-    width: 100%;
-    max-width: min(76vw, 1500px);
-    margin-inline: auto;
-  }
-
-  form {
-    width: 100%;
-  }
-
-  form > div,
-  form > textarea {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  form p {
-    font-weight: 400;
-    line-height: 2.25;
-    height: 36px;
-    margin-bottom: 0.25rem;
-  }
-
-  form > div:first-of-type {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-
-  form > div:first-of-type > div {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
-  form > div:first-of-type > div:last-child {
-    width: 56%;
-  }
-
-  form > div:last-of-type {
-    display: flex;
-    flex-direction: row;
-    gap: 2.25rem;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  form > div:last-of-type > button {
-    font-size: 1.5rem;
-    font-family: inherit;
-    padding: 0.5rem 1.75rem;
-    border-radius: 4px;
-    border: none;
-    background-color: ${({ theme }) => theme.colors.veryLightBlue};
-    color: ${({ theme }) => theme.colors.darkNavy};
-    border: 2px solid ${({ theme }) => theme.colors.veryLightBlue};
-    outline-color: ${({ theme }) => theme.colors.darkNavy};
-  }
-
-  form > div:last-of-type > button:disabled {
-    background-color: rgba(245, 245, 245, 0.45);
-    border: 2px solid rgba(245, 245, 245, 0.025);
-  }
-
-  form > div:last-of-type > button:not(:disabled):hover,
-  form > div:last-of-type > button:not(:disabled):focus-visible {
-    filter: brightness(88%);
-    cursor: pointer;
-  }
-
-  form > div:last-of-type > button:not(:disabled):active {
-    color: ${({ theme }) => theme.colors.veryLightBlue};
-    background-color: ${({ theme }) => theme.colors.darkNavy};
-  }
-
-  form > div:last-of-type > h3 {
-    display: flex;
-    flex-grow: 1;
-    font-size: 1.225rem;
-    font-weight: 500;
-    letter-spacing: 0.75px;
-    height: auto;
-    line-height: normal;
-    margin-bottom: 0;
-    transition: opacity 0.2s ease-out;
-  }
-
   .MuiSnackbar-root {
     margin: 0;
   }
 
   @media screen and (max-width: 1536px) {
-    h2,
-    & > div {
+    h2 {
       max-width: 88vw;
-    }
-  }
-
-  @media screen and (max-width: 1279px) {
-    form > div:first-of-type {
-      flex-direction: column;
-      gap: 0;
-    }
-
-    form > div:first-of-type > div:last-child {
-      width: auto;
-      flex-grow: 1;
-    }
-  }
-
-  @media screen and (max-width: 1138px) {
-    & > div {
-      gap: 8rem;
     }
   }
 
   @media screen and (max-width: 1023px) {
     min-height: calc(100vh - 74px + 1px);
-
-    & > div {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 4.5rem;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      max-width: 820px;
-    }
-
-    form > div,
-    form > textarea {
-      max-width: none;
-    }
-
-    form p {
-      width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 450px) {
-    form > div:last-of-type {
-      gap: 0;
-    }
-
-    form > div:last-of-type > h3 {
-      justify-content: center;
-      padding-inline: 0.5rem;
-      font-size: 1.175rem;
-    }
   }
 `;

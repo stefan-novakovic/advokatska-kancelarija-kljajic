@@ -1,3 +1,11 @@
 import styled from "styled-components";
 
-export const StyledFirstNameTextFieldWrapper = styled.div``;
+export const StyledFirstNameTextFieldWrapper = styled.div`
+  & > p {
+    width: 100%;
+    margin-bottom: 0.25rem;
+    font-weight: 400;
+    line-height: 2.25;
+    height: 36px;
+  }
+`;
