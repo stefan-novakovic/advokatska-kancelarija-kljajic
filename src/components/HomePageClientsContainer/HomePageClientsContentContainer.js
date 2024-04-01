@@ -8,7 +8,7 @@ const HomePageClientsContentContainer = () => {
       {HomePageData.SRB.clientsImgArray.map((imgObj, index) => {
         return (
           <HomePageClientsImageWrapper
-            key={index}
+            key={imgObj.id}
             img={imgObj.img}
             placeholderImg={imgObj.placeholderImg}
             imgAspectRatio={imgObj.imgAspectRatio}

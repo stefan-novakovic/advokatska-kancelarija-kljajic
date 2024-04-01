@@ -11,7 +11,7 @@ const NavListContainer = () => {
       {NavListItemArray.map((item) => {
         return (
           <NavListItem
-            key={item.name}
+            key={item.itemClassName}
             itemName={item.name}
             itemClassName={item.itemClassName}
             link={item.link}

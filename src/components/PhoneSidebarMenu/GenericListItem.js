@@ -15,7 +15,7 @@ const GenericListItem = ({
 
   return (
     <Item
-      itemKey={"pocetna"}
+      itemKey={itemClassName}
       text={
         <Link
           to={link}

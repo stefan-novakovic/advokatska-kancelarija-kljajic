@@ -62,30 +62,35 @@ export const HomePageData = {
     ],
     clientsImgArray: [
       {
+        id: "arborspalet",
         img: arborspaletImg,
         placeholderImg: arborspaletPlaceholderImg,
         imgAspectRatio: "310/83",
         maxWidth: "310px",
       },
       {
+        id: "skalar",
         img: skalarImg,
         placeholderImg: skalarPlaceholderImg,
         imgAspectRatio: "138.39/168",
         maxWidth: "138.39px",
       },
       {
+        id: "poljoprivredni",
         img: poljoprivredniImg,
         placeholderImg: poljoprivredniPlaceholderImg,
         imgAspectRatio: "169.44/169.94",
         maxWidth: "169.44px",
       },
       {
+        id: "agrocampus",
         img: agrocampusImg,
         placeholderImg: agrocampusPlaceholderImg,
         imgAspectRatio: "231/138",
         maxWidth: "231px",
       },
       {
+        id: "zovet",
         img: zovetImg,
         placeholderImg: zovetPlaceholderImg,
         imgAspectRatio: "217/81",

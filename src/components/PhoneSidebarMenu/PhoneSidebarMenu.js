@@ -22,7 +22,7 @@ const PhoneSidebarMenu = ({ openSidebar, setOpenSidebar }) => {
       {NavListItemArray.map((item) => {
         return (
           <GenericListItem
-            key={item.name}
+            key={item.itemClassName}
             itemName={item.name}
             itemClassName={item.itemClassName}
             link={item.link}

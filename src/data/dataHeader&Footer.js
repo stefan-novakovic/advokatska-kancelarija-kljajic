@@ -16,7 +16,7 @@ export const HeaderAndFooterData = {
     },
     footerIconArray: [
       {
-        key: "f_phone",
+        key: "f_telefon",
         title: "Pozovite nas",
         icon: <HiOutlinePhone />,
         href: "tel:+381691669892",
@@ -44,7 +44,7 @@ export const HeaderAndFooterData = {
         otherAttr: true,
       },
       {
-        key: "f_location",
+        key: "f_lokacija",
         title: "Naša lokacija",
         icon: <SlLocationPin />,
         href: "https://maps.app.goo.gl/mkZf7gm4s2ErVtjv5",
@@ -64,7 +64,7 @@ export const HeaderAndFooterData = {
     },
     footerIconArray: [
       {
-        key: "f_phone",
+        key: "f_telefon",
         title: "Call us",
         icon: <HiOutlinePhone />,
         href: "tel:+381691669892",
@@ -92,7 +92,7 @@ export const HeaderAndFooterData = {
         otherAttr: true,
       },
       {
-        key: "f_location",
+        key: "f_lokacija",
         title: "Our location",
         icon: <SlLocationPin />,
         href: "https://maps.app.goo.gl/mkZf7gm4s2ErVtjv5",
