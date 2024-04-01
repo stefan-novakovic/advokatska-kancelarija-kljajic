@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledContactUsInfoContainer = styled.div`
+export const StyledContactUsPageInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
@@ -84,5 +84,3 @@ const StyledContactUsInfoContainer = styled.div`
     }
   }
 `;
-
-export default StyledContactUsInfoContainer;

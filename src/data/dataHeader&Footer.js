@@ -1,3 +1,9 @@
+import { HiOutlinePhone } from "react-icons/hi";
+import { GoMail } from "react-icons/go";
+import { FaFacebookF } from "react-icons/fa";
+import { SlSocialInstagram } from "react-icons/sl";
+import { SlLocationPin } from "react-icons/sl";
+
 export const HeaderAndFooterData = {
   SRB: {
     navMenuObj: {
@@ -8,13 +14,43 @@ export const HeaderAndFooterData = {
       usefulLinks: "KORISNI LINKOVI",
       contact: "KONTAKT",
     },
-    footerIconTitlesObj: {
-      phone: "Pozovite nas",
-      email: "Pošaljite nam email",
-      facebook: "Posetite naš Facebook",
-      instagram: "Posetite naš Instagram",
-      location: "Naša lokacija",
-    },
+    footerIconArray: [
+      {
+        key: "f_phone",
+        title: "Pozovite nas",
+        icon: <HiOutlinePhone />,
+        href: "tel:+381691669892",
+        otherAttr: false,
+      },
+      {
+        key: "f_email",
+        title: "Pošaljite nam email",
+        icon: <GoMail />,
+        href: "mailto:info@advokatkljajic.com",
+        otherAttr: false,
+      },
+      {
+        key: "f_facebook",
+        title: "Posetite naš Facebook",
+        icon: <FaFacebookF />,
+        href: "https://www.facebook.com/AdvokatskakancelarijaKljajic",
+        otherAttr: true,
+      },
+      {
+        key: "f_instagram",
+        title: "Posetite naš Instagram",
+        icon: <SlSocialInstagram />,
+        href: "https://www.instagram.com/advokatkljajic/",
+        otherAttr: true,
+      },
+      {
+        key: "f_location",
+        title: "Naša lokacija",
+        icon: <SlLocationPin />,
+        href: "https://maps.app.goo.gl/mkZf7gm4s2ErVtjv5",
+        otherAttr: true,
+      },
+    ],
     footerFirmText: "Advokatska kancelarija Kljajić",
   },
   ENG: {
@@ -26,13 +62,43 @@ export const HeaderAndFooterData = {
       usefulLinks: "USEFUL LINKS",
       contact: "CONTACT",
     },
-    footerIconTitlesObj: {
-      phone: "Call us",
-      email: "Send us an email",
-      facebook: "Visit our Facebook page",
-      instagram: "Visit our Instagram profile",
-      location: "Our location",
-    },
+    footerIconArray: [
+      {
+        key: "f_phone",
+        title: "Call us",
+        icon: <HiOutlinePhone />,
+        href: "tel:+381691669892",
+        otherAttr: false,
+      },
+      {
+        key: "f_email",
+        title: "Send us an email",
+        icon: <GoMail />,
+        href: "mailto:info@advokatkljajic.com",
+        otherAttr: false,
+      },
+      {
+        key: "f_facebook",
+        title: "Visit our Facebook page",
+        icon: <FaFacebookF />,
+        href: "https://www.facebook.com/AdvokatskakancelarijaKljajic",
+        otherAttr: true,
+      },
+      {
+        key: "f_instagram",
+        title: "Visit our Instagram profile",
+        icon: <SlSocialInstagram />,
+        href: "https://www.instagram.com/advokatkljajic/",
+        otherAttr: true,
+      },
+      {
+        key: "f_location",
+        title: "Our location",
+        icon: <SlLocationPin />,
+        href: "https://maps.app.goo.gl/mkZf7gm4s2ErVtjv5",
+        otherAttr: true,
+      },
+    ],
     footerFirmText: "Law Office Kljajić",
   },
 };

@@ -83,18 +83,24 @@ export const StyledContactUsPage = styled.div`
     padding: 0.5rem 1.75rem;
     border-radius: 4px;
     border: none;
-    cursor: pointer;
     background-color: ${({ theme }) => theme.colors.veryLightBlue};
     color: ${({ theme }) => theme.colors.darkNavy};
     border: 2px solid ${({ theme }) => theme.colors.veryLightBlue};
+    outline-color: ${({ theme }) => theme.colors.darkNavy};
   }
 
-  form > div:last-of-type > button:hover,
-  form > div:last-of-type > button:focus-visible {
+  form > div:last-of-type > button:disabled {
+    background-color: rgba(245, 245, 245, 0.45);
+    border: 2px solid rgba(245, 245, 245, 0.025);
+  }
+
+  form > div:last-of-type > button:not(:disabled):hover,
+  form > div:last-of-type > button:not(:disabled):focus-visible {
     filter: brightness(88%);
+    cursor: pointer;
   }
 
-  form > div:last-of-type > button:active {
+  form > div:last-of-type > button:not(:disabled):active {
     color: ${({ theme }) => theme.colors.veryLightBlue};
     background-color: ${({ theme }) => theme.colors.darkNavy};
   }

@@ -1,35 +1,12 @@
-import { NavListItemArray } from "../../data/dataHeader&Footer";
-import GenericListItem from "./GenericListItem";
-import LanguageListItem from "./LanguageListItem";
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import { Menu } from "burger-menu";
 import "burger-menu/lib/index.css";
+import GenericListItem from "./GenericListItem";
+import LanguageListItem from "./LanguageListItem";
+import { NavListItemArray } from "../../data/dataHeader&Footer";
 import useDataContext from "../../hooks/useDataContext";
 
 const PhoneSidebarMenu = ({ openSidebar, setOpenSidebar }) => {
-  const location = useLocation();
-  const [selectedItemName, setSelectedItemName] = useState("");
-  const { language, setLanguage } = useDataContext();
-
-  useEffect(() => {
-    const path = location.pathname;
-    const pageSelection =
-      path === "/"
-        ? "pocetna"
-        : path.includes("/o-nama")
-        ? "o-nama"
-        : path === "/oblasti-rada"
-        ? "oblasti-rada"
-        : path === "/klijenti"
-        ? "klijenti"
-        : path === "/korisni-linkovi"
-        ? "korisni-linkovi"
-        : path === "/kontakt"
-        ? "kontakt"
-        : "";
-    setSelectedItemName(pageSelection);
-  }, [location]);
+  const { language, setLanguage, selectedItemName } = useDataContext();
 
   const handleItemClick = () => {
     setOpenSidebar(false);

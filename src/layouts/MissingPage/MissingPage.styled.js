@@ -12,7 +12,7 @@ export const StyledMissingPage = styled.div`
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
 
-  h2 {
+  & > h2 {
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
@@ -25,25 +25,25 @@ export const StyledMissingPage = styled.div`
     -ms-user-select: none;
   }
 
-  div {
+  & > div {
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
   }
 
-  a:any-link {
+  & > div > a:any-link {
     width: fit-content;
     color: ${({ theme }) => theme.colors.veryLightBlue};
     font-size: 1.25rem;
     font-weight: 400;
   }
 
-  a:hover,
-  a:focus-visible {
+  & > div > a:hover,
+  & > div > a:focus-visible {
     filter: brightness(85%);
   }
 
-  a:active {
+  & > div > a:active {
     filter: brightness(72%);
   }
 
@@ -52,8 +52,8 @@ export const StyledMissingPage = styled.div`
   }
 
   @media screen and (max-width: 1536px) {
-    h2,
-    div {
+    & > h2,
+    & > div {
       max-width: 88vw;
     }
   }

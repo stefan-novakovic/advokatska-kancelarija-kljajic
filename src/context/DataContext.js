@@ -1,5 +1,6 @@
 import { createContext } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const DataContext = createContext({});
 
@@ -8,8 +9,29 @@ export const DataProvider = ({ children }) => {
     JSON.parse(localStorage.getItem("lang")) || "SRB"
   );
   const [openSidebar, setOpenSidebar] = useState(false);
+  const [selectedItemName, setSelectedItemName] = useState("");
+  const location = useLocation();
 
   localStorage.setItem("lang", JSON.stringify(language));
+
+  useEffect(() => {
+    const currentPath = location.pathname;
+    const pageSelection =
+      currentPath === "/"
+        ? "pocetna"
+        : currentPath.includes("/o-nama")
+        ? "o-nama"
+        : currentPath === "/oblasti-rada"
+        ? "oblasti-rada"
+        : currentPath === "/klijenti"
+        ? "klijenti"
+        : currentPath === "/korisni-linkovi"
+        ? "korisni-linkovi"
+        : currentPath === "/kontakt"
+        ? "kontakt"
+        : "";
+    setSelectedItemName(pageSelection);
+  }, [location]);
 
   return (
     <DataContext.Provider
@@ -18,6 +40,7 @@ export const DataProvider = ({ children }) => {
         setLanguage,
         openSidebar,
         setOpenSidebar,
+        selectedItemName,
       }}
     >
       {children}

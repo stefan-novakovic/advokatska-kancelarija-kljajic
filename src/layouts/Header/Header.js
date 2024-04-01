@@ -12,15 +12,12 @@ const Header = () => {
   return (
     <StyledHeader>
       <HeaderLogoImageWrapper />
-
       <Nav />
-
       <HeaderHamburgerWrapper />
       <PhoneSidebarMenu
         openSidebar={openSidebar}
         setOpenSidebar={setOpenSidebar}
       />
-
       <HeaderLanguageButtonWrapper />
     </StyledHeader>
   );
