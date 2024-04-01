@@ -1,5 +1,6 @@
 import { Item } from "burger-menu";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { PhoneSidebarMenuData } from "../../data/dataPhoneSidebarMenu";
 
 const GenericListItem = ({
@@ -10,6 +11,8 @@ const GenericListItem = ({
   selectedItemName,
   handleItemClick,
 }) => {
+  const { id } = useParams();
+
   return (
     <Item
       itemKey={"pocetna"}
@@ -17,7 +20,11 @@ const GenericListItem = ({
         <Link
           to={link}
           className={
-            selectedItemName === itemClassName ? "selected" : "not-selected"
+            id == null && selectedItemName === itemClassName
+              ? "selected"
+              : id !== null && selectedItemName === itemClassName
+              ? "selected_ausdp"
+              : "not-selected"
           }
           onClick={handleItemClick}
         >

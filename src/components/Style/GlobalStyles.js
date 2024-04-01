@@ -59,9 +59,9 @@ const GlobalStyles = createGlobalStyle`
     }
 
     html {
+      caret-color: ${({ theme }) => theme.colors.veryLightBlue};
       scrollbar-color: ${({ theme }) => theme.colors.navy} ${({ theme }) =>
   theme.colors.darkNavy};
-      caret-color: ${({ theme }) => theme.colors.veryLightBlue};
     }
 
     body {

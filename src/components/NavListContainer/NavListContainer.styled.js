@@ -38,6 +38,10 @@ export const StyledNavListContainer = styled.ul`
     border-bottom: 3px solid rgba(242, 246, 249, 0.95) !important;
   }
 
+  & > li > a.selected_ausdp {
+    border-bottom: 3px solid rgba(242, 246, 249, 0.95) !important;
+  }
+
   @media screen and (max-width: 1439px) {
     gap: 1.5rem;
     padding-inline: 2.5rem;

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { HeaderAndFooterData } from "../../data/dataHeader&Footer";
+import { useParams } from "react-router-dom";
 
 const NavAboutUsListItem = ({
   itemName,
@@ -8,12 +9,18 @@ const NavAboutUsListItem = ({
   language,
   selectedItemName,
 }) => {
+  const { id } = useParams();
+
   return (
     <li>
       <Link
         to={link}
         className={
-          selectedItemName === itemClassName ? "selected" : "not-selected"
+          id == null && selectedItemName === itemClassName
+            ? "selected"
+            : id !== null && selectedItemName === itemClassName
+            ? "selected_ausdp"
+            : "not-selected"
         }
       >
         {HeaderAndFooterData[`${language}`].navMenuObj[`${itemName}`]}

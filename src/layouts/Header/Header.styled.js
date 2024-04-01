@@ -88,7 +88,13 @@ export const StyledHeader = styled.header`
     }
 
     .menu-wrap .menu div span a.selected {
-      border-right: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
+      pointer-events: none;
+      cursor: default;
+      border-right: 3px solid ${({ theme }) => theme.colors.veryLightBlue} !important;
+    }
+
+    .menu-wrap .menu div span a.selected_ausdp {
+      border-right: 3px solid ${({ theme }) => theme.colors.veryLightBlue} !important;
     }
 
     .menu-wrap .menu div:last-of-type span button {
