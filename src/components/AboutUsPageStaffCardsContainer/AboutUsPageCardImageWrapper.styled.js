@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledImageContainer = styled.div`
+export const StyledAboutUsPageCardImageWrapper = styled.div`
   display: flex;
   width: 100%;
   max-width: 375px;

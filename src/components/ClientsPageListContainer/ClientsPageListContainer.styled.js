@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
-const ClientsListContainer = styled.ul`
+export const StyledClientsPageListContainer = styled.ul`
   color: ${({ theme }) => theme.colors.veryLightBlue};
   list-style-type: none;
   width: 100%;
   max-width: min(76vw, 1500px);
   margin-inline: auto;
 
-  li {
+  & > li {
     font-size: 1.55rem;
     font-weight: 400;
     line-height: 1.32;
     margin-bottom: 2.6rem;
   }
 
-  li:last-child {
+  & > li:last-child {
     margin-bottom: 0;
   }
 
@@ -23,11 +23,11 @@ const ClientsListContainer = styled.ul`
   }
 
   @media screen and (max-width: 767px) {
-    li {
+    & > li {
       font-size: 1.35rem;
       margin-bottom: 2rem;
     }
   }
 `;
 
-export default ClientsListContainer;
+export default StyledClientsPageListContainer;

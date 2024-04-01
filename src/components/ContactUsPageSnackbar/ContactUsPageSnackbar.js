@@ -18,7 +18,7 @@ const ContactUsPageSnackbar = ({
         variant="filled"
         sx={{
           width: "304px",
-          fontSize: "1.1rem",
+          fontSize: "1.085rem",
           alignItems: "center",
         }}
       >

@@ -3,11 +3,9 @@ import { ThemeProvider } from "styled-components";
 export const Theme = ({ children }) => {
   const theme = {
     colors: {
-      white: "#FFF",
-      veryLightBlue: "#F2F6F9",
-      lightNavy: "#37536f",
-      navy: "#394867",
-      darkNavy: "#212A3E",
+      white: "#fff",
+      veryLightBlue: "#f2f6f9",
+      darkNavy: "#212a3e",
       black: "#000",
     },
   };

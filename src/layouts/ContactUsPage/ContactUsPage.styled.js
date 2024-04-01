@@ -12,7 +12,7 @@ export const StyledContactUsPage = styled.div`
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
 
-  h2 {
+  & > h2 {
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
@@ -30,7 +30,7 @@ export const StyledContactUsPage = styled.div`
   }
 
   @media screen and (max-width: 1536px) {
-    h2 {
+    & > h2 {
       max-width: 88vw;
     }
   }

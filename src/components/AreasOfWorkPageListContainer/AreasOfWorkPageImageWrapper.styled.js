@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledImageContainer = styled.div`
+export const StyledAreasOfWorkPageImageWrapper = styled.div`
   display: flex;
   background-image: url(${(props) => props.$placeholderImg});
   background-repeat: no-repeat;
@@ -11,7 +11,6 @@ export const StyledImageContainer = styled.div`
   & > span > img {
     width: 60px;
     aspect-ratio: 60/63.33;
-    /* visibility: hidden; */
   }
 
   @media screen and (max-width: 520px) {

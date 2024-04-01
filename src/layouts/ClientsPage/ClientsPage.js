@@ -1,5 +1,5 @@
 import { StyledClientsPage } from "./ClientsPage.styled";
-import ClientsListContainer from "../../components/ClientsPageListContainer/ClientsPageListContainer.styled";
+import ClientsPageListContainer from "../../components/ClientsPageListContainer/ClientsPageListContainer";
 import { ClientsPageData } from "../../data/dataClientsPage";
 import useDataContext from "../../hooks/useDataContext";
 
@@ -8,11 +8,7 @@ const ClientsPage = () => {
   return (
     <StyledClientsPage>
       <h2>{ClientsPageData[`${language}`].pageTitle}</h2>
-      <ClientsListContainer>
-        {ClientsPageData[`${language}`].namesArray.map((name, index) => (
-          <li key={index}>◈ {name}</li>
-        ))}
-      </ClientsListContainer>
+      <ClientsPageListContainer language={language} />
     </StyledClientsPage>
   );
 };
