@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer = styled.div`
   & > h3 {
-    font-size: 4.1rem;
+    font-size: 4rem;
+    font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 1rem;
     line-height: 1.1;
@@ -11,8 +12,8 @@ export const StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer = styled.div
   & > h4 {
     font-size: 1.7rem;
     font-weight: 500;
-    letter-spacing: 1px;
-    margin-bottom: 2.5rem;
+    letter-spacing: 1.25px;
+    margin-bottom: 3.25rem;
   }
 
   & > a:any-link {
@@ -20,13 +21,12 @@ export const StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer = styled.div
     justify-content: flex-start;
     align-items: center;
     width: fit-content;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.75px;
     color: ${({ theme }) => theme.colors.veryLightBlue};
     text-decoration: none;
     margin-bottom: 1.5rem;
-    white-space: nowrap;
   }
 
   & > a:any-link:last-child {
@@ -53,23 +53,14 @@ export const StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer = styled.div
     margin-right: 0.85rem;
   }
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 767px) {
     & > h3 {
-      font-size: 3.85rem;
-      letter-spacing: 1.5px;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    margin-bottom: 0;
-
-    & > h3 {
-      font-size: 2.85rem;
+      font-size: 3rem;
       letter-spacing: 1.5px;
     }
 
     & > h4 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       letter-spacing: 0.5px;
       margin-bottom: 2rem;
     }
@@ -78,6 +69,7 @@ export const StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer = styled.div
       font-size: 1.15rem;
       letter-spacing: 0.25px;
       margin-bottom: 1.25rem;
+      word-break: break-all;
     }
 
     & > a:any-link:last-child {
@@ -87,19 +79,29 @@ export const StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer = styled.div
     & > a:any-link svg {
       min-width: 20px;
       max-width: 20px;
-      margin-right: 0.5rem;
+      margin-right: 0.45rem;
     }
   }
 
   @media screen and (max-width: 374px) {
-    & > a:any-link svg {
-      display: none;
+    & > h3 {
+      font-size: 2.5rem;
+      letter-spacing: 1.5px;
     }
-  }
 
-  @media screen and (max-width: 349px) {
+    & > h4 {
+      font-size: 1.25rem;
+    }
+
     & > a:any-link {
-      font-size: 1.075rem;
+      font-size: 0.995rem;
+      letter-spacing: 0.15px;
+    }
+
+    & > a:any-link svg {
+      min-width: 16px;
+      max-width: 16px;
+      margin-right: 0.375rem;
     }
   }
 `;

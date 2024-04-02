@@ -20,13 +20,17 @@ export const StyledHomePageAOWContainer = styled.div`
     -ms-user-select: none;
   }
 
-  @media screen and (max-width: 755px) {
-    padding: 6rem 0;
-  }
-
   @media screen and (max-width: 1536px) {
     & > h3 {
       max-width: 88vw;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 4.5rem 0;
+
+    & > h3 {
+      font-size: 2.4rem;
     }
   }
 `;

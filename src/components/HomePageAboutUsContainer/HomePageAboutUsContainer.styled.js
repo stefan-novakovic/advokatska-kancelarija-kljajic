@@ -27,7 +27,7 @@ export const StyledHomePageAboutUsContainer = styled.div`
     margin-inline: auto;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.35;
+    line-height: 1.4;
     letter-spacing: 0.5px;
     margin-bottom: 5rem;
   }
@@ -38,7 +38,8 @@ export const StyledHomePageAboutUsContainer = styled.div`
     margin-inline: auto;
     text-decoration: none;
     font-family: inherit;
-    font-size: 1.75rem;
+    font-size: 1.7rem;
+    font-weight: 600;
     padding: 0.65rem 1.2rem;
     border: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
     border-radius: 5px;
@@ -65,10 +66,20 @@ export const StyledHomePageAboutUsContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 767px) {
+    padding: 4.5rem 0;
+
+    & > h2 {
+      font-size: 2.4rem;
+    }
+
     & > p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       margin-bottom: 4.75rem;
+    }
+
+    & > a:any-link {
+      font-size: 1.4rem;
     }
   }
 `;

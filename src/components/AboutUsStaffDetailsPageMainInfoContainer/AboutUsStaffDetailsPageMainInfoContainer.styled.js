@@ -16,14 +16,13 @@ export const StyledAboutUsStaffDetailsPageMainInfoContainer = styled.section`
 
   @media screen and (max-width: 1023px) {
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     gap: 3.75rem;
     margin-bottom: 3.75rem;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     gap: 3.5rem;
     margin-bottom: 3.5rem;
-    align-items: flex-start;
   }
 `;

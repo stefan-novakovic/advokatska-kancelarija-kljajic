@@ -10,9 +10,9 @@ export const StyledUsefulLinksPageItemContainer = styled.div`
   }
 
   & > li > a:any-link {
-    font-size: 1.425rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    letter-spacing: 0.9px;
+    letter-spacing: 1px;
     line-height: 1.45;
     text-decoration: none;
     color: ${({ theme }) => theme.colors.veryLightBlue};
@@ -35,7 +35,7 @@ export const StyledUsefulLinksPageItemContainer = styled.div`
     }
 
     & > li > a:any-link {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
     }
   }
 `;

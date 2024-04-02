@@ -52,4 +52,8 @@ export const StyledNavListContainer = styled.ul`
       line-height: 1.15;
     }
   }
+
+  @media screen and (max-width: 1151px) {
+    font-size: 1.05rem;
+  }
 `;

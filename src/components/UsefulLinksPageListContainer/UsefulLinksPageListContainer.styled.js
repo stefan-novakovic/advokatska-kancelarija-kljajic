@@ -21,4 +21,8 @@ export const StyledUsefulLinksListContainer = styled.ul`
     max-width: 88vw;
     gap: 2.5rem;
   }
+
+  @media screen and (max-width: 767px) {
+    gap: 1.55rem;
+  }
 `;

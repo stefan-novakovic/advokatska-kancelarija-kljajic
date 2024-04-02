@@ -1,13 +1,8 @@
 import styled from "styled-components";
 
 export const StyledHomePageClientsImageWrapper = styled.div`
-  width: 100%;
-  max-width: ${(props) => props.$imgMaxWidth};
-  aspect-ratio: ${(props) => props.$imgAspectRatio};
-  background-image: url(${(props) => props.$placeholderImg});
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
+  display: grid;
+  place-content: center;
 
   &:first-child {
     order: 1;
@@ -25,7 +20,17 @@ export const StyledHomePageClientsImageWrapper = styled.div`
     order: 5;
   }
 
-  & > span {
+  & > div {
+    width: 100%;
+    max-width: ${(props) => props.$imgMaxWidth};
+    aspect-ratio: ${(props) => props.$imgAspectRatio};
+    background-image: url(${(props) => props.$placeholderImg});
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  & > div > span {
     display: flex !important;
   }
 

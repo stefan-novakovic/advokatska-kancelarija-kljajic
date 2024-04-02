@@ -16,6 +16,6 @@ export const StyledFooterCopyrightText = styled.p`
   }
 
   @media screen and (max-width: 1023px) {
-    font-size: 0.95rem;
+    font-size: 0.925rem;
   }
 `;

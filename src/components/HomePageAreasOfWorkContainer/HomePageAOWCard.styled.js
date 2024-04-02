@@ -10,4 +10,10 @@ export const StyledHomePageAOWCard = styled.div`
   & > p {
     font-size: 1.25rem;
   }
+
+  @media screen and (max-width: 767px) {
+    & > p {
+      font-size: 1.2rem;
+    }
+  }
 `;

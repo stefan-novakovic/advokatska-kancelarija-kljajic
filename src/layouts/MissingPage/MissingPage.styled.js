@@ -37,6 +37,7 @@ export const StyledMissingPage = styled.div`
     color: ${({ theme }) => theme.colors.veryLightBlue};
     font-size: 1.25rem;
     font-weight: 400;
+    letter-spacing: 0.5px;
   }
 
   & > div > a:hover,
@@ -56,6 +57,17 @@ export const StyledMissingPage = styled.div`
     & > h2,
     & > div {
       max-width: 88vw;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & > h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2.75rem;
+    }
+
+    & > div > a:any-link {
+      font-size: 1.2rem;
     }
   }
 `;

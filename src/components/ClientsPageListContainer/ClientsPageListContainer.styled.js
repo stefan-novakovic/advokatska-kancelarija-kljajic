@@ -10,8 +10,8 @@ export const StyledClientsPageListContainer = styled.ul`
   & > li {
     font-size: 1.55rem;
     font-weight: 400;
-    line-height: 1.32;
-    margin-bottom: 2.6rem;
+    line-height: 1.35;
+    margin-bottom: 2.55rem;
   }
 
   & > li:last-child {
@@ -24,8 +24,8 @@ export const StyledClientsPageListContainer = styled.ul`
 
   @media screen and (max-width: 767px) {
     & > li {
-      font-size: 1.35rem;
-      margin-bottom: 2rem;
+      font-size: 1.3rem;
+      margin-bottom: 2.25rem;
     }
   }
 `;

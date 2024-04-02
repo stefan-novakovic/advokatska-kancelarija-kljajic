@@ -17,8 +17,8 @@ export const StyledInfoWorkingHoursText = styled.div`
     margin-right: 1rem;
   }
 
-  @media screen and (max-width: 450px) {
-    font-size: 1.05rem;
+  @media screen and (max-width: 767px) {
+    font-size: 1rem;
     min-width: auto;
 
     & > svg {

@@ -42,9 +42,9 @@ export const StyledInfoLink = styled.a`
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 767px) {
     &:any-link {
-      font-size: 1.05rem;
+      font-size: 1rem;
       min-width: auto;
     }
 

@@ -35,4 +35,11 @@ export const StyledUsefulLinksPage = styled.div`
       max-width: 88vw;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    & > h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2.75rem;
+    }
+  }
 `;

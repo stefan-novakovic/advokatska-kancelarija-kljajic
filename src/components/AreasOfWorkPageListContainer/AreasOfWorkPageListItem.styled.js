@@ -17,6 +17,7 @@ export const StyledAreasOfWorkPageListItem = styled.li`
     margin-left: 1.25rem;
     font-size: 2rem;
     font-weight: 700;
+    letter-spacing: 0.75px;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -27,10 +28,10 @@ export const StyledAreasOfWorkPageListItem = styled.li`
     width: 100%;
     max-width: min(76vw, 1500px);
     margin-inline: auto;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0.75px;
-    line-height: 1.2;
+    letter-spacing: 0.5px;
+    line-height: 1.35;
     margin-bottom: 4.25rem;
   }
 
@@ -49,24 +50,14 @@ export const StyledAreasOfWorkPageListItem = styled.li`
   }
 
   @media screen and (max-width: 767px) {
-    & > p {
-      margin-bottom: 3.35rem;
-    }
-  }
-
-  @media screen and (max-width: 520px) {
     & > div > h3 {
       margin-left: 0.75rem;
-      font-size: 1.7rem;
-      font-weight: 700;
-      user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
+      font-size: 1.75rem;
     }
 
     & > p {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
+      margin-bottom: 3.35rem;
     }
   }
 `;

@@ -68,6 +68,10 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
     }
 
     @media screen and (max-width: 767px) {
+      & > p {
+        font-size: 1.2rem;
+      }
+
       & .carousel.carousel-slider .control-dots {
         margin: 1.1rem 0;
       }

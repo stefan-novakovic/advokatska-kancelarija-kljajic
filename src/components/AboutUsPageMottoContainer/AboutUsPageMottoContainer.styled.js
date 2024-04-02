@@ -4,7 +4,7 @@ export const StyledAboutUsPageMottoContainer = styled.section`
   margin-bottom: 4.5rem;
 
   & > h3 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin-bottom: 1.875rem;
   }
 
@@ -17,5 +17,16 @@ export const StyledAboutUsPageMottoContainer = styled.section`
 
   @media screen and (max-width: 1279px) {
     margin-bottom: 3.25rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    & > h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.45rem;
+    }
+
+    & > p {
+      font-size: 1.2rem;
+    }
   }
 `;

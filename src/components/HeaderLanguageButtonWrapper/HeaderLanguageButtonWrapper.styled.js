@@ -28,6 +28,10 @@ export const StyledHeaderLanguageButtonWrapper = styled.div`
 
   @media screen and (max-width: 1439px) {
     width: 55px;
+
+    & > button {
+      font-size: 0.875rem;
+    }
   }
 
   @media screen and (max-width: 1023px) {

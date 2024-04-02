@@ -13,10 +13,10 @@ export const StyledAreasOfWorkPageImageWrapper = styled.div`
     aspect-ratio: 60/63.33;
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 767px) {
     & > span,
     & > span > img {
-      width: 45px;
+      width: 46px;
     }
   }
 `;

@@ -6,7 +6,7 @@ export const StyledAboutUsStaffDetailsPageBioContainer = styled.section`
   margin-inline: auto;
 
   & > h3 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 500;
     letter-spacing: 0.75px;
     margin-bottom: 2.5rem;
@@ -26,16 +26,15 @@ export const StyledAboutUsStaffDetailsPageBioContainer = styled.section`
 
   @media screen and (max-width: 500px) {
     & > h3 {
-      font-size: 1.85rem;
+      font-size: 2rem;
       font-weight: 500;
       letter-spacing: 0.75px;
       margin-bottom: 2.5rem;
     }
 
     & > p {
-      font-size: 1.175rem;
+      font-size: 1.2rem;
       line-height: 1.35;
-      letter-spacing: 0.35px;
     }
   }
 `;

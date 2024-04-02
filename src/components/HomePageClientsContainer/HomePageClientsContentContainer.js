@@ -5,7 +5,7 @@ import { HomePageData } from "../../data/dataHomePage";
 const HomePageClientsContentContainer = () => {
   return (
     <StyledHomePageClientsContentContainer>
-      {HomePageData.SRB.clientsImgArray.map((imgObj, index) => {
+      {HomePageData.SRB.clientsImgArray.map((imgObj) => {
         return (
           <HomePageClientsImageWrapper
             key={imgObj.id}

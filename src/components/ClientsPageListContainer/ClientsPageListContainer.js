@@ -5,7 +5,7 @@ const ClientsPageListContainer = ({ language }) => {
   return (
     <StyledClientsPageListContainer>
       {ClientsPageData[`${language}`].namesArray.map((name, index) => (
-        <li data-aos="fade-left" key={index}>
+        <li data-aos="fade-left" data-aos-offset="-70" key={index}>
           ◈ {name}
         </li>
       ))}

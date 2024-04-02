@@ -16,7 +16,9 @@ const HomePageClientsImageWrapper = ({
       $imgAspectRatio={imgAspectRatio}
       $imgMaxWidth={imgMaxWidth}
     >
-      <LazyLoadImage src={img} alt="" effect="opacity" threshold={800} />
+      <div>
+        <LazyLoadImage src={img} alt="" effect="opacity" threshold={800} />
+      </div>
     </StyledHomePageClientsImageWrapper>
   );
 };

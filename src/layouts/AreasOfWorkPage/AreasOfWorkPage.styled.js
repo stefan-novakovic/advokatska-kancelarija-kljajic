@@ -35,4 +35,11 @@ export const StyledAreasOfWorkPage = styled.div`
   @media screen and (max-width: 1023px) {
     min-height: calc(100vh - 74px + 1px);
   }
+
+  @media screen and (max-width: 767px) {
+    & > h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2.75rem;
+    }
+  }
 `;
