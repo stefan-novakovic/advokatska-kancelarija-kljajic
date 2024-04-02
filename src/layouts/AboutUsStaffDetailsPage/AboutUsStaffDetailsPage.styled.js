@@ -11,6 +11,7 @@ export const StyledAboutUsStaffDetailsPage = styled.div`
   padding: 4rem 0 6.5rem;
   background-color: ${({ theme }) => theme.colors.darkNavy};
   color: ${({ theme }) => theme.colors.veryLightBlue};
+  overflow: hidden;
 
   & > h2 {
     width: 100%;

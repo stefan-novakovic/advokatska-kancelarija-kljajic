@@ -8,7 +8,9 @@ const HomePageAOWContainer = () => {
 
   return (
     <StyledHomePageAOWContainer>
-      <h3>{HomePageData[`${language}`].areasOfWorkTitle}</h3>
+      <h3 data-aos="fade-left">
+        {HomePageData[`${language}`].areasOfWorkTitle}
+      </h3>
       <HomePageAOWContentContainer />
     </StyledHomePageAOWContainer>
   );

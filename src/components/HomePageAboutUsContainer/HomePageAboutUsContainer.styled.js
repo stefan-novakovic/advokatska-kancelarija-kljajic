@@ -21,18 +21,15 @@ export const StyledHomePageAboutUsContainer = styled.div`
     -ms-user-select: none;
   }
 
-  & > span {
-    display: block;
+  & > p {
     width: 100%;
     max-width: min(76vw, 1500px);
-    min-height: 87px;
     margin-inline: auto;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.35;
     letter-spacing: 0.5px;
-    transform: scaleY(1.04);
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
 
   & > a:any-link {
@@ -63,122 +60,15 @@ export const StyledHomePageAboutUsContainer = styled.div`
       max-width: 88vw;
     }
 
-    & > span {
+    & > p {
       max-width: 88vw;
     }
   }
 
   @media screen and (max-width: 520px) {
-    & > span {
+    & > p {
       font-size: 1.25rem;
       margin-bottom: 4.75rem;
-    }
-  }
-
-  // TYPEWRITER SPACE RESERVING QUERIES
-  @media screen and (max-width: 2527px) {
-    & > span {
-      min-height: 116px;
-    }
-  }
-  @media screen and (max-width: 1915px) {
-    & > span {
-      min-height: 144px;
-    }
-  }
-  @media screen and (max-width: 1553px) {
-    & > span {
-      min-height: 173px;
-    }
-  }
-  @media screen and (max-width: 1126px) {
-    & > span {
-      min-height: 202px;
-    }
-  }
-  @media screen and (max-width: 985px) {
-    & > span {
-      min-height: 231px;
-    }
-  }
-  @media screen and (max-width: 883px) {
-    & > span {
-      min-height: 260px;
-    }
-  }
-  @media screen and (max-width: 785px) {
-    & > span {
-      min-height: 288px;
-    }
-  }
-  @media screen and (max-width: 708px) {
-    & > span {
-      min-height: 317px;
-    }
-  }
-  @media screen and (max-width: 645px) {
-    & > span {
-      min-height: 346px;
-    }
-  }
-  @media screen and (max-width: 604px) {
-    & > span {
-      min-height: 375px;
-    }
-  }
-  @media screen and (max-width: 577px) {
-    & > span {
-      min-height: 404px;
-    }
-  }
-  @media screen and (max-width: 536px) {
-    & > span {
-      min-height: 432px;
-    }
-  }
-  @media screen and (max-width: 520px) {
-    & > span {
-      min-height: 290px;
-    }
-  }
-  @media screen and (max-width: 486px) {
-    & > span {
-      min-height: 312px;
-    }
-  }
-  @media screen and (max-width: 459px) {
-    & > span {
-      min-height: 336px;
-    }
-  }
-  @media screen and (max-width: 420px) {
-    & > span {
-      min-height: 360px;
-    }
-  }
-  @media screen and (max-width: 397px) {
-    & > span {
-      min-height: 384px;
-    }
-  }
-  @media screen and (max-width: 389px) {
-    & > span {
-      min-height: 408px;
-    }
-  }
-  @media screen and (max-width: 371px) {
-    & > span {
-      min-height: 432px;
-    }
-  }
-  @media screen and (max-width: 348px) {
-    & > span {
-      min-height: 456px;
-    }
-  }
-  @media screen and (max-width: 324px) {
-    & > span {
-      min-height: 480px;
     }
   }
 `;

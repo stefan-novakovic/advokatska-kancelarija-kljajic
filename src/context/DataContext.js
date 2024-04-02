@@ -1,6 +1,8 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const DataContext = createContext({});
 
@@ -32,6 +34,10 @@ export const DataProvider = ({ children }) => {
         : "";
     setSelectedItemName(pageSelection);
   }, [location]);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, offset: 50, once: true });
+  }, []);
 
   return (
     <DataContext.Provider

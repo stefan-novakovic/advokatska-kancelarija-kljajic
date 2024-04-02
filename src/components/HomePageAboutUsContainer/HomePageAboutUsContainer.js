@@ -1,5 +1,4 @@
 import { StyledHomePageAboutUsContainer } from "./HomePageAboutUsContainer.styled";
-import { ReactTyped } from "react-typed";
 import { Link } from "react-router-dom";
 import { HomePageData } from "../../data/dataHomePage";
 import useDataContext from "../../hooks/useDataContext";
@@ -9,15 +8,15 @@ const HomePageAboutUsContainer = () => {
 
   return (
     <StyledHomePageAboutUsContainer>
-      <h2>{HomePageData[`${language}`].aboutUsTitle}</h2>
+      <h2 data-aos="fade-left">{HomePageData[`${language}`].aboutUsTitle}</h2>
 
-      <ReactTyped
-        strings={[HomePageData[`${language}`].aboutUsDesc]}
-        typeSpeed={20}
-        showCursor={true}
-      />
+      <p id="o-nama-tekst" data-aos="zoom-in">
+        {[HomePageData[`${language}`].aboutUsDesc]}
+      </p>
 
-      <Link to="/o-nama">{HomePageData[`${language}`].aboutUsButtonText}</Link>
+      <Link data-aos="zoom-in" data-aos-anchor="#o-nama-tekst" to="/o-nama">
+        {HomePageData[`${language}`].aboutUsButtonText}
+      </Link>
     </StyledHomePageAboutUsContainer>
   );
 };
