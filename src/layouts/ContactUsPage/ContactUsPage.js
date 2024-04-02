@@ -11,7 +11,7 @@ const ContactUsPage = () => {
 
   return (
     <StyledContactUsPage>
-      <h2>{ContactUsPageData[`${language}`].pageTitle}</h2>
+      <h2 data-aos="fade-left">{ContactUsPageData[`${language}`].pageTitle}</h2>
 
       <ContactUsPageContentContainer
         setSendMessageOpen={setSendMessageOpen}

@@ -3,7 +3,10 @@ import { AboutUsPageData } from "../../data/dataAboutUsPage";
 
 const AboutUsPageMottoContainer = ({ language }) => {
   return (
-    <StyledAboutUsPageMottoContainer>
+    <StyledAboutUsPageMottoContainer
+      data-aos="fade-left"
+      data-aos-anchor="#carousel-and-text"
+    >
       <h3>{AboutUsPageData[`${language}`].mottoTitle}</h3>
       <p>{AboutUsPageData[`${language}`].mottoDesc}</p>
     </StyledAboutUsPageMottoContainer>

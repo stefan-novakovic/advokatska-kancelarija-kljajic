@@ -3,15 +3,15 @@ import { StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer } from "./AboutU
 const AboutUsStaffDetailsPageInfoTextAndLinksContainer = ({ staffMember }) => {
   return (
     <StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer>
-      <h3>{staffMember.fullName}</h3>
+      <h3 data-aos="fade-left">{staffMember.fullName}</h3>
 
-      <h4>{staffMember.role.toUpperCase()}</h4>
+      <h4 data-aos="fade-left">{staffMember.role.toUpperCase()}</h4>
 
-      <a href={`mailto:${staffMember.email}`}>
+      <a data-aos="fade-left" href={`mailto:${staffMember.email}`}>
         {staffMember.emailIcon} {staffMember.email}
       </a>
 
-      <a href={`tel:${staffMember.phoneLink}`}>
+      <a data-aos="fade-left" href={`tel:${staffMember.phoneLink}`}>
         {staffMember.phoneIcon} {staffMember.phone}
       </a>
     </StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer>

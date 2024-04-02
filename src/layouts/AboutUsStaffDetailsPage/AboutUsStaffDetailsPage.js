@@ -14,7 +14,9 @@ const AboutUsStaffDetailsPage = () => {
 
   return (
     <StyledAboutUsStaffDetailsPage>
-      <h2>{AboutUsPageData[`${language}`].staffDetailsPageTitle}</h2>
+      <h2 data-aos="fade-left">
+        {AboutUsPageData[`${language}`].staffDetailsPageTitle}
+      </h2>
       <AboutUsStaffDetailsPageMainInfoContainer staffMember={staffMember} />
       <AboutUsStaffDetailsPageBioContainer
         staffMemberBio={staffMember.bio}

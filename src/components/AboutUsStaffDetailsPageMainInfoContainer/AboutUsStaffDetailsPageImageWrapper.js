@@ -4,7 +4,10 @@ import "react-lazy-load-image-component/src/effects/opacity.css";
 
 const AboutUsStaffDetailsPageImageWrapper = ({ memberImg, placeholderImg }) => {
   return (
-    <StyledAboutUsStaffDetailsPageImageWrapper $placeholderImg={placeholderImg}>
+    <StyledAboutUsStaffDetailsPageImageWrapper
+      data-aos="flip-right"
+      $placeholderImg={placeholderImg}
+    >
       <LazyLoadImage src={memberImg} alt="" effect="opacity" threshold={800} />
     </StyledAboutUsStaffDetailsPageImageWrapper>
   );

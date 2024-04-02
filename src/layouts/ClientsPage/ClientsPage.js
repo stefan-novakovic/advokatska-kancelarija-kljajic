@@ -7,7 +7,7 @@ const ClientsPage = () => {
   const { language } = useDataContext();
   return (
     <StyledClientsPage>
-      <h2>{ClientsPageData[`${language}`].pageTitle}</h2>
+      <h2 data-aos="fade-left">{ClientsPageData[`${language}`].pageTitle}</h2>
       <ClientsPageListContainer language={language} />
     </StyledClientsPage>
   );

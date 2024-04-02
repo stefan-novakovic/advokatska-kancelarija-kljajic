@@ -18,7 +18,7 @@ const ContactUsPageFormContainer = ({ language, setSendMessageOpen }) => {
     handleSubmit,
     reset,
     trigger,
-    formState: { errors, isSubmitSuccessful, touchedFields },
+    formState: { errors, isSubmitSuccessful, touchedFields, dirtyFields },
   } = useForm({
     mode: "onTouched",
     reValidateMode: "onChange",
@@ -49,7 +49,10 @@ const ContactUsPageFormContainer = ({ language, setSendMessageOpen }) => {
   }, [isSubmitSuccessful, reset, setSendMessageOpen]);
 
   return (
-    <StyledContactUsPageFormContainer onSubmit={handleSubmit(onSubmit)}>
+    <StyledContactUsPageFormContainer
+      onSubmit={handleSubmit(onSubmit)}
+      data-aos="fade-left"
+    >
       <FirstAndLastNameContainer
         register={register}
         errors={errors}
@@ -65,7 +68,7 @@ const ContactUsPageFormContainer = ({ language, setSendMessageOpen }) => {
       />
       <MessageTextFieldErrors errors={errors} />
 
-      <SubmitButtonWrapper language={language} touchedFields={touchedFields} />
+      <SubmitButtonWrapper language={language} dirtyFields={dirtyFields} />
     </StyledContactUsPageFormContainer>
   );
 };

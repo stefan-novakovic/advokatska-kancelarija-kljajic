@@ -1,12 +1,12 @@
 import { StyledSubmitButtonWrapper } from "./SubmitButtonWrapper.styled";
 import { ContactUsPageData } from "../../data/dataContactUsPage";
 
-const SubmitButtonWrapper = ({ language, touchedFields }) => {
+const SubmitButtonWrapper = ({ language, dirtyFields }) => {
   return (
     <StyledSubmitButtonWrapper>
       <button
         type="submit"
-        disabled={Object.keys(touchedFields).length === 4 ? false : true}
+        disabled={Object.keys(dirtyFields).length === 4 ? false : true}
       >
         {ContactUsPageData[`${language}`].sentButtonText}
       </button>

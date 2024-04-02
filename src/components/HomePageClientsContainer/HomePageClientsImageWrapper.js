@@ -11,6 +11,7 @@ const HomePageClientsImageWrapper = ({
   return (
     <StyledHomePageClientsImageWrapper
       data-aos="zoom-in"
+      data-aos-once="false"
       $placeholderImg={placeholderImg}
       $imgAspectRatio={imgAspectRatio}
       $imgMaxWidth={imgMaxWidth}

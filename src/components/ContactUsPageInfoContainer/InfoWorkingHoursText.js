@@ -4,7 +4,7 @@ import { ContactUsPageData } from "../../data/dataContactUsPage";
 
 const InfoWorkingHoursText = ({ language }) => {
   return (
-    <StyledInfoWorkingHoursText>
+    <StyledInfoWorkingHoursText data-aos="fade-left">
       <LuClock8 />
       <span>
         {ContactUsPageData[`${language}`].workingHoursLabel}

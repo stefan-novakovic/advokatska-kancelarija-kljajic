@@ -7,7 +7,9 @@ const AreasOfWorkPage = () => {
   const { language } = useDataContext();
   return (
     <StyledAreasOfWorkPage>
-      <h2>{AreasOfWorkPageData[`${language}`].pageTitle}</h2>
+      <h2 data-aos="fade-left">
+        {AreasOfWorkPageData[`${language}`].pageTitle}
+      </h2>
       <AreasOfWorkPageListContainer language={language} />
     </StyledAreasOfWorkPage>
   );

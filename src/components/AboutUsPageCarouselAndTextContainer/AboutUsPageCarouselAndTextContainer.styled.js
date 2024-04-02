@@ -36,6 +36,10 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
     background-color: rgba(242, 246, 249, 0.2);
   }
 
+  & .carousel.carousel-slider .control-dots {
+    margin: 1.25rem 0;
+  }
+
   @media screen and (max-width: 1365px) {
     & > div {
       margin-left: 2.5rem;
@@ -57,6 +61,16 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
       margin-bottom: 0;
       width: 100%;
       max-width: 800px;
+    }
+
+    & .carousel.carousel-slider .control-dots {
+      margin: 1.7rem 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      & .carousel.carousel-slider .control-dots {
+        margin: 1.1rem 0;
+      }
     }
   }
 `;

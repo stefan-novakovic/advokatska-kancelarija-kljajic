@@ -4,7 +4,10 @@ import { AboutUsPageData } from "../../data/dataAboutUsPage";
 
 const AboutUsPageCarouselAndTextContainer = ({ language }) => {
   return (
-    <StyledAboutUsPageCarouselAndTextContainer>
+    <StyledAboutUsPageCarouselAndTextContainer
+      data-aos="fade-left"
+      id="carousel-and-text"
+    >
       <ImageCarousel />
       <p>{AboutUsPageData[`${language}`].pageText}</p>
     </StyledAboutUsPageCarouselAndTextContainer>

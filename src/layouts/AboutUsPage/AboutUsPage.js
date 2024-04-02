@@ -9,7 +9,7 @@ const AboutUsPage = () => {
   const { language } = useDataContext();
   return (
     <StyledAboutUsPage>
-      <h2>{AboutUsPageData[`${language}`].pageTitle}</h2>
+      <h2 data-aos="fade-left">{AboutUsPageData[`${language}`].pageTitle}</h2>
       <AboutUsPageCarouselAndTextContainer language={language} />
       <AboutUsPageMottoContainer language={language} />
       <AboutUsPageStaffCardsContainer language={language} />

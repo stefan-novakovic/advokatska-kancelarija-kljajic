@@ -9,7 +9,12 @@ const AboutUsPageStaffCardsContainer = ({ language }) => {
     <StyledAboutUsPageStaffCardsContainer>
       {AboutUsPageData[`${language}`].staffArray.map((memberObj) => {
         return (
-          <Link key={memberObj.id} to={`/o-nama/${memberObj.id}`}>
+          <Link
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            key={memberObj.id}
+            to={`/o-nama/${memberObj.id}`}
+          >
             <AboutUsPageCardImageWrapper
               memberImg={memberObj.image}
               placeholderImg={memberObj.imagePlaceholder}

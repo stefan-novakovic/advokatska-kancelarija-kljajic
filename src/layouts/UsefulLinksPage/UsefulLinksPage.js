@@ -8,7 +8,9 @@ const UsefulLinksPage = () => {
 
   return (
     <StyledUsefulLinksPage>
-      <h2>{UsefulLinksPageData[`${language}`].pageTitle}</h2>
+      <h2 data-aos="fade-left">
+        {UsefulLinksPageData[`${language}`].pageTitle}
+      </h2>
       <UsefulLinksListContainer language={language} />
     </StyledUsefulLinksPage>
   );
