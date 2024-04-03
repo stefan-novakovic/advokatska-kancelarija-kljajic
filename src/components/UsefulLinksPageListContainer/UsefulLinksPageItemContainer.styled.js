@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledUsefulLinksPageItemContainer = styled.div`
   & > li {
-    margin-bottom: 2.425rem;
+    margin-bottom: 2.35rem;
   }
 
   & > li:last-child {
