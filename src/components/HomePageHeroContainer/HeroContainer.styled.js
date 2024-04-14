@@ -11,6 +11,10 @@ export const StyledHeroContainer = styled.div`
   background-image: url(${placeholderImg});
   background-position: top;
   background-size: cover;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   & > span {
     flex-grow: 1;

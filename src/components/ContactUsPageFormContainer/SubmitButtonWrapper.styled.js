@@ -11,6 +11,10 @@ export const StyledSubmitButtonWrapper = styled.div`
     color: ${({ theme }) => theme.colors.darkNavy};
     border: 2px solid ${({ theme }) => theme.colors.veryLightBlue};
     outline-color: ${({ theme }) => theme.colors.darkNavy};
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   & > button:disabled {

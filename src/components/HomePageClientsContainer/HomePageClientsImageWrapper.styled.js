@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const StyledHomePageClientsImageWrapper = styled.div`
   display: grid;
   place-content: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   &:first-child {
     order: 1;

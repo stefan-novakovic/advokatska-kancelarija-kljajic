@@ -7,6 +7,10 @@ export const StyledHomePageAOWImageWrapper = styled.div`
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   & > a:any-link {
     display: flex;

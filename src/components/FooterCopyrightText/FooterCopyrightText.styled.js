@@ -10,6 +10,10 @@ export const StyledFooterCopyrightText = styled.p`
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   & > span {
     white-space: nowrap;

@@ -14,7 +14,7 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
     -webkit-user-select: none;
     -ms-user-select: none;
     border: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
-    border-radius: 4px;
+    border-radius: 3px;
     background-image: url(${AboutUsPageData.SRB.imageCarouselPlaceholder});
     background-size: cover;
     margin-left: 4rem;
@@ -26,10 +26,6 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
     font-weight: 400;
     line-height: 1.47059;
     white-space: pre-wrap;
-  }
-
-  & > div img {
-    border-radius: 4px;
   }
 
   & .carousel.carousel-slider .control-arrow:hover {

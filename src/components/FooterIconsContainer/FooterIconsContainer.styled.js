@@ -28,4 +28,12 @@ export const StyledFooterIconsContainer = styled.div`
   & > a > svg:active path {
     filter: brightness(80%);
   }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 1.325rem;
+
+    & > a > svg {
+      height: 33px;
+    }
+  }
 `;

@@ -7,6 +7,10 @@ export const StyledHeaderLogoImageWrapper = styled.div`
     width: 67px;
     height: auto;
     border-radius: 50%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   @media screen and (max-width: 1536px) {

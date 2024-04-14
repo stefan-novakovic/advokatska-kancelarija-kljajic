@@ -12,6 +12,10 @@ export const StyledAboutUsPageCardImageWrapper = styled.div`
   background-position: bottom;
   background-size: contain;
   box-shadow: 0 1px 4px -1px ${({ theme }) => theme.colors.black};
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   & > span > img {
     border-radius: 10px 10px 0 0;

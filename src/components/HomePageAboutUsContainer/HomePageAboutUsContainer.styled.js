@@ -44,6 +44,10 @@ export const StyledHomePageAboutUsContainer = styled.div`
     border: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
     border-radius: 5px;
     color: ${({ theme }) => theme.colors.veryLightBlue};
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   & > a:hover,

@@ -6,6 +6,10 @@ export const StyledAboutUsPageMottoContainer = styled.section`
   & > h3 {
     font-size: 1.7rem;
     margin-bottom: 1.875rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   & > p {

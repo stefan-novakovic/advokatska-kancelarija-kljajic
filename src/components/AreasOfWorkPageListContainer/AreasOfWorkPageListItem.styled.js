@@ -18,10 +18,6 @@ export const StyledAreasOfWorkPageListItem = styled.li`
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.75px;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
   }
 
   & > p {

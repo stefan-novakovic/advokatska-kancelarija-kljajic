@@ -13,6 +13,10 @@ export const StyledNavListContainer = styled.ul`
   & > li {
     min-width: 90px;
     text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   & > li > a:any-link {

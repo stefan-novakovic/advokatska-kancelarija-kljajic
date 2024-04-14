@@ -10,6 +10,10 @@ export const StyledAboutUsStaffDetailsPageBioContainer = styled.section`
     font-weight: 500;
     letter-spacing: 0.75px;
     margin-bottom: 2.5rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   & > p {
