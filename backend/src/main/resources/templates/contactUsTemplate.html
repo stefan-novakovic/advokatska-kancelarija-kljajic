@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${subject}">Email Subject</title>
+</head>
+<body>
+<div style="background-color: rgb(34, 41, 50); padding: 10px; border-radius: 5px;">
+    <h1 style="color: rgb(45, 193, 119);">Message from: <span th:text="${firstName}">First Name</span> <span th:text="${lastName}">Last Name</span>!</h1>
+</div>
+
+<div style="border-bottom: 2px solid rgb(45, 193, 119);">
+    <p><strong>Email:</strong> <span th:text="${email}">Email</span></p>
+    <p><strong>Company Name:</strong> <span th:text="${companyName}">Company Name</span></p>
+    <th:block th:if="${companyUrl != null}">
+        <p><strong>Company URL:</strong> <a th:href="${companyUrl}" th:text="${companyUrl}">Company URL</a></p>
+    </th:block>
+    <p><strong>Phone Number:</strong> <span th:text="${phoneNumber}">Phone Number</span></p>
+</div>
+
+<h2>Message:</h2>
+<p th:utext="${message}">Message</p>
+</body>
+</html>
