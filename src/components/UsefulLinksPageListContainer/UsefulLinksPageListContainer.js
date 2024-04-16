@@ -3,8 +3,14 @@ import UsefulLinksPageItemContainer from "./UsefulLinksPageItemContainer";
 import { UsefulLinksPageData } from "../../data/dataUsefulLinksPage";
 
 const UsefulLinksPageListContainer = ({ language }) => {
-  const column1 = UsefulLinksPageData[`${language}`].linksArray.slice(0, 9);
-  const column2 = UsefulLinksPageData[`${language}`].linksArray.slice(9);
+  const listLength = UsefulLinksPageData[`${language}`].linksArray.length;
+  const column1 = UsefulLinksPageData[`${language}`].linksArray.slice(
+    0,
+    listLength / 2
+  );
+  const column2 = UsefulLinksPageData[`${language}`].linksArray.slice(
+    listLength / 2
+  );
 
   return (
     <StyledUsefulLinksListContainer>
