@@ -5,11 +5,12 @@ export const StyledAboutUsPageStaffCardsContainer = styled.section`
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 
   & > a:any-link {
     width: 100%;
     max-width: 375px;
+    min-height: 767px;
     text-decoration: none;
     color: ${({ theme }) => theme.colors.veryLightBlue};
     background-color: rgba(242, 246, 249, 0.03);
@@ -17,6 +18,10 @@ export const StyledAboutUsPageStaffCardsContainer = styled.section`
     box-shadow: 0 0 15px -1px ${({ theme }) => theme.colors.black};
     transition: 0.325s;
     filter: invert(4%);
+  }
+
+  & > a:any-link:last-of-type {
+    justify-self: flex-start;
   }
 
   & > a:hover,

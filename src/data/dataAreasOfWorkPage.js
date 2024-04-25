@@ -18,7 +18,7 @@ export const AreasOfWorkPageData = {
       {
         id: "gradjansko-pravo",
         title: "Građansko pravo",
-        desc: "Naknada štete, razvod braka, dečije izdržavanje i izdržavanje između supružnika, ostavinski postupci, izrada i overe ugovora, međunarodna overa ugovora, zaštita autorskih i srodnih prava, prinudno izvršenje, promet nekretnina.",
+        desc: "Naknada štete, razvrgnuće imovinske zajednice, sporovi u vezi sa rešavanjem imovinsko—pravnih odnosa, svojinske tužbe, ugovori o prometu nekretnina (kupoprodaja, poklon i sl.), ostavinski postupci, međunarodna overa ugovora, zaštita autorskih i srodnih prava, potrošački sporovi.",
         img: gradjanskoImg,
         placeholderImg: gradjanskoPlaceholderImg,
       },
@@ -32,7 +32,7 @@ export const AreasOfWorkPageData = {
       {
         id: "radno-pravo",
         title: "Radno pravo",
-        desc: "Sporovi povodom naknada štete zbog neisplaćene zarade, naknade štete prilikom povrede na radu, zaštite prava radnika, mobing, izrada svih akata u skladu sa Zakonom o radu.",
+        desc: "Sporovi povodom naknada štete zbog neisplaćene zarade, sporovi povodom nezakonitih otkaza ugovora o radu, naknade štete prilikom povrede na radu, zaštite prava radnika, mobing, izrada svih opštih akata u skladu sa Zakonom o radu (pravilnici o radu, akt o sistematizaciji radnih mesta i sl.).",
         img: radnoImg,
         placeholderImg: radnoPlaceholderImg,
       },
@@ -65,7 +65,7 @@ export const AreasOfWorkPageData = {
       {
         id: "gradjansko-pravo",
         title: "Civil rights",
-        desc: "Compensation for damages, divorce, child support and spousal support, probate proceedings, drafting and certification of contracts, international certification of contracts, protection of copyright and related rights, forced execution, real estate transactions.",
+        desc: "Compensation for damages, dissolution of community property, property settlement disputes, property lawsuits, real estate contracts (purchase, sale, gift, etc.), probate proceedings, international notarization of contracts, protection of copyright and related rights, consumer disputes.",
         img: gradjanskoImg,
         placeholderImg: gradjanskoPlaceholderImg,
       },
@@ -79,7 +79,7 @@ export const AreasOfWorkPageData = {
       {
         id: "radno-pravo",
         title: "Labor law",
-        desc: "Disputes regarding compensation for unpaid wages, compensation for injuries at work, protection of workers' rights, mobbing, drafting of all acts in accordance with the Labor Law.",
+        desc: "Disputes regarding compensation for unpaid wages, disputes regarding illegal termination of employment contracts, compensation for injuries at work, protection of workers' rights, mobbing, drafting of all general acts in accordance with the Labor Law (labor regulations, act on the systematization of workplaces, etc.).",
         img: radnoImg,
         placeholderImg: radnoPlaceholderImg,
       },

@@ -10,7 +10,7 @@ export const StyledAboutUsPageCardsTextContainer = styled.div`
   }
 
   & > h4 {
-    font-size: 1.075rem;
+    font-size: 1.025rem;
     font-weight: 600;
     margin-bottom: 1.1rem;
   }

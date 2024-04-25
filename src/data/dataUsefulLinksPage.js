@@ -9,7 +9,7 @@ export const UsefulLinksPageData = {
         url: "https://www.ns.ap.sud.rs/",
       },
       { title: "PRIVREDNI SUD U NOVOM SADU", url: "https://www.ns.pr.sud.rs/" },
-      { title: "VRHOVNI KASACIONI SUD", url: "https://www.vrh.sud.rs/" },
+      { title: "VRHOVNI SUD", url: "https://www.vrh.sud.rs/" },
       {
         title: "USTAVNI SUD REPUBLIKE SRBIJE",
         url: "https://www.ustavni.sud.rs/",
@@ -59,7 +59,7 @@ export const UsefulLinksPageData = {
         url: "https://www.ns.ap.sud.rs/",
       },
       { title: "COMMERCIAL COURT NOVI SAD", url: "https://www.ns.pr.sud.rs/" },
-      { title: "SUPREME COURT BELGRADE", url: "https://www.vrh.sud.rs/" },
+      { title: "SUPREME COURT", url: "https://www.vrh.sud.rs/" },
       {
         title: "CONSTITUTIONAL COURT OF SERBIA",
         url: "https://www.ustavni.sud.rs/",

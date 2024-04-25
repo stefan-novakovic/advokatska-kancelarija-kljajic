@@ -1,7 +1,9 @@
 import goran from "../assets/images/goran.png";
 import vuksa from "../assets/images/vuksa.png";
+// import milica from "../assets/images/milica.jpg";
 import goranPlaceholder from "../assets/images/placeholders/goran-placeholder.png";
 import vuksaPlaceholder from "../assets/images/placeholders/vuksa-placeholder.png";
+// import milicaPlaceholder from "../assets/images/placeholders/milica-placeholder.jpg";
 import au1 from "../assets/images/slika-1-o-nama.jpg";
 import au2 from "../assets/images/slika-2-o-nama.jpg";
 import au3 from "../assets/images/slika-3-o-nama.jpg";
@@ -14,10 +16,10 @@ export const AboutUsPageData = {
   SRB: {
     pageTitle: "O nama",
     pageText:
-      "Čovekova sloboda je da svojom voljom reguliše pravne i poslovne odnose, zaključuje ugovore, ima sposobnost i veštinu da dogovara ili pregovara. Svakako, neophodno je imati dobru osnovu i podlogu, koja je od pamtiveka utkana u mnoge zakone naše zemlje.\n\nAko niste sigurni u to koja su Vaša prava a šta su Vaše obaveze, kolike su Vam mogućnosti i dometi, na koji način ćete za sebe lično ili svoj posao stvoriti najbolju pravnu zaštinu, šah-mat poslovni potez koji možete napraviti je da uvek imate odličnog advokata, zastupnika i savetnika, čiji je posao isključivo Vaš interes.\n\nMi smo upravo takva kancelarija i cilj nam je da gradimo profesionalan i lojalan odnos sa svojim klijentima.\n\nAdvokatska kancelarija Kljajić osnovana je 2012. godine. Sa punom pažnjom pristupa svim problemima klijenata, uz posebnu zaštitu njihovih interesa, strogo čuvanje advokatske tajne i poštovanje odnosa advokat-klijent.\n\nCilj advokatske kancelarije je pružanje kvalitetnih advokatskih usluga svim potencijalnim klijentima uz najveću meru poštovanja njihovih ličnosti i uz objektivno sagledavanje svih njihovih pravnih problema , sa nastojanjem da svoje probleme reše na najefikasniji i najbolji mogući način.",
+      "Čovekova sloboda je da svojom voljom reguliše pravne i poslovne odnose, zaključuje ugovore, ima sposobnost i veštinu da dogovara ili pregovara. Svakako, neophodno je imati dobru osnovu i podlogu, koja je od pamtiveka utkana u mnoge zakone naše zemlje.\n\nAko niste sigurni u to koja su Vaša prava a šta su Vaše obaveze, kolike su Vam mogućnosti i dometi, na koji način ćete za sebe lično ili svoj posao stvoriti najbolju pravnu zaštinu, šah—mat poslovni potez koji možete napraviti je da uvek imate odličnog advokata, zastupnika i savetnika, čiji je posao isključivo Vaš interes.\n\nMi smo upravo takva kancelarija i cilj nam je da gradimo profesionalan i lojalan odnos sa svojim klijentima.\n\nAdvokatska kancelarija Kljajić osnovana je 2011. godine. Sa punom pažnjom pristupa svim problemima klijenata, uz posebnu zaštitu njihovih interesa, strogo čuvanje advokatske tajne i poštovanje odnosa advokat—klijent.\n\nCilj advokatske kancelarije je pružanje kvalitetnih advokatskih usluga svim potencijalnim klijentima uz najveću meru poštovanja njihovih ličnosti i uz objektivno sagledavanje svih njihovih pravnih problema , sa nastojanjem da svoje probleme reše na najefikasniji i najbolji mogući način.",
     mottoTitle: "Moto našeg tima je:",
     mottoDesc:
-      "Opšti je princip pravičnosti da se niko ne obogati čineći drugom štetu i nepravdu.\n\nIure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem. (Pomponius – D. 51, 17, 206)",
+      "Opšti je princip pravičnosti da se niko ne obogati čineći drugom štetu i nepravdu.\n\nIure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem. (Pomponius — D. 51, 17, 206)",
     aboutUsImageArray: [au1, au2, au3, au4],
     imageCarouselPlaceholder: au1Placeholder,
     staffArray: [
@@ -27,19 +29,45 @@ export const AboutUsPageData = {
         image: goran,
         imagePlaceholder: goranPlaceholder,
         role: "advokat",
-        email: "info@advokatkljajic.com",
+        email: "info@advokatkljajic.rs",
         emailIcon: <GoMail />,
         phone: "069/166-98-92",
         phoneLink: "+381691669892",
         phoneIcon: <HiOutlinePhone />,
-        bio: "Advokat Goran Kljajić rođen je u Zrenjaninu 1984. godine. Osnovnu školu “Dositej Obradović” u Zrenjaninu završio je 1999. godine, a potom i srednju ekonomsku školu “Jovan Trajković” 2003. godine. Pravni fakultet u Novom Sadu upisao je 2003. godine i diplomirao na opštem smeru 2008. godine.\n\nNakon završenog Pravnog fakulteta, 2009. godine započeo je pripravničku vežbu u advokatskoj kancelariji novosadskog advokata Zorana Koprivice, u kojoj je radio do 2012. godine, u početku kao advokatski pripravnik, a potom i jedno vreme kao advokat – saradnik.\n\nPravosudni ispit položio je 2011. godine sa vrlo dobrim uspehom, a nakon rada u svojstvu advokata – saradnika u kancelariji advokata Koprivice, osniva samostalnu advokatsku kancelariju 2012. godine i započinje samostalno bavljenje advokaturom.\n\nGodine 2016. na konkursu koji je raspisan od strane Republičke Agencije za mirno rešavanje radnih sporova u Beogradu, izabran je za aribtra/miritelja pri Agenciji za mirno rešavanje radnih sporova, i tim poslovima se bavio do septembra 2020. godine kada mu je istekao mandat.\n\nTokom rada na poslovima arbitra, uspešno je arbitrirao u preko 200 arbitražnih postupaka, između ostalog u arbitraži JKP Put iz Novog Sada, Studentski centar Novi Sad i predškolska ustanova Radost iz Novih Banovaca, kojom prilikom je radio na poslovima pomirenja između zaposlenih i njihovih poslodavaca, a u vezi sa problemima oko isplate regresa, toplog obroka, putnih troškova i jubilarnih nagrada.\n\nZa vreme mandata arbitra i miritelja učestvovao je na brojnim seminarima i konferencijama, uključujući i godišnju konferenciju Federalne službe za mirenje iz Vašingtona (SAD) održane u julu 2018. godine u Aranđelovcu, usled čega se kod njega javila želja za dodatnim usavršavanjem i sticanjem iskustva iz oblasti radnih odnosa iz perspektive advokata.\n\nPoseduje brojne sertifikate između ostalog i sertifikat za odbranu maloletnih učinilaca krivičnih dela i zastupanje maloletnih lica oštećenih krivičnim delima, kao i sertifikat iz oblasti prava zaštite životne sredine.\n\nBavi se zastupanjem brojnih fizičkih i pravnih lica iz svih oblasti prava, posebno iz domena građanskog prava (imovinski sporovi, sporovi u vezi sa nepokretnostima, svojinski odnosi), radnog prava (zastupanje u sporovima poništaja rešenja,izgubljene zarade, diskriminacije na radu – mobinga, naknade štete usled povreda na radu) kao i odbranom u krivičnim postupcima (odbrana okrivljenih i zastupanje oštećenih). Osim toga bavi se bankarskim pravom kao i obligacionim pravom i izradom svih vrsta obligacionih ugovora.\n\nOblast interesovanja su mu radno pravo i građansko (imovinsko) pravo.\n\nŽivi u Novom Sadu, oženjen je i otac je dvoje dece. Govori engleski jezik, a hobi mu je stoni tenis, koji aktivno igra sa prijateljima i trenutno se takmiči u gradskoj rekreativnoj ligi.",
+        bio: "Advokat Goran Kljajić rođen je u Zrenjaninu 1984. godine. Osnovnu školu “Dositej Obradović” u Zrenjaninu završio je 1999. godine, a potom i srednju ekonomsku školu “Jovan Trajković” 2003. godine. Pravni fakultet u Novom Sadu upisao je 2003. godine i diplomirao na opštem smeru 2008. godine.\n\nNakon završenog Pravnog fakulteta, 2009. godine započeo je pripravničku vežbu u advokatskoj kancelariji novosadskog advokata Zorana Koprivice, u kojoj je radio do 2011. godine, u početku kao advokatski pripravnik, a potom i jedno vreme kao advokat—saradnik.\n\nPravosudni ispit položio je 2011. godine sa vrlo dobrim uspehom, a nakon rada u svojstvu advokata—saradnika u kancelariji advokata Koprivice, osniva samostalnu advokatsku kancelariju 2011. godine i započinje samostalno bavljenje advokaturom.\n\nGodine 2016. na konkursu koji je raspisan od strane Republičke Agencije za mirno rešavanje radnih sporova u Beogradu, izabran je za arbitra i miritelja pri Agenciji za mirno rešavanje radnih sporova.\n\nNa poslovima arbitra i miritelja, uspešno je arbitrirao u preko 200 arbitražnih postupaka, između ostalog u arbitraži JKP Put iz Novog Sada, Studentski centar Novi Sad i predškolska ustanova Radost iz Novih Banovaca, kojom prilikom je radio na poslovima pomirenja između zaposlenih i njihovih poslodavaca, a u vezi sa problemima oko isplate regresa, toplog obroka, putnih troškova i jubilarnih nagrada, kao i sprečavanja zlostavljanja na radu (mobing).\n\nZa vreme mandata arbitra i miritelja učestvovao je na brojnim seminarima i konferencijama, uključujući i godišnju konferenciju Federalne službe za mirenje iz Vašingtona (SAD) održane u julu 2018. godine u Aranđelovcu, usled čega se kod njega javila želja za dodatnim usavršavanjem i sticanjem iskustva iz oblasti radnih odnosa iz perspektive advokata.\n\nPoseduje brojne sertifikate između ostalog i sertifikat za odbranu maloletnih učinilaca krivičnih dela i zastupanje maloletnih lica oštećenih krivičnim delima, kao i sertifikat iz oblasti prava zaštite životne sredine.\n\nBavi se zastupanjem brojnih fizičkih i pravnih lica iz svih oblasti prava, posebno iz domena građanskog prava (imovinski sporovi, sporovi u vezi sa nepokretnostima, svojinski odnosi), radnog prava (zastupanje u sporovima poništaja rešenja,izgubljene zarade, diskriminacije na radu — mobinga, naknade štete usled povreda na radu) kao i odbranom u krivičnim postupcima (odbrana okrivljenih i zastupanje oštećenih). Osim toga bavi se bankarskim pravom kao i obligacionim pravom i izradom svih vrsta obligacionih ugovora.\n\nOblast interesovanja su mu radno pravo i građansko (imovinsko) pravo.\n\nŽivi u Novom Sadu, oženjen je i otac je dvoje dece. Govori engleski jezik, a hobi mu je stoni tenis, koji aktivno igra sa prijateljima i trenutno se takmiči u gradskoj rekreativnoj ligi.",
       },
+      // {
+      //   id: "milica-popov",
+      //   fullName: "Milica Popov",
+      //   image: milica,
+      //   imagePlaceholder: milicaPlaceholder,
+      //   role: "advokatski pripravnik",
+      //   email: "milica.popov@advokatkljajic.rs",
+      //   emailIcon: <GoMail />,
+      //   phone: "062/159-78-75",
+      //   phoneLink: "+381621597875",
+      //   phoneIcon: <HiOutlinePhone />,
+      //   bio: "Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat...",
+      // },
+      // {
+      //   id: "nadja-knezevic",
+      //   fullName: "Nađa Knežević",
+      //   image: "",
+      //   imagePlaceholder: "",
+      //   role: "advokat — saradnik u kancelariji",
+      //   email: "xxxxx.xxxxxxxx@xxxxx.com",
+      //   emailIcon: <GoMail />,
+      //   phone: "065/346-50-80",
+      //   phoneLink: "+381653465080",
+      //   phoneIcon: <HiOutlinePhone />,
+      //   bio: "Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat...",
+      // },
       {
         id: "vuksa-jerkovic",
         fullName: "Vukša Jerković",
         image: vuksa,
         imagePlaceholder: vuksaPlaceholder,
-        role: "advokatski pripravnik",
+        role: "saradnik u kancelariji",
         email: "vuksa.jerkovic@advokatkljajic.com",
         emailIcon: <GoMail />,
         phone: "065/562-34-51",
@@ -54,10 +82,10 @@ export const AboutUsPageData = {
   ENG: {
     pageTitle: "About us",
     pageText:
-      "Man's freedom is to regulate legal and business relations of his own free will, conclude contracts and have the ability and skill to agree or negotiate. Certainly, it's necessary to have a good foundation, which has been woven into the laws of our country a long time ago.\n\nIf you are not sure what your rights are, what your obligations are, what your opportunities are and their possible scope, or how you will create the best legal protection for yourself personally or your business, the best move you can make is to always have an excellent lawyer, representative and advisor, whose work is exclusively in your interest.\n\nWe are that kind of office, and our goal is to build a professional and loyal relationship with our clients.\n\nKljajić Law Office was founded in 2012. We approach all client problems with full attention, with the protection of their interests, strict preservation of a lawyer's secrecy, and respect for attorney-client privilege.\n\nOur goal is to provide high—quality legal services to all potential clients with the utmost respect for their personalities and an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
+      "Man's freedom is to regulate legal and business relations of his own free will, conclude contracts and have the ability and skill to agree or negotiate. Certainly, it's necessary to have a good foundation, which has been woven into the laws of our country a long time ago.\n\nIf you are not sure what your rights are, what your obligations are, what your opportunities are and their possible scope, or how you will create the best legal protection for yourself personally or your business, the best move you can make is to always have an excellent lawyer, representative and advisor, whose work is exclusively in your interest.\n\nWe are that kind of office, and our goal is to build a professional and loyal relationship with our clients.\n\nKljajić Law Office was founded in 2011. We approach all client problems with full attention, with the protection of their interests, strict preservation of a lawyer's secrecy, and respect for attorney—client privilege.\n\nOur goal is to provide high—quality legal services to all potential clients with the utmost respect for their personalities and an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
     mottoTitle: "Our motto:",
     mottoDesc:
-      "By the law of nature, it is fair that no one becomes richer by the loss and injury of another\n\nIure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem. (Pomponius – D. 51, 17, 206)",
+      "By the law of nature, it is fair that no one becomes richer by the loss and injury of another\n\nIure naturae aequum est neminem cum alterius detrimento et iniuria fieri locupletiorem. (Pomponius — D. 51, 17, 206)",
     staffArray: [
       {
         id: "goran-kljajic",
@@ -65,19 +93,45 @@ export const AboutUsPageData = {
         image: goran,
         imagePlaceholder: goranPlaceholder,
         role: "attorney",
-        email: "info@advokatkljajic.com",
+        email: "info@advokatkljajic.rs",
         emailIcon: <GoMail />,
         phone: "069/166-98-92",
         phoneLink: "+381691669892",
         phoneIcon: <HiOutlinePhone />,
-        bio: "Attorney Goran Kljajić was born in Zrenjanin in 1984. He graduated from the “Dositej Obradović“ elementary school in Zrenjanin in 1999, and then from the “Jovan Trajković“ secondary school of economics in 2003. He enrolled in the Faculty of Law at the University of Novi Sad in 2003 and graduated in 2008.\n\nAfter graduating from the Faculty of Law, in 2009 he began his internship at the Zoran Koprivica Law Office, where he worked until 2012, initially as a trainee lawyer, and then for a while as a lawyer—associate.\n\nHe passed the bar exam in 2011 with very good success, and after working as a lawyer—associate in the Koprivica lawyer's office, he founded his own law office in 2012 and started practicing law independently.\n\nIn 2016, at a competition announced by the Republic Agency for the Peaceful Resolution of Labor Disputes in Belgrade, he was chosen as an arbitrator/conciliator at the Agency for the Peaceful Resolution of Labor Disputes, and he was engaged in that work until September 2020, when his mandate expired.\n\nDuring his work as an arbitrator, he successfully arbitrated in over 200 arbitration proceedings, among others in the arbitration of JKP Put from Novi Sad, Student Center Novi Sad and preschool institution Radost from Novi Banovac, where he worked on reconciliation between employees and their employers, and in connection with the problems regarding the payment of holiday pay, hot meals, travel expenses and jubilee awards.\n\nDuring his mandate as an arbitrator and conciliator, he participated in numerous seminars and conferences, including the annual conference of the Federal Conciliation Service from Washington (USA) held in July 2018 in Arandjelovac, as a result of which he expressed a desire for additional training and gaining experience in the field of labor relations from a lawyer's perspective.\n\nHe has numerous certificates, including a certificate for the defense of juvenile offenders and representation of minors injured by criminal offenses, as well as a certificate in the field of environmental protection law.\n\nHe deals with the representation of numerous individuals and legal entities from all areas of law, especially in the domain of civil law (property disputes, disputes related to real estate, property relations), labor law (representation in disputes over annulment of decisions, lost earnings, discrimination at work - mobbing, compensation for damages due to injuries at work) as well as defense in criminal proceedings (defense of defendants and representation of injured parties). In addition, he deals with banking law as well as bond law and the drafting of all types of bond contracts.\n\nHis area of interest is labor law and civil (property) law.\n\nHe lives in Novi Sad, is married and is the father of two. He speaks English, and his hobby is table tennis, which he actively plays with his friends and currently competes in the city's recreational league.",
+        bio: "Attorney Goran Kljajić was born in Zrenjanin in 1984. He graduated from the “Dositej Obradović“ elementary school in Zrenjanin in 1999, and then from the “Jovan Trajković“ secondary school of economics in 2003. He enrolled in the Faculty of Law at the University of Novi Sad in 2003 and graduated in 2008.\n\nAfter graduating from the Faculty of Law, in 2009 he began his internship at the Zoran Koprivica Law Office, where he worked until 2011, initially as a trainee lawyer, and then for a while as a lawyer—associate.\n\nHe passed the bar exam in 2011 with very good success, and after working as a lawyer—associate in the Koprivica lawyer's office, he founded his own law office in 2011 and started practicing law independently.\n\nIn 2016, at a competition announced by the Republic Agency for the Peaceful Resolution of Labor Disputes in Belgrade, he was chosen as an arbitrator and conciliator at the Agency for the Peaceful Resolution of Labor Disputes.\n\nOn the duties of arbitrator and conciliator, he successfully arbitrated in over 200 arbitration proceedings, among others in the arbitration of JKP Put from Novi Sad, Student Center Novi Sad and preschool institution Radost from Novi Banovac, where he worked on reconciliation between employees and their employers, and in connection with the problems regarding the payment of holiday pay, hot meals, travel expenses, jubilee awards, as well as prevention of abuse at work (mobbing).\n\nDuring his mandate as an arbitrator and conciliator, he participated in numerous seminars and conferences, including the annual conference of the Federal Conciliation Service from Washington (USA) held in July 2018 in Arandjelovac, as a result of which he expressed a desire for additional training and gaining experience in the field of labor relations from a lawyer's perspective.\n\nHe has numerous certificates, including a certificate for the defense of juvenile offenders and representation of minors injured by criminal offenses, as well as a certificate in the field of environmental protection law.\n\nHe deals with the representation of numerous individuals and legal entities from all areas of law, especially in the domain of civil law (property disputes, disputes related to real estate, property relations), labor law (representation in disputes over annulment of decisions, lost earnings, discrimination at work — mobbing, compensation for damages due to injuries at work) as well as defense in criminal proceedings (defense of defendants and representation of injured parties). In addition, he deals with banking law as well as bond law and the drafting of all types of bond contracts.\n\nHis area of interest is labor law and civil (property) law.\n\nHe lives in Novi Sad, is married and is the father of two. He speaks English, and his hobby is table tennis, which he actively plays with his friends and currently competes in the city's recreational league.",
       },
+      // {
+      //   id: "milica-popov",
+      //   fullName: "Milica Popov",
+      //   image: milica,
+      //   imagePlaceholder: milicaPlaceholder,
+      //   role: "trainee lawyer",
+      //   email: "milica.popov@advokatkljajic.rs",
+      //   emailIcon: <GoMail />,
+      //   phone: "062/159-78-75",
+      //   phoneLink: "+381621597875",
+      //   phoneIcon: <HiOutlinePhone />,
+      //   bio: "Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat...",
+      // },
+      // {
+      //   id: "nadja-knezevic",
+      //   fullName: "Nađa Knežević",
+      //   image: "",
+      //   imagePlaceholder: "",
+      //   role: "attorney — office associate",
+      //   email: "xxxxx.xxxxxxxx@xxxxx.com",
+      //   emailIcon: <GoMail />,
+      //   phone: "065/346-50-80",
+      //   phoneLink: "+381653465080",
+      //   phoneIcon: <HiOutlinePhone />,
+      //   bio: "Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat Advokat...",
+      // },
       {
         id: "vuksa-jerkovic",
         fullName: "Vukša Jerković",
         image: vuksa,
         imagePlaceholder: vuksaPlaceholder,
-        role: "trainee lawyer",
+        role: "office associate",
         email: "vuksa.jerkovic@advokatkljajic.com",
         emailIcon: <GoMail />,
         phone: "065/562-34-51",
