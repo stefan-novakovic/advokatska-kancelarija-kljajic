@@ -1,6 +1,7 @@
 import axios from "../../api/axios";
 
 export const onSubmit = async (data) => {
+  const subject = "Test Test";
   try {
     const firstName =
       data.firstName.slice(0, 1).toUpperCase() + data.firstName.slice(1);
@@ -12,7 +13,7 @@ export const onSubmit = async (data) => {
 
     const response = await axios.post(
       "/api/email/contact-us",
-      JSON.stringify({ firstName, lastName, email, message }),
+      JSON.stringify({ firstName, lastName, email, subject, message }),
       { headers: { "Content-Type": "application/json" } }
     );
 
