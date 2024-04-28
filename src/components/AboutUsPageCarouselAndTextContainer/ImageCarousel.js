@@ -21,9 +21,9 @@ const ImageCarousel = () => {
         threshold={4750}
         effect="opacity"
       />
-      <img src={AboutUsPageData.SRB.aboutUsImageArray[1]} alt="" />
-      <img src={AboutUsPageData.SRB.aboutUsImageArray[2]} alt="" />
-      <img src={AboutUsPageData.SRB.aboutUsImageArray[3]} alt="" />
+      {AboutUsPageData.SRB.aboutUsImageArray.slice(1).map((imgSrc) => {
+        return <img key={imgSrc} src={imgSrc} alt="" />;
+      })}
     </Carousel>
   );
 };

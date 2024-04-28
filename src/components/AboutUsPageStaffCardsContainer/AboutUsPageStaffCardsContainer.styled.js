@@ -7,6 +7,9 @@ export const StyledAboutUsPageStaffCardsContainer = styled.section`
   align-items: center;
   gap: 2.5rem;
 
+  max-width: 1756px !important;
+  padding-inline: 68px !important;
+
   & > a:any-link {
     width: 100%;
     max-width: 375px;
@@ -32,5 +35,10 @@ export const StyledAboutUsPageStaffCardsContainer = styled.section`
 
   & > a:active {
     filter: brightness(92%);
+  }
+
+  @media screen and (max-width: 1536px) {
+    max-width: 88vw !important;
+    padding-inline: 0 !important;
   }
 `;

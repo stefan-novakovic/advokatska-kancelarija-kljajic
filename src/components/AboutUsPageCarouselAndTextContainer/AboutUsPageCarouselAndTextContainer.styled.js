@@ -7,8 +7,8 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
   & > div {
     float: right;
     width: 100%;
-    max-width: 570px;
-    aspect-ratio: 570/429;
+    max-width: 430px;
+    aspect-ratio: 800/1066;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -17,8 +17,8 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
     border-radius: 3px;
     background-image: url(${AboutUsPageData.SRB.imageCarouselPlaceholder});
     background-size: cover;
-    margin-left: 4rem;
-    margin-bottom: 3rem;
+    margin-left: 4.5rem;
+    margin-bottom: 1.5rem;
   }
 
   & > p {
@@ -56,7 +56,7 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
       margin-left: 0;
       margin-bottom: 0;
       width: 100%;
-      max-width: 800px;
+      max-width: 650px;
     }
 
     & .carousel.carousel-slider .control-dots {

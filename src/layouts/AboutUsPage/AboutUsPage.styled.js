@@ -15,7 +15,7 @@ export const StyledAboutUsPage = styled.div`
 
   & > h2 {
     width: 100%;
-    max-width: min(76vw, 1500px);
+    max-width: min(76vw, 1485px);
     margin-inline: auto;
     font-size: 2.5rem;
     font-weight: 700;
@@ -28,7 +28,7 @@ export const StyledAboutUsPage = styled.div`
 
   & > section {
     width: 100%;
-    max-width: min(76vw, 1500px);
+    max-width: min(76vw, 1485px);
     margin-inline: auto;
   }
 

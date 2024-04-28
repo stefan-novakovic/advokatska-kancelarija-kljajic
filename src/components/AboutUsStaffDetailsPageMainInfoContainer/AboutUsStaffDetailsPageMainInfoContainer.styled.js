@@ -6,7 +6,7 @@ export const StyledAboutUsStaffDetailsPageMainInfoContainer = styled.section`
   align-items: center;
   gap: 7rem;
   width: 100%;
-  max-width: min(76vw, 1500px);
+  max-width: min(76vw, 1485px);
   margin-inline: auto;
   margin-bottom: 6rem;
 

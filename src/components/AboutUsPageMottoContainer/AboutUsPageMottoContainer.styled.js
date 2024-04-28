@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledAboutUsPageMottoContainer = styled.section`
-  margin-bottom: 4rem;
+  margin-bottom: 4.5rem;
 
   & > h3 {
     font-size: 1.7rem;

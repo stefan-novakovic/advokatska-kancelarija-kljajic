@@ -7,7 +7,7 @@ export const StyledAreasOfWorkPageListItem = styled.li`
     justify-content: flex-start;
     align-items: flex-end;
     width: 100%;
-    max-width: min(76vw, 1500px);
+    max-width: min(76vw, 1485px);
     height: 64px;
     margin-inline: auto;
     margin-bottom: 1.85rem;
@@ -22,11 +22,11 @@ export const StyledAreasOfWorkPageListItem = styled.li`
 
   & > p {
     width: 100%;
-    max-width: min(76vw, 1500px);
+    max-width: min(76vw, 1485px);
     margin-inline: auto;
     font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.25px;
     line-height: 1.35;
     margin-bottom: 4.25rem;
   }

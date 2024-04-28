@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAboutUsStaffDetailsPageBioContainer = styled.section`
   width: 100%;
-  max-width: min(76vw, 1500px);
+  max-width: min(76vw, 1485px);
   margin-inline: auto;
 
   & > h3 {

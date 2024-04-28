@@ -7,7 +7,7 @@ export const StyledContactUsPageContentContainer = styled.div`
   align-items: center;
   gap: 10rem;
   width: 100%;
-  max-width: min(76vw, 1500px);
+  max-width: min(76vw, 1485px);
   margin-inline: auto;
 
   @media screen and (max-width: 1536px) {
