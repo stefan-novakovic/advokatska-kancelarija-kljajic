@@ -5,39 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title th:text="${subject}">Predmet email-a</title>
-    <link rel="stylesheet" href="contactUsTemplate.css">
+    <style>
+        @media only screen and (max-width: 500px) {
+            body {
+                background-color: white !important;
+            }
+
+            main {
+                max-width: none !important;
+                margin: 0 !important;
+                padding: 22px 16px !important;
+                border: 0 !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
 </head>
 
-<body class="question_body">
-    <main class="question_container">
-        <h1>Šalje:
+<body
+    style="box-sizing: border-box; margin: 0;padding: 0;display: flex;justify-content: center;font-family: Verdana, Tahoma, sans-serif; background-color: rgb(248, 248, 248); color: black; word-wrap: break-word; line-height: 1.275;">
+    <main
+        style="box-sizing: border-box; margin: 32px 24px;padding: 24px 20px; width: 100%; max-width: 600px; background-color: white; border: 1px solid black; border-radius: 10px; box-shadow: 0 0 6px black">
+        <h1
+            style="box-sizing: border-box; margin: 0;padding: 16px 20px; font-size: 20px; text-align: center; background-color: black; color: white; border-radius: 4px;">
+            Šalje:
             <span th:text="${firstName}">Ime</span>
             <span th:text="${lastName}">Prezime</span>
         </h1>
 
 
-        <section class="data_container">
-            <h2>Podaci:</h2>
-            <p>
+        <section>
+            <h2 style="box-sizing: border-box; margin: 18px 0 3px;padding: 0; font-size: 18px; font-weight: bold;">
+                Podaci:</h2>
+            <p style="box-sizing: border-box; margin: 0 0 3px; padding: 0; font-size: 17px;">
                 Ime:
-                <span th:text="${firstName}">Ime</span>
+                <span th:text=" ${firstName}">Ime</span>
             </p>
-            <p>
+            <p style="box-sizing: border-box; margin: 0 0 3px; padding: 0; font-size: 17px">
                 Prezime:
                 <span th:text="${lastName}">Prezime</span>
             </p>
-            <p>
+            <p style="box-sizing: border-box; margin: 0; padding: 0; font-size: 17px">
                 Email:
                 <span th:text="${email}">Email</span>
             </p>
         </section>
 
-        <section class="message_container">
-            <h3>Pitanje:</h3>
-            <p th:utext="${message}">Pitanje</p>
+        <section>
+            <h3 style="box-sizing: border-box; margin: 18px 0 3px;padding: 0;font-size: 18px; font-weight: bold;">
+                Pitanje:</h3>
+            <p th:utext="${message}" style="box-sizing: border-box; margin: 0 0 32px; padding: 0; font-size: 17px">
+                Pitanje</p>
         </section>
 
-        <p id="currentDate" class="current_date" th:text="${currentDate}">Datum</p>
+        <p th:text="${currentDate}"
+            style="box-sizing: border-box; margin: 0;padding: 0; font-size: 17px; text-align: right; letter-spacing: 0.3px;">
+            Datum</p>
     </main>
 
 
