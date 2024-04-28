@@ -1,8 +1,10 @@
 import axios from "../../api/axios";
+import getDate from "./getDate";
 
 export const onSubmit = async (data) => {
-  const subject = "Test Test";
   try {
+    const subject = "Informacije i pitanja | Advokatska Kancelarija Kljajić";
+    const currentDate = getDate();
     const firstName =
       data.firstName.slice(0, 1).toUpperCase() + data.firstName.slice(1);
     const lastName =
@@ -13,7 +15,14 @@ export const onSubmit = async (data) => {
 
     const response = await axios.post(
       "/api/email/contact-us",
-      JSON.stringify({ firstName, lastName, email, subject, message }),
+      JSON.stringify({
+        firstName,
+        lastName,
+        email,
+        currentDate,
+        subject,
+        message,
+      }),
       { headers: { "Content-Type": "application/json" } }
     );
 

@@ -11,12 +11,8 @@ public record SendMailRequestDto(
         String lastName,
         @Email
         String email,
-        @Size(max = 200)
-        String companyName,
-        @Size(max = 200)
-        String companyUrl,
-        @Size(max = 100)
-        String phoneNumber,
+        @Size(max = 15)
+        String currentDate,
         @NotBlank @Size(max = 100)
         String subject,
         @NotBlank @Size(max = 5_000)

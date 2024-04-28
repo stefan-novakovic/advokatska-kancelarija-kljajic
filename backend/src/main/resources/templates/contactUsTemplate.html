@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="sr" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <title th:text="${subject}">Email Subject</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${subject}">Predmet email-a</title>
+    <link rel="stylesheet" href="contactUsTemplate.css">
 </head>
-<body>
-<div style="background-color: rgb(34, 41, 50); padding: 10px; border-radius: 5px;">
-    <h1 style="color: rgb(45, 193, 119);">Message from: <span th:text="${firstName}">First Name</span> <span th:text="${lastName}">Last Name</span>!</h1>
-</div>
 
-<div style="border-bottom: 2px solid rgb(45, 193, 119);">
-    <p><strong>Email:</strong> <span th:text="${email}">Email</span></p>
-    <p><strong>Company Name:</strong> <span th:text="${companyName}">Company Name</span></p>
-    <th:block th:if="${companyUrl != null}">
-        <p><strong>Company URL:</strong> <a th:href="${companyUrl}" th:text="${companyUrl}">Company URL</a></p>
-    </th:block>
-    <p><strong>Phone Number:</strong> <span th:text="${phoneNumber}">Phone Number</span></p>
-</div>
+<body class="question_body">
+    <main class="question_container">
+        <h1>Šalje:
+            <span th:text="${firstName}">Ime</span>
+            <span th:text="${lastName}">Prezime</span>
+        </h1>
 
-<h2>Message:</h2>
-<p th:utext="${message}">Message</p>
+
+        <section class="data_container">
+            <h2>Podaci:</h2>
+            <p>
+                Ime:
+                <span th:text="${firstName}">Ime</span>
+            </p>
+            <p>
+                Prezime:
+                <span th:text="${lastName}">Prezime</span>
+            </p>
+            <p>
+                Email:
+                <span th:text="${email}">Email</span>
+            </p>
+        </section>
+
+        <section class="message_container">
+            <h3>Pitanje:</h3>
+            <p th:utext="${message}">Pitanje</p>
+        </section>
+
+        <p id="currentDate" class="current_date" th:text="${currentDate}">Datum</p>
+    </main>
+
+
 </body>
+
 </html>

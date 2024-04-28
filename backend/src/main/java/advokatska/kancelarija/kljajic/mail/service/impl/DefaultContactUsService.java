@@ -36,9 +36,7 @@ public class DefaultContactUsService implements ContactUsService {
         context.setVariable("message",     request.message().replace("\n", "<br/>"));
         context.setVariable("firstName",   request.firstName());
         context.setVariable("lastName",    request.lastName());
-        context.setVariable("companyName", request.companyName());
-        context.setVariable("companyUrl",  request.companyUrl());
-        context.setVariable("phoneNumber", request.phoneNumber());
+        context.setVariable("currentDate", request.currentDate());
 
         return templateEngine.process("contactUsTemplate", context);
     }
