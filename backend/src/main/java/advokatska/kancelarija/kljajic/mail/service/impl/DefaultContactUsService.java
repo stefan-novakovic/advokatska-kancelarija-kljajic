@@ -5,11 +5,16 @@ import advokatska.kancelarija.kljajic.mail.service.ContactUsService;
 import advokatska.kancelarija.kljajic.mail.service.EmailService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
+import org.apache.commons.text.StringSubstitutor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
-import org.thymeleaf.context.Context;
-import org.thymeleaf.spring6.SpringTemplateEngine;
 
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Map;
 import java.util.Set;
 
 @RequiredArgsConstructor
@@ -19,7 +24,6 @@ public class DefaultContactUsService implements ContactUsService {
     @Value("${mail.recipients}")
     private final Set<String> recipientsEmail;
     private final EmailService emailService;
-    private final SpringTemplateEngine templateEngine;
 
     @Override
     public void contactUs(@NonNull SendMailRequestDto request) {
@@ -29,15 +33,22 @@ public class DefaultContactUsService implements ContactUsService {
     }
 
     private String generateEmailHtml(@NonNull SendMailRequestDto request) {
-        final Context context = new Context();
+        final String html = loadContactUsTemplate();
+        final Map<String, Object> params = Map.of(
+        "email",       request.email(),
+        "subject",     request.subject(),
+        "message",     request.message().replace("\n", "<br/>"),
+        "firstName",   request.firstName(),
+        "lastName",    request.lastName(),
+        "currentDate", request.currentDate());
 
-        context.setVariable("email",       request.email());
-        context.setVariable("subject",     request.subject());
-        context.setVariable("message",     request.message().replace("\n", "<br/>"));
-        context.setVariable("firstName",   request.firstName());
-        context.setVariable("lastName",    request.lastName());
-        context.setVariable("currentDate", request.currentDate());
+        final StringSubstitutor sub = new StringSubstitutor(params);
+        return sub.replace(html);
+    }
 
-        return templateEngine.process("contactUsTemplate", context);
+    @SneakyThrows
+    private String loadContactUsTemplate() {
+        Path path = new ClassPathResource("templates/contactUsTemplate.html").getFile().toPath();
+        return Files.readString(path, StandardCharsets.UTF_8);
     }
 }

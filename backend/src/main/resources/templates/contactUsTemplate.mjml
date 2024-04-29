@@ -14,26 +14,26 @@
   <mj-body mj-class="bg-color-body">
     <mj-section mj-class="bg-color" padding="22px 25px">
       <mj-column>
-        <mj-text mj-class="main-title"> <strong>Šalje: Ime Prezime</strong> </mj-text>
+        <mj-text mj-class="main-title"> <strong>Šalje: ${firstName} ${lastName}</strong> </mj-text>
       </mj-column>
     </mj-section>
     <mj-section border-right="1px solid black" border-left="1px solid black" mj-class="bg-color-alt" padding="0 0 14px">
       <mj-column>
         <mj-text mj-class="data-title"><strong>Podaci:</strong></mj-text>
-        <mj-text mj-class="data-desc">Ime: Ime</mj-text>
-        <mj-text mj-class="data-desc">Prezime: Prezime</mj-text>
-        <mj-text mj-class="data-desc" padding-bottom="0">Email: Email</mj-text>
+        <mj-text mj-class="data-desc">Ime: ${firstName}</mj-text>
+        <mj-text mj-class="data-desc">Prezime: ${lastName}</mj-text>
+        <mj-text mj-class="data-desc" padding-bottom="0">Email: ${email}</mj-text>
       </mj-column>
     </mj-section>
     <mj-section border-right="1px solid black" border-left="1px solid black" mj-class="bg-color-alt" padding="0 0 28px">
       <mj-column>
         <mj-text mj-class="data-title"><strong>Pitanje:</strong></mj-text>
-        <mj-text mj-class="data-desc">Tekst pitanja</mj-text>
+        <mj-text mj-class="data-desc">${message}</mj-text>
       </mj-column>
     </mj-section>
     <mj-section border-right="1px solid black" border-left="1px solid black" mj-class="bg-color-alt" padding="0 0 14px">
       <mj-column>
-        <mj-text mj-class="data-date">Datum</mj-text>
+        <mj-text mj-class="data-date">Datum: ${currentDate}</mj-text>
       </mj-column>
     </mj-section>
     <mj-section mj-class="bg-color" padding="0">
