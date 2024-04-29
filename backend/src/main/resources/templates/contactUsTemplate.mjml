@@ -1,14 +1,13 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-class name="main-title" font-size="23px" font-family="Ubuntu, sans-serif" color="white" padding="0 25px" align="center" line-height="1.275" />
+      <mj-class name="main-title" font-size="23px" font-family="Ubuntu, sans-serif" color="#8e8e8e" padding="0 25px" align="center" line-height="1.275" />
       <mj-class name="data-title" font-size="19px" font-family="Ubuntu, sans-serif" color="black" padding="14px 25px 8px" align="left" line-height="1.275" />
       <mj-class name="data-desc" font-size="16px" font-family="Ubuntu, sans-serif" color="black" padding="0 25px 5px" align="left" line-height="1.275" />
       <mj-class name="data-date" font-size="16px" font-family="Ubuntu, sans-serif" color="black" padding="0 25px" align="right" line-height="1.275" letter-spacing="0.3px" />
-      <mj-class name="footer" font-size="16px" font-family="Ubuntu, sans-serif" color="white" padding="12px 25px" align="center" line-height="1.275" />
-      <mj-class name="bg-color-body" background="white" background-color="white" color="black" />
-      <mj-class name="bg-color" background="black" background-color="black" color="white" />
-      <mj-class name="bg-color-alt" background="white" background-color="white" color="black" />
+      <mj-class name="footer" font-size="16px" font-family="Ubuntu, sans-serif" color="#8e8e8e" padding="12px 25px" align="center" line-height="1.275" />
+      <mj-class name="bg-color" background="black" background-color="black" color="#efefef" />
+      <mj-class name="bg-color-alt" background="#efefef" background-color="#efefef" color="black" />
     </mj-attributes>
   </mj-head>
   <mj-body mj-class="bg-color-alt">
