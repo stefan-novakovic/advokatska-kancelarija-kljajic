@@ -1,31 +1,31 @@
 <mjml>
   <mj-head>
     <mj-attributes>
-      <mj-class name="main-title" font-size="23px" font-family="sans-serif" color="white" padding="0 25px" align="center" line-height="1.275" />
-      <mj-class name="data-title" font-size="19px" font-family="sans-serif" color="black" padding="14px 25px 8px" align="left" line-height="1.275" />
-      <mj-class name="data-desc" font-size="16px" font-family="sans-serif" color="black" padding="0 25px 5px" align="left" line-height="1.275" />
-      <mj-class name="data-date" font-size="16px" font-family="sans-serif" color="black" padding="0 25px" align="right" line-height="1.275" letter-spacing="0.3px" />
-      <mj-class name="footer" font-size="16px" font-family="sans-serif" color="white" padding="12px 25px" align="center" line-height="1.275" />
-      <mj-class name="bg-color-body" background-color="white" />
-      <mj-class name="bg-color" background-color=black />
-      <mj-class name="bg-color-alt" background-color=white />
+      <mj-class name="main-title" font-size="23px" font-family="Ubuntu, sans-serif" color="white" padding="0 25px" align="center" line-height="1.275" />
+      <mj-class name="data-title" font-size="19px" font-family="Ubuntu, sans-serif" color="black" padding="14px 25px 8px" align="left" line-height="1.275" />
+      <mj-class name="data-desc" font-size="16px" font-family="Ubuntu, sans-serif" color="black" padding="0 25px 5px" align="left" line-height="1.275" />
+      <mj-class name="data-date" font-size="16px" font-family="Ubuntu, sans-serif" color="black" padding="0 25px" align="right" line-height="1.275" letter-spacing="0.3px" />
+      <mj-class name="footer" font-size="16px" font-family="Ubuntu, sans-serif" color="white" padding="12px 25px" align="center" line-height="1.275" />
+      <mj-class name="bg-color-body" background="white" background-color="white" color="black" />
+      <mj-class name="bg-color" background="black" background-color="black" color="white" />
+      <mj-class name="bg-color-alt" background="white" background-color="white" color="black" />
     </mj-attributes>
   </mj-head>
-  <mj-body mj-class="bg-color-body">
-    <mj-section mj-class="bg-color" padding="22px 25px">
+  <mj-body mj-class="bg-color-alt">
+    <mj-section border="1px solid black" mj-class="bg-color" padding="22px 25px">
       <mj-column>
         <mj-text mj-class="main-title"> <strong>Šalje: ${firstName} ${lastName}</strong> </mj-text>
       </mj-column>
     </mj-section>
     <mj-section border-right="1px solid black" border-left="1px solid black" mj-class="bg-color-alt" padding="0 0 14px">
       <mj-column>
-        <mj-text mj-class="data-title"><strong>Podaci:</strong></mj-text>
+        <mj-text mj-class="data-title"><strong>Podaci pošiljaoca:</strong></mj-text>
         <mj-text mj-class="data-desc">Ime: ${firstName}</mj-text>
         <mj-text mj-class="data-desc">Prezime: ${lastName}</mj-text>
         <mj-text mj-class="data-desc" padding-bottom="0">Email: ${email}</mj-text>
       </mj-column>
     </mj-section>
-    <mj-section border-right="1px solid black" border-left="1px solid black" mj-class="bg-color-alt" padding="0 0 28px">
+    <mj-section border-right="1px solid black" border-left="1px solid black" mj-class="bg-color-alt" padding="0 0 32px">
       <mj-column>
         <mj-text mj-class="data-title"><strong>Pitanje:</strong></mj-text>
         <mj-text mj-class="data-desc">${message}</mj-text>
@@ -33,10 +33,10 @@
     </mj-section>
     <mj-section border-right="1px solid black" border-left="1px solid black" mj-class="bg-color-alt" padding="0 0 14px">
       <mj-column>
-        <mj-text mj-class="data-date">Datum: ${currentDate}</mj-text>
+        <mj-text mj-class="data-date">${currentDate}</mj-text>
       </mj-column>
     </mj-section>
-    <mj-section mj-class="bg-color" padding="0">
+    <mj-section border="1px solid black" mj-class="bg-color" padding="0">
       <mj-column>
         <mj-text mj-class="footer"><strong>Advokatska Kancelarija Kljajic</strong></mj-text>
       </mj-column>
