@@ -99,7 +99,7 @@ export const HeaderAndFooterData = {
         otherAttr: true,
       },
     ],
-    footerFirmText: "Law Office Kljajić",
+    footerFirmText: "Kljajić Law Office",
   },
 };
 

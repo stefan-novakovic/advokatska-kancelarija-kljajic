@@ -12,7 +12,7 @@ const ImageCarousel = () => {
       swipeable
       showStatus={false}
       showThumbs={false}
-      interval={12000}
+      interval={14000}
       transitionTime={500}
     >
       <LazyLoadImage
@@ -21,9 +21,9 @@ const ImageCarousel = () => {
         threshold={4750}
         effect="opacity"
       />
-      {AboutUsPageData.SRB.aboutUsImageArray.slice(1).map((imgSrc) => {
-        return <img key={imgSrc} src={imgSrc} alt="" />;
-      })}
+      {AboutUsPageData.SRB.aboutUsImageArray.slice(1).map((imgSrc) => (
+        <img key={imgSrc} src={imgSrc} alt="" />
+      ))}
     </Carousel>
   );
 };

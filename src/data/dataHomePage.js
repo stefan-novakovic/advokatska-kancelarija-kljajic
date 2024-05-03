@@ -102,7 +102,7 @@ export const HomePageData = {
     heroTitle1: "LAW OFFICE",
     aboutUsTitle: "About us",
     aboutUsDesc:
-      "Kljajić Law Office was founded in 2011. We approach all client problems with full attention, with the protection of their interests, strict preservation of a lawyer's secrecy, and respect for attorney—client privilege. Our goal is to provide high—quality legal services to all potential clients with the utmost respect for their personalities and an objective assessment of all their legal problems, with an effort to solve their problems in the most efficient and best possible way.",
+      "Kljajić Law Office was established in 2011. We approach all client issues with full attention, providing protection of their interests, strictly safeguarding attorney—client privilege, and respecting the attorney—client relationship. The goal of our law office is to provide quality legal services to all potential clients with the utmost respect for their individuality and with an objective assessment of all their legal problems, striving to resolve their issues in the most efficient and effective manner possible.",
     aboutUsButtonText: "Find out more",
     areasOfWorkTitle: "Practice areas",
     areasOfWorkArray: [

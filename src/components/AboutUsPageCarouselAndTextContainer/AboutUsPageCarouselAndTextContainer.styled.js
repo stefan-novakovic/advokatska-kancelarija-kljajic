@@ -18,7 +18,7 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
     background-image: url(${AboutUsPageData.SRB.imageCarouselPlaceholder});
     background-size: cover;
     margin-left: 4.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   & > p {
@@ -38,8 +38,7 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
 
   @media screen and (max-width: 1365px) {
     & > div {
-      margin-left: 2.5rem;
-      margin-bottom: 2.5rem;
+      margin-left: 3.5rem;
     }
   }
 

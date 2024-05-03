@@ -36,13 +36,13 @@ export const StyledNavListContainer = styled.ul`
     filter: brightness(65%);
   }
 
-  & > li > a.selected {
+  & > li > a.selected:not(.selected_ausdp) {
     pointer-events: none;
     cursor: default;
     border-bottom: 3px solid rgba(242, 246, 249, 0.95) !important;
   }
 
-  & > li > a.selected_ausdp {
+  & > li > a.selected_ausdp:not(.selected) {
     border-bottom: 3px solid rgba(242, 246, 249, 0.95) !important;
   }
 

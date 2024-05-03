@@ -87,7 +87,7 @@ export const ContactUsPageData = {
         icon: <FaFacebookF />,
         href: "https://www.facebook.com/AdvokatskakancelarijaKljajic",
         otherAttr: true,
-        linkText: "Law Office Kljajić",
+        linkText: "Kljajić Law Office",
       },
       {
         key: "cp_instagram",

@@ -13,6 +13,7 @@ export const StyledAboutUsPageCardsTextContainer = styled.div`
     font-size: 1.025rem;
     font-weight: 600;
     margin-bottom: 1.1rem;
+    line-height: 1.25;
   }
 
   & > div {

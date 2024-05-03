@@ -14,6 +14,7 @@ export const StyledAboutUsStaffDetailsPageInfoTextAndLinksContainer = styled.div
     font-weight: 500;
     letter-spacing: 1.25px;
     margin-bottom: 3.25rem;
+    line-height: 1.3;
   }
 
   & > a:any-link {
