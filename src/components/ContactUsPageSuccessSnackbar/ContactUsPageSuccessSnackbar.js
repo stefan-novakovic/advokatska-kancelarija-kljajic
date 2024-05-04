@@ -2,7 +2,7 @@ import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import { ContactUsPageData } from "../../data/dataContactUsPage";
 
-const ContactUsPageSnackbar = ({
+const ContactUsPageSuccessSnackbar = ({
   sendMessageOpen,
   setSendMessageOpen,
   language,
@@ -28,4 +28,4 @@ const ContactUsPageSnackbar = ({
   );
 };
 
-export default ContactUsPageSnackbar;
+export default ContactUsPageSuccessSnackbar;

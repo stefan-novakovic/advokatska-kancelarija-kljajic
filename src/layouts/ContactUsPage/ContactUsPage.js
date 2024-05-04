@@ -1,6 +1,6 @@
 import { StyledContactUsPage } from "./ContactUsPage.styled";
 import ContactUsPageContentContainer from "../../components/ContactUsPageContentContainer/ContactUsPageContentContainer";
-import ContactUsPageSnackbar from "../../components/ContactUsPageSnackbar/ContactUsPageSnackbar";
+import ContactUsPageSuccessSnackbar from "../../components/ContactUsPageSuccessSnackbar/ContactUsPageSuccessSnackbar";
 import { useState } from "react";
 import { ContactUsPageData } from "../../data/dataContactUsPage";
 import useDataContext from "../../hooks/useDataContext";
@@ -18,7 +18,7 @@ const ContactUsPage = () => {
         language={language}
       />
 
-      <ContactUsPageSnackbar
+      <ContactUsPageSuccessSnackbar
         sendMessageOpen={sendMessageOpen}
         setSendMessageOpen={setSendMessageOpen}
         language={language}
