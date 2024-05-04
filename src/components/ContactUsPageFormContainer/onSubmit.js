@@ -14,7 +14,7 @@ export const onSubmit = async (data, setResponseErr) => {
       data.message.slice(0, 1).toUpperCase() + data.message.slice(1);
 
     await axios.post(
-      "/api/email/contact-us1",
+      "/api/email/contact-us",
       JSON.stringify({
         firstName,
         lastName,
