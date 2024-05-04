@@ -1,7 +1,7 @@
 import axios from "../../api/axios";
 import getDate from "./getDate";
 
-export const onSubmit = async (data) => {
+export const onSubmit = async (data, setResponseErr) => {
   try {
     const subject = "Informacije i pitanja | Advokatska Kancelarija Kljajić";
     const currentDate = getDate();
@@ -13,8 +13,8 @@ export const onSubmit = async (data) => {
     const message =
       data.message.slice(0, 1).toUpperCase() + data.message.slice(1);
 
-    const response = await axios.post(
-      "/api/email/contact-us",
+    await axios.post(
+      "/api/email/contact-us1",
       JSON.stringify({
         firstName,
         lastName,
@@ -25,13 +25,7 @@ export const onSubmit = async (data) => {
       }),
       { headers: { "Content-Type": "application/json" } }
     );
-
-    console.log(response.data);
   } catch (err) {
-    if (err.response) {
-      console.log(`Error ${err.response.status}: ${err.response.data}`);
-    } else {
-      console.log(`Error: ${err.message}`);
-    }
+    setResponseErr(true);
   }
 };

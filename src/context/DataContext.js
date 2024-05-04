@@ -16,6 +16,8 @@ export const DataProvider = ({ children }) => {
 
   localStorage.setItem("lang", JSON.stringify(language));
 
+  const [responseErr, setResponseErr] = useState(false);
+
   useEffect(() => {
     const currentPath = location.pathname;
     const pageSelection =
@@ -47,6 +49,8 @@ export const DataProvider = ({ children }) => {
         openSidebar,
         setOpenSidebar,
         selectedItemName,
+        responseErr,
+        setResponseErr,
       }}
     >
       {children}

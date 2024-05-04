@@ -2,19 +2,19 @@ import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import { ContactUsPageData } from "../../data/dataContactUsPage";
 
-const ContactUsPageSuccessSnackbar = ({
-  sendMessageOpen,
-  setSendMessageOpen,
+const ContactUsPageErrorSnackbar = ({
+  errorMessageOpen,
+  setErrorMessageOpen,
   language,
 }) => {
   return (
     <Snackbar
-      open={sendMessageOpen}
-      autoHideDuration={3500}
-      onClose={() => setSendMessageOpen(false)}
+      open={errorMessageOpen}
+      autoHideDuration={4000}
+      onClose={() => setErrorMessageOpen(false)}
     >
       <Alert
-        severity="success"
+        severity="error"
         variant="filled"
         sx={{
           width: "100%",
@@ -24,10 +24,10 @@ const ContactUsPageSuccessSnackbar = ({
           whiteSpace: "pre-wrap",
         }}
       >
-        {ContactUsPageData[`${language}`].sentMessageText}
+        {ContactUsPageData[`${language}`].errorMessageText}
       </Alert>
     </Snackbar>
   );
 };
 
-export default ContactUsPageSuccessSnackbar;
+export default ContactUsPageErrorSnackbar;

@@ -9,9 +9,17 @@ import { yupValidationSchema } from "../ContactUsPageFormContainer/yupValidation
 import { yupResolver } from "@hookform/resolvers/yup";
 import { formDefaultValues } from "./formDefaultValues";
 import { onSubmit } from "./onSubmit";
+import useDataContext from "../../hooks/useDataContext";
 
-const ContactUsPageFormContainer = ({ language, setSendMessageOpen }) => {
+const ContactUsPageFormContainer = ({
+  sendMessageOpen,
+  setSendMessageOpen,
+  errorMessageOpen,
+  setErrorMessageOpen,
+  language,
+}) => {
   const schema = yupValidationSchema(language);
+  const { responseErr, setResponseErr } = useDataContext();
 
   const {
     register,
@@ -42,15 +50,26 @@ const ContactUsPageFormContainer = ({ language, setSendMessageOpen }) => {
   }, [language, touchedFields, trigger]);
 
   useEffect(() => {
-    if (isSubmitSuccessful) {
+    if (isSubmitSuccessful && !responseErr) {
       reset();
       setSendMessageOpen(true);
+    } else if (isSubmitSuccessful && responseErr) {
+      setResponseErr(false);
+      reset(undefined, { keepDirtyValues: true });
+      setErrorMessageOpen(true);
     }
-  }, [isSubmitSuccessful, reset, setSendMessageOpen]);
+  }, [
+    isSubmitSuccessful,
+    reset,
+    setSendMessageOpen,
+    setErrorMessageOpen,
+    responseErr,
+    setResponseErr,
+  ]);
 
   return (
     <StyledContactUsPageFormContainer
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit((data) => onSubmit(data, setResponseErr))}
       data-aos="fade-left"
     >
       <FirstAndLastNameContainer

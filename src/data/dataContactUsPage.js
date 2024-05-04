@@ -13,6 +13,7 @@ export const ContactUsPageData = {
     pageTitle: "Kontakt",
     sentButtonText: "Pošalji",
     sentMessageText: "Forma je uspešno poslata.",
+    errorMessageText: "Greška!\nProverite konekciju i pokušajte ponovo.",
     linksArray: [
       {
         key: "cp_telefon",
@@ -67,6 +68,7 @@ export const ContactUsPageData = {
     pageTitle: "Contact",
     sentButtonText: "Send",
     sentMessageText: "The form has been successfully submitted.",
+    errorMessageText: "Error!\nCheck the connection and try again.",
     linksArray: [
       {
         key: "cp_telefon",
