@@ -16,6 +16,7 @@ export const LastNameTextField = ({ register, errors, language }) => {
       }}
       InputLabelProps={{
         style: { fontSize: "1.2rem", color: "whitesmoke" },
+        shrink: true,
       }}
       sx={{
         "& label.Mui-focused": {

@@ -3,18 +3,14 @@ import ContactUsPageInfoContainer from "../ContactUsPageInfoContainer/ContactUsP
 import ContactUsPageFormContainer from "../ContactUsPageFormContainer/ContactUsPageFormContainer";
 
 const ContactUsPageContentContainer = ({
-  sendMessageOpen,
   setSendMessageOpen,
-  errorMessageOpen,
   setErrorMessageOpen,
   language,
 }) => {
   return (
     <StyledContactUsPageContentContainer>
       <ContactUsPageFormContainer
-        sendMessageOpen={sendMessageOpen}
         setSendMessageOpen={setSendMessageOpen}
-        errorMessageOpen={errorMessageOpen}
         setErrorMessageOpen={setErrorMessageOpen}
         language={language}
       />

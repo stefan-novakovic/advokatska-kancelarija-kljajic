@@ -16,9 +16,7 @@ const ContactUsPage = () => {
       <h2 data-aos="fade-left">{ContactUsPageData[`${language}`].pageTitle}</h2>
 
       <ContactUsPageContentContainer
-        sendMessageOpen={sendMessageOpen}
         setSendMessageOpen={setSendMessageOpen}
-        errorMessageOpen={errorMessageOpen}
         setErrorMessageOpen={setErrorMessageOpen}
         language={language}
       />

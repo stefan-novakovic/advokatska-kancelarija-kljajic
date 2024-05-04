@@ -13,7 +13,7 @@ export const ContactUsPageData = {
     pageTitle: "Kontakt",
     sentButtonText: "Pošalji",
     sentMessageText: "Forma je uspešno poslata.",
-    errorMessageText: "Greška!\nProverite konekciju i pokušajte ponovo.",
+    errorMessageText: "Greška! Proverite konekciju i pokušajte ponovo.",
     linksArray: [
       {
         key: "cp_telefon",
@@ -46,7 +46,7 @@ export const ContactUsPageData = {
       {
         key: "cp_lokacija",
         icon: <SlLocationPin />,
-        href: "https://maps.app.goo.gl/puS2tG7b9kLew9U89",
+        href: "https://maps.app.goo.gl/muPM9CMe3UpEiZCc9",
         otherAttr: true,
         linkText: "Vase Pelagića 9, Novi Sad",
       },
@@ -68,7 +68,7 @@ export const ContactUsPageData = {
     pageTitle: "Contact",
     sentButtonText: "Send",
     sentMessageText: "The form has been successfully submitted.",
-    errorMessageText: "Error!\nCheck the connection and try again.",
+    errorMessageText: "Error! Check the connection and try again.",
     linksArray: [
       {
         key: "cp_telefon",
@@ -101,7 +101,7 @@ export const ContactUsPageData = {
       {
         key: "cp_lokacija",
         icon: <SlLocationPin />,
-        href: "https://maps.app.goo.gl/puS2tG7b9kLew9U89",
+        href: "https://maps.app.goo.gl/muPM9CMe3UpEiZCc9",
         otherAttr: true,
         linkText: "Vase Pelagića 9, Novi Sad",
       },

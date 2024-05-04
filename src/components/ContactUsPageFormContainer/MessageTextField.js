@@ -18,6 +18,7 @@ export const MessageTextField = ({ register, errors, language }) => {
       }}
       InputLabelProps={{
         style: { fontSize: "1.2rem", color: "whitesmoke" },
+        shrink: true,
       }}
       sx={{
         "& label.Mui-focused": {

@@ -12,14 +12,12 @@ import { onSubmit } from "./onSubmit";
 import useDataContext from "../../hooks/useDataContext";
 
 const ContactUsPageFormContainer = ({
-  sendMessageOpen,
   setSendMessageOpen,
-  errorMessageOpen,
   setErrorMessageOpen,
   language,
 }) => {
-  const schema = yupValidationSchema(language);
   const { responseErr, setResponseErr } = useDataContext();
+  const schema = yupValidationSchema(language);
 
   const {
     register,
@@ -60,11 +58,11 @@ const ContactUsPageFormContainer = ({
     }
   }, [
     isSubmitSuccessful,
+    responseErr,
     reset,
     setSendMessageOpen,
-    setErrorMessageOpen,
-    responseErr,
     setResponseErr,
+    setErrorMessageOpen,
   ]);
 
   return (
