@@ -1,1 +1,1 @@
-DEMO: https://advokatska-kancelarija-kljajic.netlify.app/
+WEB APP: https://advokatkljajic.rs/
