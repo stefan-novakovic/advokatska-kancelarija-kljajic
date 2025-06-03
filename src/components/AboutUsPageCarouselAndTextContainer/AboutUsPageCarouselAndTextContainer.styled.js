@@ -13,8 +13,7 @@ export const StyledAboutUsPageCarouselAndTextContainer = styled.section`
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    border: 3px solid ${({ theme }) => theme.colors.veryLightBlue};
-    border-radius: 3px;
+    /* border: 3px solid ${({ theme }) => theme.colors.veryLightBlue}; */
     background-image: url(${AboutUsPageData.SRB.imageCarouselPlaceholder});
     background-size: cover;
     margin-left: 4.5rem;

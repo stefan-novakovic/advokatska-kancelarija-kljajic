@@ -14,14 +14,12 @@ export const StyledUsefulLinksPageItemContainer = styled.div`
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.45;
-    text-decoration: none;
     color: ${({ theme }) => theme.colors.veryLightBlue};
     white-space: wrap;
   }
 
   & > li > a:hover,
   & > li > a:focus-visible {
-    text-decoration: underline;
     filter: brightness(85%);
   }
 
