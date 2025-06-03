@@ -13,7 +13,7 @@
 
 # Build
 ```
-mvn clean -Pnative native:compile
+ ./mvnw spring-boot:build-image
 ```
 
 # Linux
